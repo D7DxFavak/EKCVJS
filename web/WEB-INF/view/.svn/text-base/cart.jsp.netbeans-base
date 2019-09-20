@@ -1,0 +1,116 @@
+<%--
+    Document   : cart
+    Created on : Jun 9, 2010, 3:59:32 PM
+    Author     : tgiunipero
+--%>
+
+<%@taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core"%>
+<c:set var='view' value='/cart' scope='session' />
+<%@taglib prefix="fmt" uri="http://java.sun.com/jsp/jstl/fmt"%>
+
+<html>
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">       
+</head>
+<body>       
+    <div id="actionBar">
+        <%-- clear cart widget --%>
+        <c:if test="${!empty cart && cart.numberOfItems != 0}">
+            <c:url var="url" value="viewCart">
+                <c:param name="clear" value="true"/>
+            </c:url>
+            <a href="${url}" class="bubble hMargin">${webProp.nazev("zrusit_objednavky")}</a>
+        </c:if>
+
+        <c:set var="value">
+            <c:choose>
+                <%-- if 'selectedCategory' session object exists, send user to previously viewed category --%>
+                <c:when test="${!empty selectedCategory}">
+                    category
+                </c:when>
+                <%-- otherwise send user to welcome page --%>
+                <c:otherwise>
+                    index.jsp
+                </c:otherwise>
+            </c:choose>
+        </c:set>
+
+        <%--<a href="${value}" class="bubble hMargin">continue shopping</a>--%>
+        <a href="ekcvjs?novePrihlaseni.jsp" class="bubble hMargin">${webProp.nazev("pokracovat_ve_vyberu")}</a>
+
+
+        <%-- checkout widget --%>
+        <c:if test="${!empty cart && cart.numberOfItems != 0}">
+            <a href="checkout" class="bubble hMargin">${webProp.nazev("objednat")} &#x279f;</a>
+        </c:if>
+    </div>
+
+    <c:if test="${!empty cart && cart.numberOfProducts != 0}">
+        <ul>
+            <c:forEach var="cartItem" items="${cart.items}">         
+
+                <c:set var="product" value="${cartItem.product}"/>
+
+                <li>          
+                    <p class="kosikCisloAkce">${webProp.nazev("vybrana_akce")} : ${product.akceCislo}</p>
+                    <p class="kosikNazevAkce">${product.nazev}</p>
+
+                    <table id="osobyOrgTable">
+                        <tr class="hlavniHeader">
+                            <th colspan="4">
+                                ${webProp.nazev("prihlasene_osoby")}
+                            </th>
+                        </tr>
+                        <tr class="header">
+                            <th>
+                                ${webProp.nazev("uzivatel_jmeno")}
+                            </th>
+                            <th>
+                                ${webProp.nazev("uzivatel_prijmeni")}
+                            </th>
+                            <th>
+                                ${webProp.nazev("uzivatel_datum_narozeni")}
+                            </th>                        
+                            <th>
+                                ${webProp.nazev("tab_odebrat")}
+                            </th>
+                        </tr>
+
+                        <c:forEach var="prihlaseni" items="${cartItem.prihlaseni}" varStatus="iter">
+
+                            <tr class="${((iter.index % 2) == 0) ? 'lightBlue' : 'white'}">
+
+                                <td width="130">
+                                    ${prihlaseni.jmeno}               
+                                </td>
+                                <td width="140">
+                                    ${prihlaseni.prijmeni}                           
+                                </td>
+                                <td width="150">
+                                    <fmt:formatDate value="${prihlaseni.datumNarozeni}" pattern="d.M.yyyy"/>  
+                                </td>                               
+                                <td width="100">
+                                    <form action="odebratLidizKosiku" method="post">
+                                        <input type="hidden"
+                                               name="osobaAkceId"
+                                               id="osobaAkceId"
+                                               value="${prihlaseni.osobaId}x${product.akceId}">
+                                        <input type="submit"
+                                               name="submit"
+                                               value="${webProp.nazev("odebrat")}">
+                                    </form>
+                                </td>
+
+                            </tr>
+                        </c:forEach>
+                    </table>                  
+
+                    <p class="kosikCenaAkce">${webProp.nazev("cena_akce")} : ${cartItem.total}</p>
+                </li>                        
+            </c:forEach>
+        </ul>
+
+        <h4 id="subtotal">${webProp.nazev("cena_celkem")}: ${cart.subtotal} ${webProp.nazev("CZK")}</h4>
+    </c:if>
+</body>
+</html>

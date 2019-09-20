@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<persistence version="2.0" xmlns="http://java.sun.com/xml/ns/persistence" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://java.sun.com/xml/ns/persistence http://java.sun.com/xml/ns/persistence/persistence_2_0.xsd">
+  <persistence-unit name="EKCVJS2PU" transaction-type="JTA">
+    <jta-data-source>jdbc/kopernik4</jta-data-source>
+    <class>entity.AkceFormyAkce</class>
+    <class>entity.AkceHlavni</class>
+    <class>entity.AkceRezimZverejneni</class>
+    <class>entity.AkceStavy</class>
+    <class>entity.CasoveJednotky</class>
+    <class>entity.DruhyFaktur</class>
+    <class>entity.DruhyPrihlasek</class>
+    <class>entity.Jazyky</class>
+    <class>entity.KatOrgPolozky</class>
+    <class>entity.KatOrgTypy</class>
+    <class>entity.Obdobi</class>
+    <class>entity.Obory</class>
+    <class>entity.Organizace</class>
+    <class>entity.Osoby</class>
+    <class>entity.OsobyDruhy</class>
+    <class>entity.PrihlaskyDruhy</class>
+    <class>entity.PrihlaskyRozpisy</class>
+    <class>entity.RegionyOkresy</class>
+    <class>entity.SazbyDph</class>
+    <class>entity.StavyPrihlasek</class>
+    <class>entity.UzemnespravniCelky</class>
+    <class>entity.WebKategorieZakladni</class>
+    <class>entity.WebVazbaKategorieAkceHlavni</class>
+    <class>entity.ZpusobKomunikaceLektor</class>
+    <class>entity.WebPanelyData</class>
+    <class>entity.WebKategorieDetaily</class>
+    <class>entity.WebAktuality</class>
+    <class>entity.Uzivatele</class>
+    <class>entity.Skupina</class>
+    <class>entity.WebPanely</class>
+    <class>entity.OborySkupiny</class>
+    <class>entity.OboryVazbySkupiny</class>
+    <class>entity.AkceAkreditace</class>
+    <class>entity.AkrCiloveSkupiny</class>
+    <class>entity.AkrFormyAkce</class>
+    <class>entity.AkrOblzarHrube</class>
+    <class>entity.AkrOblzarJemne</class>
+    <class>entity.AkreditaceHlavni</class>   
+    <exclude-unlisted-classes>false</exclude-unlisted-classes>
+    <validation-mode>NONE</validation-mode>
+    <properties/>
+  </persistence-unit>
+</persistence>

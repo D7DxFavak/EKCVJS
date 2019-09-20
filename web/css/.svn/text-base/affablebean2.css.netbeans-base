@@ -1,0 +1,2219 @@
+/* START RESET */
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre, a,
+abbr, acronym, address, big, cite, code, del, dfn,
+em, font, img, ins, kbd, q, s, samp, small, strike,
+strong, sub, sup, tt, var, b, u, i, center, dl, dt,
+dd, ol, ul, li, fieldset, form, label, legend, table,
+caption, tbody, tfoot, thead, tr, th, td {
+
+    background: none repeat scroll 0 0 transparent;
+    border: 0 none;
+    font-size: 100%;
+    margin: 0;
+    outline: 0 none;
+    padding: 0;
+    vertical-align: baseline;
+}
+
+body {
+    /*background: #dedede;*/
+    /*background: url("../img/bg.jpg") repeat scroll 0 0 transparent;*/
+    font-family: Verdana, /**Arial,**/ Helvetica,sans-serif;
+    margin: auto;
+    width: 1024px;
+    font-size: 0.9em /* tweak z 23.11. */
+
+}
+ol, ul {
+    list-style: none outside none;
+}
+
+#btop {
+    width: 9999px;
+    height: 500px;
+    /*border: 2px solid black;*/
+    position: fixed;
+    background: url("../img/bg.jpg") repeat-x;
+    top: 0px;
+    left: -997px;
+}
+
+#bbottom {
+    width: 9999px;
+    height: 9999px;
+    /*border: 2px solid black;*/
+    position: fixed;
+    background: url("../img/bgb.jpg") repeat;
+    top: 500px;
+    left:-997px;
+}
+
+#main {
+    width: 1024px;
+    background: none repeat scroll 0 0 white;
+    /**box-shadow: 0px 4px 21px 2px #000;*//
+    margin: 10px 0px;
+}
+
+/**#subMain {
+    width: 1024px;
+    background: none repeat scroll 0 0 transparent;
+        box-shadow: 0px 0px 1px 0 #C3C2C2 inset;
+        margin: 20px 0px;
+}**/
+
+#mainLogin {
+    width: 365px;
+    height: 402px;
+    background: url("../img/loginbg.png") no-repeat scroll 0 0 transparent;
+    margin: 40px auto;
+    /**border: 1px solid grey;**/
+    /**background-color: rgba(255,255,255,0.3);**/
+    /**box-shadow: 1px 1px 14px;**/
+
+}
+
+a:link    {
+    /* Applies to all unvisited links */
+    text-decoration:  none;
+    font-weight:      bold;
+    /*background-color: #ddd;*/
+    color:            grey;
+} 
+a:visited {
+    /* Applies to all visited links */
+    text-decoration:  none;
+    font-weight:      bold;
+    /*background-color: #ddd;*/
+    color:            grey;
+} 
+a:hover   {
+    /* Applies to links under the pointer */
+    text-decoration:  none/*underline*/;
+    font-weight:      bold;
+    /*background-color: blue;*/
+    color:            grey;
+} 
+a:active  {
+    /* Applies to activated links */
+    text-decoration:  none/*underline*/;
+    font-weight:      bold;
+    /*background-color: black;*/
+    color: ornagered;
+} 
+
+
+/* END RESET */
+
+#header {
+    width: auto;
+    height: 168px /**188px**/ /*200px*/;
+    border: 0px solid black;
+    z-index: 100;
+    position: relative;
+}
+
+#widgetBar #cart {
+
+}
+
+#loginForm {
+    height: 200px;
+    width: 365px;
+    position: relative;
+    top: 47px;
+}
+
+#loginForm label {
+    /*clear: both;*/
+    float: left;
+    width: 150px;
+    height: 20px;
+    margin: 12px 10px 1px 57px;
+    /*display: inline-block;*/
+    padding: 0px 5px;
+    /*background: #F8CF00;*/
+    /*box-shadow: 3px 3px 4px #000;*/
+    font-size: 0.9em;
+    font-weight: bolder;
+    color: #fff;
+}
+
+#loginForm input {
+    /*clear: both;*/
+    float: left;
+    width: 222px;
+    height: 21px;
+    /*display: inline-block;*/
+    margin: 1px 10px 1px 61px;
+    /*padding-left: 10px;*/
+    background: #e0e0e0;
+    padding: 0px 5px;
+    font-weight: bold;
+    border: none;
+    color: #000 /*wheat*/;
+    /*box-shadow: 3px 3px 4px #000;*/
+}
+
+#loginForm #submitLogin {
+    float: left;
+    height: 24px;
+    width: 100px;
+    margin: 22px 5px 5px 124px;
+    /*padding-left: 10px;*/
+    background: #0c1e4a;
+    padding: 0px 5px;
+    font-weight: bold;
+    border: none;
+    color: wheat;
+    /**box-shadow: 1px 1px 10px;**/
+    cursor: pointer;
+}
+
+#loginForm #submitLogin:hover {
+    background: #fff;
+    color: black;
+}
+
+#registraceForm {
+    margin: auto;
+    margin-top: 20px;
+    height: 530px;
+    width: 300px;
+    background: none repeat scroll 0 0 rgba(255, 255, 255, 0.3);
+    padding: 20px;
+    box-shadow: 3px 3px 4px #000;
+}
+
+#registraceForm label {
+    /*clear: both;*/
+    float: left;
+    width: 130px;
+    height: 20px;
+    margin: 5px 5px;
+    /*display: inline-block;*/
+    padding: 0px 5px;
+    background: none repeat scroll 0 0 rgba(30, 41, 71, 0.8);
+    box-shadow: 1px 1px 4px #000;
+    font-size: 0.8em;
+    font-weight: bold;
+    color: #FFF;
+}
+
+#registraceForm input {
+    /*clear: both;*/
+    float: left;
+    width: 130px;
+    height: 20px;
+    /*display: inline-block;*/
+    margin: 5px -4px;
+    /*padding-left: 10px;*/
+    background: #E0E0E0;
+    padding: 0px 5px;
+    font-weight: bold;
+    border: none;
+    color: #000;
+    box-shadow: 1px 1px 4px #000;
+}
+
+#registraceForm #submitLogin {
+    float: left;
+    height: 21px;
+    margin: 5px 5px;
+    margin-left: 83px;
+    /*padding-left: 10px;*/
+    background: #420303;
+    padding: 0px 5px;
+    font-weight: bold;
+    border: none;
+    color: wheat;
+    box-shadow: 3px 3px 4px #000;
+}
+
+#registraceForm #submitOsobaUdaje {
+    width: 130px;
+    height: 24px;
+    margin: 10px 5px;
+}
+
+#registraceForm #submitOsobaUdaje:hover {
+    background: #1e2947;
+    color: white;
+    box-shadow: 0px 0px 4px #FFF;
+}
+
+#logo {
+    height: 146px;
+    margin: auto;
+    width: 100%;
+    border: 0px solid black;
+}
+
+#widgetBar {
+    width: auto;
+    height: 26px;
+    margin-top: 5px;
+    border: 0px solid black;
+}
+
+#widgetBar a:link, #widgetBar a:visited, #widgetBar a:hover, #widgetBar a:active {
+    color: white;
+    text-decoration: none;
+    /*background-image: -moz-linear-gradient(right center , #F0E68C 0%, #FFA600 100%);*/
+    /*background-image: -moz-linear-gradient(left , #2A2952 10%, #2A2952 0%, #7277CC 100%);*/
+    font-weight: normal;
+}
+
+#widgetBar #headerLanguage {
+    float: right;
+    margin-left: 4px;
+    color: white;
+    /*width: 300px;*/
+}
+
+.bubble {
+    float: left;
+    margin-right: 8px;
+    font-weight: bold;
+    color: orange;
+}
+
+.slash {
+    float: left;
+    margin-right: 2px;
+    font-weight: bold;
+    color: orange;
+}
+
+#login.headerWidget {
+    display: inline;
+    float: right;
+    /*margin: 5px 50px 15px 837px;*/
+    border: 0px solid black;
+    width: 200px;
+}
+
+#headerLogin a {
+    float: left;
+    margin-right: 6px;
+}
+
+#headerLogin span {
+    color: #FEE275;
+    float: left;
+    margin-right: 6px;
+}
+
+.headerWidget {
+    /*clear:both;*/
+    display: inline;
+    float: right;
+    /*margin: 5px 50px 15px 837px;*/
+    border: 0px solid black;
+    margin-left: 10px
+        margin-right: 8px;
+    padding: 5px 0px 0px 0px;
+}
+
+#viewCart {
+    position: relative;
+    clear: both;
+    float: left;
+    margin: 12px 20px;
+    border: 0px solid black;
+
+}
+
+#indexTopColumn {
+    clear: both;
+    /*height: 62px;*/
+    width: 100%;
+    display: block;
+    position: relative;
+    /*background: orange;*/
+}
+
+#indexTopColumnC1 {
+    float: left;
+    height: 62px;
+    width: 1000px;
+    /*background: orange/*#fff*/;
+    /*padding-left: 264px;*/
+    margin: 7px 0px 0px 0px;
+    border: 0px solid black;
+    text-align: center;
+    display: block;
+    position: relative;
+    background: url("../img/mainM_center.png") repeat-x scroll 0 0 transparent
+}
+
+#indexTopColumnL1 {
+    float: left;
+    margin-top: 7px;
+}
+
+#indexTopColumnC1 ul {
+    float: left;
+    width: auto;
+    height: 50px;
+    margin-top: 5px;
+    position: relative;
+    /*display: inline;*/
+    list-style: circle;
+    cursor: pointer;
+    text-align: center; /* !!!! musi byt proto aby display: inline-block v UL LI fungoval, viz nize !!!! */
+}
+
+#indexTopColumnC1 ul li {
+    background: url("../img/mainM_button.png") repeat-x scroll 0 0 transparent;
+    height: 34px;
+    margin-top: 1px;
+    padding: 15px 10px 0px 10px;
+    display: inline-block; /* !!!! bude fungovat s text-align: center viz vyse !!!! */
+    position: relative; /* !!!! nejdulezitejsi pro spravny alignment drop-down menu k jednotlive polozce !!!! */
+    border-right: 2px solid #fff;
+    width: auto; /*104px;*/
+    z-index: 100; /* necessary for wrapper area shadow */
+}
+
+/*#indexTopColumnC1 ul li.topListItemAktivni {
+    background: none repeat scroll 0 0 LightSlateGrey;
+        position: relative;
+        border: medium none;
+        height: 24px;
+        margin: 0 auto;
+        padding: 15px 11px 10px;
+        z-index: 100;
+}*/
+
+#indexTopColumnC1 ul li.topListItemAktivni:hover {
+    /**background: none repeat scroll 0 0 white;**/
+    position: relative;
+    /**box-shadow: 1px -1px 7px 0 grey;**/
+    z-index: 111;
+    font-weight:
+
+        /*padding: 15px 14px 14px 14px;
+        top: -10px;*/                         /* vyskakujici aktivni hover meni */
+}
+
+#indexTopColumnC1 ul li.topListItemNeaktivni {
+    background: none repeat scroll 0 0 #000;
+}
+
+#indexTopColumnC1 ul li.topListItemNeaktivni:hover {
+    /*background: none repeat scroll 0 0 #000;*/
+    color: white;
+}
+
+#indexTopColumnR1 {
+    float: right;
+    margin-top: 7px;
+}
+
+/*
+        filter: progid:DXImageTransform.Microsoft.gradient(startColorstr=#FF5900, endColorstr=#FFCC00);
+        position: relative;
+        z-index: 3;
+*/
+
+/*#indexTopColumn a:visited {
+        background-color: #000;
+        width: 60px;
+        height: 30px;
+        display: block;
+}*/
+
+
+#navigace {
+    margin: auto;
+    text-align: center;
+}
+
+#navigace a {
+    font-size: 0.8em;
+    /*color: black;*/  /* likviduje color v .navClass protoze je to tag */
+    float: left;
+    margin-left: 5px;
+    margin-top: 5px;
+    padding: 0px 2px;
+}
+
+#navigace p {
+    font-size: 0.8em;
+    /**color: black;**/
+    color: white;
+    float: left;
+    margin-left: 5px;
+    margin-top: 5px;
+}
+
+#strana, #stranaHledani {
+    float: right;
+}
+
+#strana a, #stranaHledani a {
+    font-size: 0.8em;
+    /*color: black;*/ /* likviduje color v .navClass protoze je to tag */
+    float: left;
+    margin-left: 5px;
+    margin-top: 5px;
+    padding: 0px 2px;
+}
+
+#strana p, #stranaHledani p {
+    font-size: 0.8em;
+    color: black;
+}
+
+#strana span, #stranaHledani span {
+    font-size: 0.8em;
+    color: black;
+    float: left;
+    margin-left: 5px;
+    margin-top: 5px;
+}
+
+/*.navClass {
+        font-size: 0.8em;
+        color: black;
+}
+/*#wrapperPrihlasky a:link, #wrapperPrihlasky a:visited, #wrapperPrihlasky a:hover, #wrapperPrihlasky a:active {
+        font-size: 0.8em;
+        color: black;
+}*/
+
+
+#indexTopColumnC1 ul li ul li {
+    display: none;
+}
+
+#indexTopColumnC1 ul li:hover {
+    background: white /*LightSlateGray*/ /*#F66*/; /* orange */
+    cursor: pointer;
+    z-index: 100;
+    position: relative;
+    /*color: white;*/
+}
+
+#indexTopColumnC1 ul li:active {
+    background-color: white; /**orangered**/; /*#F66*/; /* orange */
+    cursor: pointer;
+    z-index: 100;
+    position: relative;
+}
+
+#indexTopColumnC1 ul li:hover ul {
+    top: 44px /*40px*/;
+    left: -4px;
+    width: 158px;
+    height: auto;
+    /**background-color: white; /*orangered*/ /*#F66*//* orange */
+    position:absolute;
+    /*height:65px;*/
+    display:block;
+    /**border: 1px solid black;**/
+
+}
+
+#indexTopColumnC1 ul li:hover ul li {
+    width: 148px;
+    height: 21px;
+    /**margin-bottom: 0px;
+        margin-top: 0px;**/ /* zruseno pri remaku na background */
+    padding: 6px 1px 2px 8px;
+    /**border-left: 0px solid black;
+    border-top: 0px solid black;**/ /* zruseny vsechny bordery -> border: none; */
+    background: url("../img/ddulCenter.png") repeat-y scroll 0 0 transparent;
+    /*background: white /*firebrick*/ /*#F90*/; /* orange */
+    /*position: absolute;*/
+    /*height:65px;*/
+    display: block;
+    font-size: 0.78em;
+    text-align: left;
+    margin: 0;
+    border: none;
+    /*box-shadow: 1px 1px 1px 1px black;*/
+}
+
+#indexTopColumnC1 ul li:hover ul li:last-child {
+    width: 148px;
+    height: 21px;
+    /**margin-bottom: 0px;
+        margin-top: 0px;**/ /* zruseno pri remaku na background */
+    padding: 6px 1px 2px 8px;
+    /**border-left: 0px solid black;
+    border-top: 0px solid black;**/ /* zruseny vsechny bordery -> border: none; */
+    background: url("../img/ddulLastItem.png") no-repeat scroll 0 0 transparent;
+    /*background: white /*firebrick*/ /*#F90*/; /* orange */
+    /*position: absolute;*/
+    /*height:65px;*/
+    display: block;
+    font-size: 0.78em;
+    text-align: left;
+    margin: 0;
+    border: none;
+    /*box-shadow: 1px 1px 1px 1px black;*/
+}
+
+
+#indexTopColumnC1 ul li:hover ul li:hover a {
+    background: url("../img/ddlideco.png") no-repeat scroll 0 -2px transparent;
+    /**background: orange;**/
+    width: 150px;
+    display: block;
+    padding: 3px 4px 0px 2px;
+    height: 23px;
+
+}
+
+/* 
+ * DD COMPOSITE BACKGROUND 
+*/
+
+/*#indexTopColumnC1 ul il:hover #topListTop {
+        background: url("../img/ddulTop.png") no-repeat scroll 0 0 transparent;
+        width: 158px;
+        height: 7px;
+}
+
+#indexTopColumnC1 ul il:hover #topListCenter {
+        background: url("../img/ddulCenter.png") repeat-y scroll 0 0 transparent;
+        width: 158px;
+        height: auto;
+}
+
+#indexTopColumnC1 ul il:hover  #topListBottom {
+        background: url("../img/ddulBottom.png") no-repeat scroll 0 0 transparent;
+        width: 158px;
+        height: 7px;	
+}*/
+
+/* 
+ * MAIN PAGE KATEGORIE 
+*/
+
+#uciteleHome .homeKategorie {
+    color: black;
+    display: block;
+    margin-top: 10px;
+    margin-left: 7px;
+}
+
+#jsHome .homeKategorie {
+    color: black;
+    display: block;
+    margin-top: 10px;
+    margin-left: 7px;
+}
+
+#dvppHome .homeKategorie {
+    color: black;
+    display: block;
+    margin-top: 10px;
+    margin-left: 7px;
+}
+
+#ekcvjsHome .homeKategorie {
+    color: black;
+    display: block;
+    margin-top: 10px;
+    margin-left: 7px;	
+}
+
+/*
+ * 
+*/
+
+.catDetailLabelText {
+    color: black;
+}
+
+.kontaktyLabelText {
+    background: none repeat scroll 0 0 lightGrey;
+    color: black;
+    display: block;
+    padding: 6px;
+}
+
+.categoryBox {
+    margin: auto;
+    display: inline;
+    float: left;
+    margin: 5px 10px 0 0;
+    padding: 10px;
+    background: magenta;
+    border: 2px solid black;
+    position: absolute;
+}
+
+#panelLeftColumn {
+    margin-top: 5px;
+    padding-top: 0px;
+    clear: both;
+    float: left;
+    display: block;
+    width: 180px;
+    border: 0px solid black;
+    /**box-shadow: 1px 1px 11px 1px #91650d;**/
+}
+
+#container10, #container20, #container30, #container40, #container50, #container60, #container70 {
+    /*clear: both;
+        float: right;
+        overflow: auto;*/
+    /**background: none repeat scroll 0 0 #fff;**/
+    height: 900px /*1024px;*/ /*auto*/; /* AUTO zpusobuje se stinem rosekani opakujicihose bg po px u height */
+    width: 100%;
+    /**box-shadow: 0 4px 23px 4px grey;**/
+    position: relative;
+    z-index: 2;
+}
+
+#container10 {
+    /**background: none repeat scroll 0 0 #fff; /*#fc0*/  
+    /**box-shadow: 0px 4px 21px 2px #000;**/
+    position: relative;
+
+    /*filter: progid:DXImageTransform.Microsoft.Shadow(Color=#cccccc, Strength=10, Direction=0),
+            progid:DXImageTransform.Microsoft.Shadow(Color=#cccccc, Strength=10, Direction=90),
+            progid:DXImageTransform.Microsoft.Shadow(Color=#cccccc, Strength=10, Direction=180),
+            progid:DXImageTransform.Microsoft.Shadow(Color=#cccccc, Strength=10, Direction=270);
+    /*z-index: 20;*/
+}
+
+#container70 {
+    clear: both;
+    float: right;
+    overflow: auto;
+    /*background: none repeat scroll 0 0 #06f;*/
+    /*background: url("../img/70hD.jpg") repeat-y scroll 0 0 transparent;*/
+}
+
+#wrapper {
+    margin: 10px 10px 0 10px;
+    padding: 6px;
+    /*clear: both;*/
+    float: left;
+    display: block;
+    width: 628px;
+    background: white /*#FEECBF*/;
+    /*filter: progid:DXImageTransform.Microsoft.Glow(Color=#383838, Strength=3, Enabled);*/
+}
+
+#wrapper ul li {
+    /**background: #FEE275 /**#FED980**/; 
+    /*border: 2px solid #B25900;*/
+    margin: 4px 4px 10px 4px;
+    padding-top: 2px;
+}
+
+#wrapper ul ul > li > h2 {
+    clear: both;
+    background: url("../img/mainM_button.png") repeat-x scroll 0 -20px transparent;
+    /*background: red;*/
+    height: 28px;
+    padding-left: 5px;
+    padding-top: 5px;
+}
+
+#wrapperPrihlasky {
+    float: left;
+    margin: 10px 4px 0 14px;
+    padding: 6px;
+    /*clear: both;*/
+    float: left;
+    display: block;
+    width: 790px;
+    border: 2px solid black;
+    /**background: #FEECBF;**/
+    background: none repeat scroll 0 0 grey;
+    border: 0px dashed #FEECBF;
+    box-shadow: 0px 0px 4px black;
+}
+
+/* NAVIGACE na KAZDE STRANCE */
+
+#wrapper #navigaceTop {
+    width: 100%;
+    height: 15px;
+}
+
+#wrapper > #navigaceTop > ul.navigaceList {
+    float: right;
+}
+
+#wrapper > #navigaceTop > ul > li {
+    float: right;
+    display: inline;
+    font-size: 0.7em;
+    font-style: italic;
+    margin: 0;
+    margin: 0;
+    margin-left: 4px;
+}
+
+#wrapper > #navigaceTop > ul > li a {
+    color: black;
+}
+
+/* -------------------------------------------------------------------------- */
+/* KONTAKTY */
+/* -------------------------------------------------------------------------- */
+
+#kontaktyOsoba {
+    width: auto;
+    height: 120px;
+    margin-bottom: 16px;
+}
+
+#kontaktyLeftDiv {
+    float: left;
+    height: 120px;
+    width: 20%;
+}
+
+#kontaktyRightDiv {
+    float: left;
+    height: 120px;
+    width: 80%;
+    border-bottom: 1px solid lightSlateGray;
+}
+
+#kontaktyLeftDiv img {
+    width: 94px;
+    height: 120px;
+}
+
+#kontaktyRightDiv p {
+    font-size: 0.9em;
+}
+
+#kontaktyRightDiv .kontaktyEmail a:link, #kontaktyRightDiv .kontaktyEmail a:visited, #kontaktyRightDiv .kontaktyEmail a:hover, #kontaktyRightDiv .kontaktyEmail a:active {
+    color: activeCaption;
+    font-size: 0.9em;
+}   
+
+/* -------------------------------------------------------------------------- */
+
+/*
+ * SEARCH RESULT DISPLAY
+*/
+
+#wrapper .searchLeftTop {
+    width: 50%;
+    height: 21px;
+    margin-bottom: 5px;
+    text-align: left;
+    float: left;
+    border-bottom: 1px solid grey;
+}
+
+#wrapper .searchLeftTop p {
+    float: left;
+    font-family: verdana;
+    font-size: 0.85em;
+}
+
+#wrapper .searchLeftTop p span {
+    font-family: verdana;
+    font-size: 1em;
+    color: blue;
+    font-style: italic;
+    font-weight: bold;
+    /*text-decoration: underline;*/
+}
+
+#wrapper .searchRightTop {
+    width: 50%;
+    height: 21px;
+    margin-bottom: 5px;
+    text-align: left;
+    float: right;
+    border-bottom: 1px solid grey;
+}
+
+#wrapper .searchRightTop p {
+    float: right;
+    font-family: verdana;
+    font-size: 0.85em;
+}
+
+#wrapper .searchRightTop p span {
+    font-family: verdana;
+    font-size: 1em;
+    color: blue;
+    font-style: italic;
+    font-weight: bold;
+    /*text-decoration: underline;*/
+}
+
+#navigaceHledani {
+    border-top: 1px solid grey;
+}
+
+#navigaceHledani p {
+    font-size: 0.8em;
+    color: black;
+    float: left;
+    margin-left: 5px;
+    margin-top: 5px;
+}
+
+#navigaceHledani a {
+    font-size: 0.8em;
+    /*color: black;*/  /* likviduje color v .navClass protoze je to tag */
+    float: left;
+    margin-left: 5px;
+    margin-top: 5px;
+    padding: 0px 2px;
+}
+
+a.navClassHledani:link, a.navClassHledani:visited/*, a.navClass:hover/*, a.navClass:active*/ {
+    /**color: #4C4C4C;*/
+    color: black;
+}
+
+a.navClassHledani:hover {
+    color: white;
+    background: grey;
+
+}
+
+/*----------------------------------------------------------------------------------------------------*/
+
+#wrapper span.seznamLabelText {
+    font-family: verdana;
+    font-size: 0.80em;
+    color: Navy;
+}
+
+#leftColumnUl2/*, #leftColumnUl2*/ {
+    margin: 0px 0;
+    width: 180px;
+    /**background: #FFF8AF;**/
+    padding: 2px 0px 2px 0px;
+    /*box-shadow: 1px 1px 11px 0px grey; /*darkgoldenrod*/
+    /**background: none repeat scroll 0 0 white;**/
+    background: none repeat scroll 0 0 #fee275;
+}
+
+#leftColumnUl1 {
+    margin: 5px auto;
+    width: 180px;
+    height: 50px;
+    /**background: #FFF8AF;**/
+    margin: 5px 0px 0px 0px;
+    /**border: 2px solid orange;**/
+    /**padding: 10px 2px 12px 0px;**/
+    /*box-shadow: 1px 1px 11px 0px grey; /*darkgoldenrod*/
+    background: url("../img/searchbg.png") no-repeat scroll 0 0 transparent;
+}
+
+#leftColumnUl1 ul li, #leftColumnUl2 ul li {
+    /*margin: 20px 0;*/
+    width: 180px;
+    height: 28px;
+    /***background: #FFCC00;***/
+    /**border-bottom: 2px solid gray;**/
+    border-left: 0px solid orange/*firebrick*/;
+    border-right: 0px solid white;
+    margin: 6px 0;
+    padding: 2px 0;
+    /*box-shadow: 1px 1px 2px 0px grey;*/
+    cursor: pointer;
+    text-decoration:  none;
+    font-size: 12px /**14px**/;
+    background: none repeat scroll 0 0 #fee275;
+}
+
+#leftColumnUl1 ul li:hover, #leftColumnUl2 ul li:hover {
+    /*margin: 20px 0;*/
+    width: 180px;
+    background: orange;
+    /*border-left: 6px solid firebrick;
+margin: 6px 0;
+    padding: 6px;
+    box-shadow: 1px 1px 2px 0px #000;*/
+    text-decoration:  none;
+}
+
+#leftColumnUl3 {
+    margin: 0px 0;
+    width: 180px;
+    background: #FFF8AF;
+    padding: 5px 0;
+    /*box-shadow: 1px 1px 11px 0px grey; /*darkgoldenrod*/
+    background: none repeat scroll 0 0 white;
+    position: relative;
+    height: 100px;
+}
+
+#leftColumnUl3 #cart {
+    margin-left: 22px;
+    margin-top: 0px;
+}
+
+#leftColumnUl3 a.zobrazKos {
+    padding: 17px 0 2px 36px;
+    color: black;
+    display: block;
+}
+
+#leftColumnUl3 a.panelButtonUl3 {
+    position: absolute;
+    top: 97px;
+    left: 140px;
+}
+
+#panelRightColumn {
+    /*background: none repeat scroll 0 0 white;*/
+    margin: 10px 0px;
+    /**padding-top: 10px;**/
+    /*clear: both;*/
+    float: right;
+    display: block;
+    width: 180px;
+    border: 0px solid black;
+    /*box-shadow: 1px 1px 11px 1px grey;*/
+}
+
+#rightColumnUl1 {
+    clear: both;
+    background: none repeat scroll 0 0 /*khaki*/; /*#d6d6d6*/
+    margin: 0px 0px;
+    /**padding-top: 5px;**/
+    /*clear: both;*/
+    float: right;
+    display: block;
+    width: 180px;
+    border: 0px solid black;
+    position: relative;
+    /*box-shadow: 0px 0px 4px 0px grey*/
+}
+
+#rightColumnUl1 #newsTop {
+    background: url("../img/rNewsTop.png") repeat scroll -4px 0 transparent;
+    width: 100%;
+    /**font-size: 0.8em;
+font-weight: bold;
+    padding: 1px 2px;
+    color: #282828;**/
+    display: block;
+    position: relative;
+    height: 46px;
+}
+
+.rnews {
+    background: url("../img/rnewslow.png") no-repeat scroll -4px 0 transparent;
+    display: block;
+    height: 24px;
+    margin-bottom: 24px;
+    position: relative;
+    width: 185px;
+    left: -4px;
+
+} 
+
+.dwnarr1 {
+    position: absolute;
+    top: 133px;
+    left: 146px;
+    z-index: 100;
+}
+
+.dwnarr2 {
+    position: absolute;
+    top: 298px;
+    left: 146px;
+    z-index: 100;
+}
+
+.dwnarr3 {
+    position: absolute;
+    top: 462px;
+    left: 146px;
+    z-index: 100;
+}
+
+#rightColumnUl1 a:link {
+    color: black;
+    text-decoration: none;
+}
+
+#rightColumnUl1 a:visited {
+    color: blue;
+    text-decoration: none;
+}
+
+#rightColumnUl1 a:hover {
+    color: DarkBlue;
+    text-decoration: none;
+}
+
+#rightColumnUl1 a:active {
+    color: red;
+    text-decoration: none;
+}
+
+#rightColumnUl1 ul li {
+    /*margin: 10px 5px 10px 5px;*/
+    margin: -17px 0px;
+}
+
+#rightColumnUl2 {
+    clear: both;
+    background: none repeat scroll 0 0 /*khaki*/; /*#d6d6d6*/
+    margin: 0px 0px;
+    padding-top: 5px;
+    /*clear: both;*/
+    float: right;
+    display: block;
+    width: 180px;
+    border: 0px solid black;
+    /*box-shadow: 0px 0px 4px 0px grey*/
+}
+
+#rightColumnUl3 {
+    clear: both;
+    background: none repeat scroll 0 0 /*khaki*/; /*#d6d6d6*/
+    margin: 0px 0px;
+    padding-top: 5px;
+    /*clear: both;*/
+    float: right;
+    display: block;
+    width: 180px;
+    border: 0px solid black;
+    /*box-shadow: 0px 0px 4px 0px grey*/
+}
+
+#panelUdajeOsoba {
+    width: auto;
+}
+
+#panelUdajeOsoba h2 {
+    text-align: center;
+}
+
+#panelUdajeOsoba p {
+    text-align: center;
+    margin-top: 10px;
+}
+
+#klientInfoForm {
+    border: 15px;
+    display: block;
+    margin: 16px auto;
+    padding: 10px;
+    width: 290px;
+    height: 350px;
+    border-color: #F5D35E #F5BE00 #F5BE00 #F5D35E;
+    border-style: solid;
+}
+
+#klientInfoForm label {
+    /*clear: both;*/
+    float: left;
+    width: 130px;
+    margin-right: 10px;
+    /*display: inline-block;*/
+    padding: 0px 5px;
+    background: #F8CF00;
+}
+
+#klientInfoForm input {
+    /*clear: both;*/
+    float: left;
+    width: 130px;
+    /*display: inline-block;*/
+    /*margin: 0px 10px;
+    padding-left: 10px;*/
+    /*background: #F8CF00;*/
+    font-weight: bold;
+}
+
+#klientInfoForm input#submitOsobaUdaje {
+    margin-top: 15px;
+}
+
+#footer {
+    clear: both;
+    /*display: inline;
+        float: left;
+        margin-right: 288px;*/
+}
+
+#footerEsf {
+    /*width: 33%;
+    /*float: left;*/
+    /*background: url(img/logoesf.jpg) no-repeat;*/
+}
+
+#footerEsf #logo {
+    width: 98%;
+    height: auto;
+    background: url(img/logoesf.jpg) no-repeat;
+}
+
+#footer #footerKontakt {
+    width: 50%;
+    float: left;
+    /*text-align: center;*/
+}
+
+#footer #footerTM {
+    width: 50%;
+    float: left;
+    text-align: right;
+}
+
+.datumAktuality {
+    /**background: url("../img/rNewsTop.png") repeat scroll -4px 0 transparent;**/
+    /**width: 98%;**/
+    font-size: 0.8em;
+    font-weight: bold;
+    margin: 11px 10px 0px 0px;
+    padding: 13px 12px 10px 10px;
+    color: #282828;
+    display: block;
+    /**height: 46px;**/
+}
+
+/*
+ * AKTUALITY MAIN PAGE STYLE
+*/
+
+#wrapper #aktualitySeznamMain {
+    margin: 6px 1px;
+    padding: 2px;
+    display: block;
+    border-bottom: 1px solid lightSteelBlue;
+    /**height: 46px;**/
+}
+
+#wrapper .aktualitySeznamDatum {
+    background: url("../img/ddlideco.png") no-repeat scroll 0 0 transparent;
+    /**width: 98%;**/
+    border-bottom: 1px solid orangered;
+    font-size: 0.8em;
+    font-weight: bold;
+    margin: 0px 0px 0px 0px;
+    padding: 2px 1px 3px 4px;
+    color: #282828;
+    display: block;
+    width: 140px;
+    /**height: 46px;**/
+}
+
+#wrapper .aktualitySeznamText {
+    /*background: url("../img/rNewsFill.png") repeat scroll -4px 0 transparent;*/
+    font-family: Verdana, Helvetica, sans-serif;
+    font-size: 0.85em;
+    font-weight: bold;
+    display: block;
+    /*height: 80px;*/
+    padding: 7px 1px 3px;
+    color: #000;
+    /*font-style: italic;*/
+}
+
+#wrapper .aktualitySeznamPopis {
+    /*background: url("../img/rNewsFill.png") repeat scroll -4px 0 transparent;*/
+    font-family: Verdana, Helvetica, sans-serif;
+    font-size: 0.75em;
+    display: block;
+    /*height: 80px;*/
+    padding: 4px 8px;
+    color: #000;
+    /*font-style: italic;*/
+}
+
+#wrapper #aktualitaAutor {
+    margin-top: 6px;
+    margin-bottom: 2px;
+    height: 12px;
+}
+
+#wrapper #aktualitaAutor p {
+    float: right;
+    font-size: 0.7em;
+    font: verdana;
+
+}
+
+.default a:link, .default a:visited, .default a:hover, .default a:active {
+    color: Navy;
+    font-weight: bold;
+    text-decoration: none;
+}
+
+/*--------------------------------------------------------------------------------------------------------------------------*/
+
+
+/*
+ * VZDELAVANI UCITELU -> HLAVNI CINNOST, DALSI VZDELAVANI 
+*/
+
+#wrapper .statickeInfoNazev {
+    background: url("../img/mainlideco.png") no-repeat scroll 0 0 transparent;
+    display: block;
+    height: 24px;
+    margin-bottom: 8px;
+    padding: 3px;
+    width: 622px
+
+}
+
+
+#wrapper p.statickeInfoText {
+    font: verdana;
+    font-size: 0.8em;
+    text-align: justify;
+}
+
+.aktualityLabelText {
+    background: url("../img/rNewsFill.png") repeat scroll -4px 0 transparent;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 0.75em;
+    display: block;
+    height: 80px;
+    padding: 4px 8px;
+    /*font-style: italic;*/
+}
+
+.categoryLabelTextAktivni {
+    font-family: Arial, Helvetica, sans-serif;
+    /*font-size: 0.9em;*/
+    font-size: 1.05em;
+    /*font-size: 16px;*/
+    color: black;
+}
+
+.categoryLabelTextAktivni:hover {
+    font-family: Arial, Helvetica, sans-serif;
+    /*font-size: 0.9em;*/
+    font-size: 1.05em;
+    /*font-size: 16px;*/
+    color: darkslategrey;
+}
+
+.categoryLabelTextNektivni {
+    font-family: Arial, Helvetica, sans-serif;
+    /*font-size: 0.9em;*/
+    font-size: 1.05em;
+    /*font-size: 16px;*/
+    color: black;
+}
+
+.categoryLabelTextNektivni:hover {
+    font-family: Arial, Helvetica, sans-serif;
+    /*font-size: 0.9em;*/
+    font-size: 1.05em;
+    /*font-size: 16px;*/
+    /*color: white;*/
+}
+
+.aktualityPanelNazev {
+    background: none repeat scroll 0 0 #FFB200;
+    border: 2px solid #FF9900;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 1em;
+    font-weight: bolder;
+    margin-top: 2px;
+    margin-bottom: 2px;
+    padding: 1px 0 1px 3px;
+}
+
+.aktualityPanelText { /* !!!! zda se ze SPAN nereaguje na MARGIN ani PADDING, sice se zpracuje ale nedela to nic !!!! */
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 1em;
+    display: block;
+    margin-bottom: 2px;
+    /*font-weight: bolder;*/
+}
+
+.aktualityPanelOdkaz {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: .9em;
+    font-weight: normal;
+    display: block;
+    margin-top: -2px;	
+}
+
+/* -------------------------------------------------------------------------- */
+/* PRIHLASENI K AKCIM v menu KCVJS */
+/* -------------------------------------------------------------------------- */
+
+#prihlaseniTable {
+    clear: both;
+}
+
+#prihlaseniTable th {
+    /**background-color: rgba(255, 132, 0, 0.5);**/
+    background: none repeat scroll 0 0 #FAC600;
+}
+
+#prihlaseniTable tr > th > a {
+    /**background-color: rgba(255, 132, 0, 0.5);**/
+    color: #000;
+}
+
+tr.lightBlue {
+    color: black;
+    background-color: #f1f1f1 /**#FFDE98**/ /**#e2d7b6**/ /*rgba(156, 152, 122, 0.3);*/;
+    font-size: 1.0em;
+}
+
+.lightBlue td {
+    text-align: center;
+    padding: 2px 6px;
+    font-size: 0.9em;
+}
+
+.lightBlue td a:link, .lightBlue td a:visited, .lightBlue td a:hover, .lightBlue td a:active {
+    color: #0e2b82;
+
+}
+
+tr.white {
+    color: black;
+    background-color: #f1f1f1 /**#f5d693**/ /**#dcd1b1*/ /*rgba(162, 168, 162, 0.3)*/;
+    font-size: 1.0em;
+}
+
+.white td {
+    text-align: center;
+    padding: 2px 6px;
+    font-size: 0.9em;
+}
+
+.white td a:link, .white td a:visited, .white td a:hover, .white td a:active {
+    color: #0e2b82;
+}
+
+tr.detailAkce {
+    background-color: #ebe5d1 /**#DCD1B1**/;
+    color: black;
+    font-size: 0.8em;
+}
+
+.smallText {
+    font-size: 0.9em;
+}
+
+#skupinaOboru, #Obory, #obdobi {
+    float: left;
+}
+
+#logoPdf img {
+    position: relative;
+    width: 48px;
+    height: 48px;
+    display: block;
+    margin-top: 16px;
+}
+
+#divNazev {
+    clear: both;
+    margin: 16px auto 10px;
+    font-size: 1.0em;
+}
+
+/* ------------------------------------------------------------------------- */
+/* ROZBALOVACI CAST TABULKY AKCE - PRIHLASKY (bez REGISTRACE buttonu) */
+/* ------------------------------------------------------------------------- */
+
+#divChar {
+    width: auto;
+    padding: 5px;
+}
+
+.levaCara {
+    float: left;
+    width: 42%;
+    background: none repeat scroll 0 0 black;
+    height: 1px;
+    margin: 19px 0px 5px 0px;
+}
+
+/* CHARAKTERISTIKA */
+
+#divChar p.tabDetail {
+    float: left;
+    width: 16%;
+    height: 10px;
+    background: none repeat scroll 0 0 transparent;
+    margin-top: 6px;
+    font-size: 1.0em;
+    color: #1b2954;
+    text-align: center;
+}
+
+#divChar p.tabCharakteristika {
+    clear: both;
+    background: none repeat scroll 0 0 transparent;
+    width: auto;
+    font-size: 1.0em;
+    text-align: left;
+}
+
+/* GARANT */
+
+#divGarant {
+    width: auto;
+    padding: 5px;
+}
+
+#divGarant p.tabDetail {
+    float: left;
+    width: 16%;
+    height: 10px;
+    background: none repeat scroll 0 0 transparent;
+    margin-top: 6px;
+    font-size: 1.0em;
+    color: #1b2954;
+    text-align: center;
+}
+
+#divGarant p.tabGarant {
+    clear: both;
+    background: none repeat scroll 0 0 transparent;
+    width: auto;
+    font-size: 1.0em;
+    text-align: center;
+}
+
+/* DOPORUCENO */
+
+#divDoporuceno {
+    width: auto;
+    padding: 5px;
+}
+
+#divDoporuceno p.tabDetail {
+    float: left;
+    width: 16%;
+    height: 10px;
+    background: none repeat scroll 0 0 transparent;
+    margin-top: 6px;
+    font-size: 1.0em;
+    color: #1b2954;
+    text-align: center;
+}
+
+#divDoporuceno p.tabDoporuceno {
+    clear: both;
+    background: none repeat scroll 0 0 transparent;
+    width: auto;
+    font-size: 1.0em;
+    text-align: center;
+}
+
+/* MISTO */
+#divMisto p.tabDetail {
+    float: left;
+    width: 16%;
+    height: 10px;
+    background: none repeat scroll 0 0 transparent;
+    margin-top: 6px;
+    font-size: 1.0em;
+    color: #1b2954;
+    text-align: center;
+}
+
+#divMisto p.tabMisto {
+    clear: both;
+    background: none repeat scroll 0 0 transparent;
+    width: auto;
+    font-size: 1.0em;
+    text-align: center;
+}
+
+#divDokumenty p.tabDetail {
+    float: left;
+    width: 16%;
+    height: 10px;
+    background: none repeat scroll 0 0 transparent;
+    margin-top: 6px;
+    font-size: 1.0em;
+    color: #1b2954;
+    text-align: center;
+}
+
+#tabDokumenty {
+    clear: both;
+    width: auto;
+    margin: auto;
+    text-align: center;
+}
+
+#tabDokumenty a {
+    /*clear: both;*/
+    background: grey;
+}
+
+/* ------------------------------------------------------------------- */
+/* ROZBALOVACI CAST TABULKY AKCE - SHOP = REGISTRACE button) */
+/* ------------------------------------------------------------------- */
+
+/*.levaCaraShop {
+        float: left;
+        width: 42%;
+        background: none repeat scroll 0 0 black;
+        height: 1px;
+        margin: 19px 0px 5px 0px;
+}*/
+
+/* Prihlasene osoby */
+#divPrihlaseniShop {
+    width: auto;
+    padding: 0px /**5px**/;
+}	
+
+#divPrihlaseniShop p.tabDetailShop {
+    float: left;
+    width: 774px;
+    height: 19px;
+    background: none repeat scroll 0 0 grey; 
+    /**background:url("../img/mainlideco.png") no-repeat scroll 0 0 transparent;*/
+    /**margin-top: 6px;**/
+    font-size: 0.85em;
+    color: white;
+    /**color: #1b2954;**/
+    text-align: left;
+    font-weight: bold;
+    padding-left: 10px;
+    padding-top: 4px;
+    border: 1px solid lightgrey;
+}
+
+#divPrihlaseniShop li {
+    float: left;
+}      
+
+/* CHARAKTERISTIKA */
+#divCharShop {
+    width: auto;
+    padding: 0px /**5px**/;
+}	
+
+#divCharShop p.tabDetailShop {
+    float: left;
+    width: 774px;
+    height: 19px;
+    background: none repeat scroll 0 0 grey; 
+    /**background:url("../img/mainlideco.png") no-repeat scroll 0 0 transparent;*/
+    /**margin-top: 6px;**/
+    font-size: 0.85em;
+    color: white;
+    /**color: #1b2954;**/
+    text-align: left;
+    font-weight: bold;
+    padding-left: 10px;
+    padding-top: 4px;
+    border: 1px solid lightgrey;
+}
+
+#divCharShop p.tabCharakteristikaShop {
+    clear: both;
+    background: none repeat scroll 0 0 transparent;
+    width: auto;
+    font-size: 0.8em;
+    text-align: justify;
+    padding: 4px;
+}
+
+/* GARANT */
+#divGarantShop {
+    width: auto;
+    padding: 0px;
+}
+
+#divGarantShop p.tabDetailShop {
+    float: left;
+    width: 774px;
+    height: 19px;
+    background: none repeat scroll 0 0 grey; 
+    /**background:url("../img/mainlideco.png") no-repeat scroll 0 0 transparent;*/
+    /**margin-top: 6px;**/
+    font-size: 0.85em;
+    color: white;
+    /**color: #1b2954;**/
+    text-align: left;
+    font-weight: bold;
+    padding-left: 10px;
+    padding-top: 4px;
+    border: 1px solid lightgrey;
+}
+
+#divGarantShop p.tabGarantShop {
+    clear: both;
+    background: none repeat scroll 0 0 transparent;
+    width: auto;
+    font-size: 0.8em;
+    text-align: justify;
+    padding: 4px;
+}
+
+/* DOPORUCENO */
+#divDoporucenoShop {
+    width: auto;
+    padding: 0px;
+}	
+
+#divDoporucenoShop p.tabDetailShop {
+    float: left;
+    width: 774px;
+    height: 19px;
+    background: none repeat scroll 0 0 grey; 
+    /**background:url("../img/mainlideco.png") no-repeat scroll 0 0 transparent;*/
+    /**margin-top: 6px;**/
+    font-size: 0.85em;
+    color: white;
+    /**color: #1b2954;**/
+    text-align: left;
+    font-weight: bold;
+    padding-left: 10px;
+    padding-top: 4px;
+    border: 1px solid lightgrey;
+}
+
+#divDoporucenoShop p.tabDoporucenoShop {
+    clear: both;
+    background: none repeat scroll 0 0 transparent;
+    width: auto;
+    font-size: 0.8em;
+    text-align: justify;
+    padding: 4px;
+}
+
+/* MISTO */
+#divMistoShop {
+    width: auto;
+    padding: 0px;
+}	
+
+#divMistoShop p.tabDetailShop {
+    float: left;
+    width: 774px;
+    height: 19px;
+    background: none repeat scroll 0 0 grey; 
+    /**background:url("../img/mainlideco.png") no-repeat scroll 0 0 transparent;*/
+    /**margin-top: 6px;**/
+    font-size: 0.85em;
+    color: white;
+    /**color: #1b2954;**/
+    text-align: left;
+    font-weight: bold;
+    padding-left: 10px;
+    padding-top: 4px;
+    border: 1px solid lightgrey;
+}
+
+#divMistoShop p.tabMistoShop {
+    clear: both;
+    background: none repeat scroll 0 0 transparent;
+    width: auto;
+    font-size: 0.8em;
+    text-align: justify;
+    padding: 4px;
+}
+
+/* DOKUMENTY */
+#divDokumentyShop {
+    width: auto;
+    padding: 0px;
+}		
+
+#divDokumentyShop p.tabDetailShop {
+    float: left;
+    width: 774px;
+    height: 19px;
+    background: none repeat scroll 0 0 grey; 
+    /**background:url("../img/mainlideco.png") no-repeat scroll 0 0 transparent;*/
+    /**margin-top: 6px;**/
+    font-size: 0.85em;
+    color: white;
+    /**color: #1b2954;**/
+    text-align: left;
+    font-weight: bold;
+    padding-left: 10px;
+    padding-top: 4px;
+    border: 1px solid lightgrey;
+}
+
+#divDokumentyShop p.tabMistoShop {
+    clear: both;
+    background: none repeat scroll 0 0 transparent;
+    width: auto;
+    font-size: 0.8em;
+    text-align: justify;
+    padding: 4px;
+}
+
+#divDokumentyShop a {
+    color: black;
+    display: block;
+    margin: auto;
+    text-align: center;
+}
+
+/**	
+#divDokumentyShop p.tabDetailShop {
+        float: left;
+        width: 16%;
+        height: 10px;
+        background: none repeat scroll 0 0 transparent;
+        margin-top: 6px;
+        font-size: 1.0em;
+        color: #1b2954;
+        text-align: center;
+}
+
+#tabDokumentyShop {
+        clear: both;
+        width: auto;
+        margin: auto;
+        text-align: center;
+}
+
+#tabDokumentyShop a {
+        clear: both;
+        background: grey;
+}**/
+
+
+#wrapperPrihlasky p.wrapperP, #wrapperPrihlasky select {
+    /*clear: both;*/
+    /*float: left;*/
+    font-size: 0.9em;
+    margin: 5px 0px 5px 5px;
+    width: 250px;
+    /*background-image: -moz-linear-gradient(right center , #F0E68C 0%, #FFA600 100%);*/
+}
+
+#wrapperPrihlasky p.wrapperP {
+    /**background-image: -moz-linear-gradient(right center , #F0E68C 0%, #FFA600 100%);**/
+    background: none repeat scroll 0 0 #FAC600;
+    padding: 2px;
+    font-weight: bold;
+    color: #291a0b;
+}
+
+/* --------------------------------------------------------------------------------------------------- */
+/* NAVIGACE v AKCE SHOPU, 1 2 3 Predchozi, Dalsi, 10 20 50
+/* --------------------------------------------------------------------------------------------------- */
+
+/* nefunguje, zjistit cileni classy a A: */
+a.navClass:link, a.navClass:visited/*, a.navClass:hover/*, a.navClass:active*/ {
+    /**color: #4C4C4C;*/
+    color: white;
+}
+
+a.navClass:hover {
+    /**color: white;**/
+    color: MidnightBlue;
+    background: lightgrey;
+}
+
+a.navClass:active {
+    color: white;
+    background: black;
+}
+
+.volno {
+    background: green;
+    padding: 2px;
+    margin-top: 2px;
+    font-size: 0.8em;
+    font-weight: bold;
+    padding: 2px;
+    color: white;
+    border: 2px solid #419f1a;
+    cursor: default;
+}
+
+.obsazeno {
+    background: none repeat scroll 0 0 #FF7410;
+    padding: 2px;
+    margin-top: 2px;
+    font-size: 0.8em;
+    font-weight: bold;
+    padding: 2px;
+    color: white;
+    border: 2px solid orange;
+}
+
+/* --------------------------------------------------------------------------------------------------- */
+/* SEZNAM PRIHLASENYCH LIDI NA AKCI v SHOPU,
+/* --------------------------------------------------------------------------------------------------- */
+
+
+#wrapperPrihlasky h2 {
+    margin: 10px 4px;
+    color: black;
+    background: url("../img/mainlideco.png") no-repeat scroll 0 0 transparent;
+    height: 24px;
+    padding: 2px 4px;
+}
+
+#wrapperPrihlasky #inputPrihlaseniOsoba {
+    float: right;
+    margin: 10px 3px;
+
+    cursor: pointer;
+    border: medium none;
+    height: 23px;
+    padding: 0px 2px 2px 2px;
+    background: none repeat scroll 0 0 #FAC600;
+    box-shadow: 0px 0px 5px black;
+
+}
+
+#wrapperPrihlasky #inputPrihlaseniOsoba:hover {
+    background: none repeat scroll 0 0 #000;
+    color: #fff;
+    box-shadow: 0px 0px 5px white;
+}
+
+#osobyOrgTable {
+    width: 500px;
+}
+
+#osobyOrgTable .header {
+    background: none repeat scroll 0 0 #FAC600;
+}
+
+#osobyOrgTable .hlavniHeader {
+    text-align: center;
+    background: none repeat scroll 0 0 #FAC600;
+    width: 100%;
+}
+
+#wrapperPrihlasky .kosikCisloAkce {
+    background: none repeat scroll 0 0 #FAC600;
+    width: 492px;
+    margin-bottom: 1px;
+    margin-left: 2px;
+    font-weight: bold;
+    padding: 2px;
+    font-size: 0.9em;
+}
+
+#wrapperPrihlasky .kosikNazevAkce {
+    background: none repeat scroll 0 0 lightgrey;
+    width: 492px;
+    margin-bottom: 5px;
+    margin-left: 2px;
+    padding: 2px;
+    font-size: 0.9em;
+}
+
+#wrapperPrihlasky .kosikCenaAkce {
+    background: none repeat scroll 0 0 lightgrey;
+    width: 496px;
+    margin-bottom: 15px;
+    margin-left: 2px
+}
+
+/* -------------------------------------------------------------------------------------- */
+/* NAKUPNI KOSIK - NAKOUPENE ITEMY */
+/* -------------------------------------------------------------------------------------- */
+
+#singleColumn {
+    background: none repeat scroll 0 0 rgba(255, 255, 255, 0.3);
+    width: 95%;
+    margin: 10px auto;
+    clear: both;
+}
+
+#singleColumn p {
+    margin-left: 6px;
+}
+
+#actionBar {
+    margin: 2px 0px 0px 83px;
+    height: 40px;
+}
+
+#actionBar a:link, #actionBar a:visited, #actionBar a:hover, #actionBar a:active {
+    float: left;
+    margin: 6px 4px 6px 6px;
+    padding: 2px 4px;
+    background: rgba(35, 25, 100, 0.6);
+    text-decoration: none;
+}
+
+#singleColumn h4 {
+    background: none repeat scroll 0 0 rgba(35, 25, 100, 0.6);
+    color: white;
+    clear: both;
+    float: right;
+    margin-right: 88px;
+    padding: 4px;
+}
+
+#cartTable {
+    clear: both;
+    color: black;
+    background: none repeat scroll 0 0 #FEECBF;
+    /*background-color: rgba(55, 45, 105, 0.7);*/
+    font-size: 1em;
+    margin: 8px auto;
+}
+
+#cartTable th {
+    clear: both;
+    background-color: rgba(255, 132, 0, 0.5);
+}
+
+#cartTable td {
+    color: black;
+    background-color: #E2D7B6;
+    font-size: 1em;
+    padding: 2px 6px;
+    font-weight: bold;
+}
+
+/* ---------------------------------------------------------------------------- */
+/* HOME - 4 TABY s bodovym popisem VZEDL. UCITELU, JAZYK.SKOLA, DALS.VZ, EKCVJS */
+/* -----------------------------------------------------------------------------*/
+
+#uciteleHome {
+    width: auto;
+    /* margin: auto 12px;*/
+    margin: 10px 10px 0 10px;
+    padding: 6px;
+    /*clear: both;*/
+    float: left;
+    display: block;
+    width: 584px;
+    /**background: none repeat scroll 0 0 #FCEC9D;**/
+    /**border: 3px solid #F1E296;**/
+    /*box-shadow: 1px 1px 11px 1px grey;*/
+    /*filter: progid:DXImageTransform.Microsoft.Glow(Color=#383838, Strength=3, Enabled);*/
+}
+
+#uciteleHome a:link, #uciteleHome a:visited, #uciteleHome a:hover, #uciteleHome a:link  {
+    color: #5B5B5B;
+}
+
+#uciteleHome ul {
+    margin: auto 12px;
+}
+
+
+#uciteleHome ul li {
+    list-style: disc;
+    background: none; /* !!!! - workaround pro likwidace stylu z #wrapper ul li - !!!! */
+}
+
+#jsHome {
+    width: auto;
+    /* margin: auto 12px;*/
+    margin: 10px 10px 0 10px;
+    padding: 6px;
+    clear: both;
+    float: left;
+    display: block;
+    width: 584px;
+    background: white /*#FEECBF*/;
+    /**border: 3px solid #F1E296;**/
+    /*box-shadow: 1px 1px 11px 1px grey;*/
+    /*filter: progid:DXImageTransform.Microsoft.Glow(Color=#383838, Strength=3, Enabled);*/
+}
+
+#jsHome a:link, #jsHome a:visited, #jsHome a:hover, #jsHome a:link  {
+    color: #5B5B5B;
+}
+
+#jsHome ul {
+    margin: auto 12px;
+}
+
+
+#jsHome ul li {
+    list-style: disc;
+    background: none; /* !!!! - workaround pro likwidace stylu z #wrapper ul li - !!!! */
+}
+
+#dvppHome {
+    width: auto;
+    /*margin: auto 12px;*/
+    margin: 10px 10px 0 10px;
+    padding: 6px;
+    clear: both;
+    float: left;
+    display: block;
+    width: 584px;
+    background: white /*#FEECBF*/;
+    /**border: 2px dashed #FEECBF;**/
+    /*box-shadow: 1px 1px 11px 1px grey;*/
+    /*filter: progid:DXImageTransform.Microsoft.Glow(Color=#383838, Strength=3, Enabled);*/
+}
+
+#dvppHome a:link, #dvppHome a:visited, #dvppHome a:hover, #dvppHome a:link  {
+    color: #5B5B5B;
+}
+
+#dvppHome ul {
+    margin: auto 12px;
+}
+
+
+#dvppHome ul li {
+    list-style: disc;
+    background: none; /* !!!! - workaround pro likwidace stylu z #wrapper ul li - !!!! */
+}
+
+#ekcvjsHome {
+    width: auto;
+    /*margin: auto 12px;*/
+    margin: 20px 10px 0 10px;
+    padding: 6px;
+    clear: both;
+    float: left;
+    display: block;
+    width: 584px;
+    background: white /*#FEECBF*/;
+    /**border: 2px dashed #FEECBF;**/
+    /*box-shadow: 1px 1px 11px 1px grey;*/
+    /*filter: progid:DXImageTransform.Microsoft.Glow(Color=#383838, Strength=3, Enabled);*/
+}
+
+#ekcvjsHome a:link, #ekcvjsHome a:visited, #ekcvjsHome a:hover, #ekcvjsHome a:link  {
+    color: #5B5B5B;
+}
+
+#ekcvjsHome ul {
+    margin: auto 12px;
+}
+
+
+#ekcvjsHome ul li {
+    list-style: disc;
+    background: none; /* !!!! - workaround pro likwidace stylu z #wrapper ul li - !!!! */
+}
+
+/*----------------------------------------------------------------------------------------------------------------------*/
+
+#uciteleHome .homePanelNazev1 {
+    float: left;
+    background: url("../img/tEdu.png") no-repeat scroll 0 0 transparent;
+    /**background: none repeat scroll 0 0 #FCF49D;**/
+    width: 172px;
+    height: 101px; /* background style box */
+    margin-top: 6px;
+    padding-left: 4px;
+    margin-top: 6px;
+}
+
+#jsHome .homePanelNazev2 {
+    float: left;
+    background: url("../img/nEdu.png") no-repeat scroll 0 0 transparent;
+    /**background: none repeat scroll 0 0 #FCF49D;**/
+    width: 172px;
+    height: 101px; /* background style box */
+    margin-top: 6px;
+    padding-left: 4px;
+    margin-top: 6px;
+}
+
+#dvppHome .homePanelNazev3 {
+    float: left;
+    background: url("../img/forLang.png") no-repeat scroll 0 0 transparent;
+    /**background: none repeat scroll 0 0 #FCF49D;**/
+    width: 172px;
+    height: 101px; /* background style box */
+    margin-top: 6px;
+    padding-left: 4px;
+    margin-top: 6px;
+}
+
+#ekcvjsHome .homePanelNazev4 {
+    float: left;
+    background: url("../img/emKcvjs.png") no-repeat scroll 0 0 transparent;
+    /**background: none repeat scroll 0 0 #FCF49D;**/
+    width: 172px;
+    height: 101px; /* background style box */
+    margin-top: 6px;
+    padding-left: 4px;
+    margin-top: 6px;
+}
+
+.homePanelDetail {
+    float: left;
+    margin: 4px 20px;
+    width: 63%;
+}
+
+.ekcvjsPanelNazev {
+    float: left;
+    width: 30%;
+    margin-top: 6px;
+}
+
+.ekcvjsPanelDetail {
+    float: left;
+    margin: auto 20px;
+    width: 63%;
+}
+
+.detailAkceShop {
+    background-color: #E6E6E6;
+}
+
+a.categoryLabelText:link, a.categoryLabelText:visited, a.categoryLabelText:hover, a.categoryLabelText:link {
+    color: grey;
+}
+
+.panelText {
+    float: left;
+    color: black;
+    margin: 5px 0px 0px 4px;
+}
+
+/*-----------------------------------------------------------------------------*/
+/* FOOTER */
+/*-----------------------------------------------------------------------------*/
+
+#footer {
+    clear: both;
+    height: 83px;
+    padding: 14px 12px 12px 12px;
+}
+
+#footer #footerLeft {
+    float: left;
+    height: 83px;
+    width: 100px;			
+}
+
+#footer #footerCenter {
+    float: left;
+    height: 83px;
+    width: 100px;
+}
+
+#footer #footerRight {
+    float: right;
+    background: url("../img/footerLogo.png") no-repeat scroll 0 0 transparent;
+    width: 325px;
+    height: 83px;
+}
+
+/** NEW MAVERICK **/
+
+input.inp_text {
+    border: medium none;
+    width: 124px;
+    margin: 16px 12px 0 18px;
+}
+
+.panelButton img {
+    float: left;
+    /**margin: 3px 5px 2px 10px;**/
+    margin: 3px 1px 2px 8px;
+    width: 21px;
+}

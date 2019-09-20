@@ -1,0 +1,33 @@
+<%-- 
+    Document   : eLearning
+    Created on : 3.11.2011, 9:07:34
+    Author     : 7Data Gotzy
+--%>
+
+<%@page contentType="text/html" pageEncoding="UTF-8"%>
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+        <title>JSP Page</title>
+    </head>
+    <body>
+        <div id="navigaceTop">
+            <ul class="navigaceList">
+                <li> 
+                    <a href="dvpp?eLearning.jsp">
+                        <span class="navigacePopis">${webProp.nazev("e_learning")}</span>                                
+                    </a></li>
+                <li>
+                    <div class="slash">></div>
+                </li>    
+                <li> 
+                    <a href="dvpp.jsp">
+                        <span class="navigacePopis">${webProp.nazev("dvpp")}</span>                                
+                    </a>
+                </li>               
+            </ul>
+        </div>
+        <h1>Hello World!</h1>
+    </body>
+</html>

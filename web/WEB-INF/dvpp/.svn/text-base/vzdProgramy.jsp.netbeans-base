@@ -1,0 +1,282 @@
+<%-- 
+    Document   : vzdProgramy
+    Created on : 3.11.2011, 9:07:14
+    Author     : 7Data Gotzy
+--%>
+
+<%@ taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core" %>
+
+<%@page contentType="text/html" pageEncoding="UTF-8"%>
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+        <title>JSP Page</title>
+    </head>
+    <body>   
+        <div id="navigaceTop">
+            <ul class="navigaceList">
+                <li> 
+                    <a href="dvpp?vzdProgramy.jsp">
+                        <span class="navigacePopis">${webProp.nazev("dvpp")}</span>                                
+                    </a></li> 
+
+                <li>
+                    <div class="slash">></div>
+                </li>    
+                <li> 
+                    <a href="dvpp?dvpp.jsp">
+                        <span class="navigacePopis">${webProp.nazev("vzdelavaci_programy")}</span>                                
+                    </a></li>               
+            </ul>
+        </div>
+       <%-- <div id="skupinaOboru">
+            <p class="wrapperP">Skupina oborů</p>
+            <select name="vyberSkupinaOboru" size="1" onchange="document.location.href='ekcvjs?novePrihlaseni.jsp&idSkupina='+this.value">
+                <c:forEach var="skupina" items="${oborySkupiny}">
+                    <c:choose>
+                        <c:when test="${vybranyOborSkupina == skupina.oborySkupinyId}">
+                            <option selected value="${skupina.oborySkupinyId}" >${skupina.oborySkupinyNazev}</option>
+                        </c:when>
+                        <c:otherwise>
+                            <option value="${skupina.oborySkupinyId}">${skupina.oborySkupinyNazev}</option>
+                        </c:otherwise>
+                    </c:choose>                 
+                </c:forEach>
+            </select>
+        </div>--%>
+        <div id="Obory">
+            <p class="wrapperP">${webProp.nazev("filtr_obor")}</p>
+            <select name="vyberObor" size="1" onchange="document.location.href='dvpp?vzdProgramy.jsp&idObor='+this.value">
+                <c:forEach var="oborSkupina" items="${vybraneOborySkupiny}">       
+                    <c:choose>
+                        <c:when test="${vybranyObor == oborSkupina.obory.oborId}">
+                            <option selected value="${oborSkupina.obory.oborId}">${oborSkupina.obory.nazev}</option>
+                        </c:when>
+                        <c:otherwise>
+                            <option value="${oborSkupina.obory.oborId}">${oborSkupina.obory.nazev}</option>
+                        </c:otherwise>
+                    </c:choose> 
+
+                </c:forEach>
+            </select>
+        </div>
+        <div id="obdobi">
+            <p class="wrapperP">${webProp.nazev("filtr_obdobi")}</p>
+            <select name="vyberObdobi" size="1" onchange="document.location.href='dvpp?vzdProgramy.jsp&idObdobi='+this.value">
+                <c:forEach var="obdobi" items="${obdobiSet}">
+                    <c:choose>
+                        <c:when test="${vybraneObdobi == obdobi.obdobiId}">
+                            <option selected value="${obdobi.obdobiId}">${obdobi.nazev}</option>
+                        </c:when>
+                        <c:otherwise>
+                            <option value="${obdobi.obdobiId}">${obdobi.nazev}</option>
+                        </c:otherwise>
+                    </c:choose> 
+
+                </c:forEach>
+            </select>
+        </div>
+
+        <br>
+        <table id="prihlaseniTable">
+
+            <tr class="header">
+            <tr class="header">
+                <th><a href="dvpp?vzdProgramy.jsp&sort=0">                
+                        <c:choose>
+                            <c:when test="${sortCislo == 0}">
+                                <img src="img/downArrow.png" id="logoDown" alt="logoDown">   
+                                ${webProp.nazev("tab_cislo")}
+                            </c:when>
+                            <c:otherwise>
+                                <img src="img/upArrow.png" id="logUp" alt="logoUp">   
+                                ${webProp.nazev("tab_cislo")}
+                            </c:otherwise>
+                        </c:choose>
+                    </a>
+                </th>
+                <th><a href="dvpp?vzdProgramy.jsp&sort=1">        
+                        <c:choose>
+                            <c:when test="${sortNazev == 0}">
+                                <img src="img/downArrow.png" id="logoDown" alt="logoDown">   
+                                ${webProp.nazev("tab_nazev")}
+                            </c:when>
+                            <c:otherwise>
+                                <img src="img/upArrow.png" id="logUp" alt="logoUp">   
+                                ${webProp.nazev("tab_nazev")} 
+                            </c:otherwise>
+                        </c:choose>
+                    </a>
+                </th>
+                <th><a href="dvpp?vzdProgramy.jsp&sort=2">         
+                        <c:choose>
+                            <c:when test="${sortTermin == 0}">
+                                <img src="img/downArrow.png" id="logoDown" alt="logoDown">   
+                                ${webProp.nazev("tab_termin")}
+                            </c:when>
+                            <c:otherwise>
+                                <img src="img/upArrow.png" id="logUp" alt="logoUp">   
+                                ${webProp.nazev("tab_termin")}
+                            </c:otherwise>
+                        </c:choose>
+                    </a>
+                </th>
+                <th><a href="dvpp?vzdProgramy.jsp&sort=3">                
+                        <c:choose>
+                            <c:when test="${sortCena == 0}">
+                                <img src="img/downArrow.png" id="logoDown" alt="logoDown">   
+                                ${webProp.nazev("tab_cena")}
+                            </c:when>
+                            <c:otherwise>
+                                <img src="img/upArrow.png" id="logUp" alt="logoUp">   
+                                ${webProp.nazev("tab_cena")}
+                            </c:otherwise>
+                        </c:choose>
+                    </a>
+                </th>
+                <%-- </tr>
+                     <th>rezervace</th> 
+                 </tr>--%>
+
+                <c:forEach var="akce" items="${akcePrihlaseni}" varStatus="iter">
+
+                <tr class="${((iter.index % 2) == 0) ? 'lightBlue' : 'white'}">
+                    <c:choose>
+                        <c:when test = "${akceIdDetail == akce.akceId}">
+                            <td width="65">
+                                <a href="dvpp?vzdProgramy.jsp&akceIdDetail=${akce.akceId}">${akce.akceCislo}</a>
+                                <c:choose>
+                                    <c:when test="${akce.volno == false}">
+                                        <p class="obsazeno">
+                                            ${webProp.nazev("tab_obsazeno")}
+                                        </p>        
+                                    </c:when>
+                                    <c:otherwise>
+                                        <p class="volno">
+                                            ${webProp.nazev("tab_volno")}
+                                        </p>                                   
+                                    </c:otherwise>
+                                </c:choose>                    
+                            </td>
+                            <td width="460">
+                                <div id="divNazev">
+                                    <a href="dvpp?vzdProgramy.jsp&akceIdDetail=${akce.akceId}">${akce.nazev}</a>
+                                </div>                            
+                            </td>
+                            <td width="110">
+                                ${akce.terminObecny}
+                                <br>
+                                <span class="smallText">(${webProp.nazev("tab_pocet_hodin")} : ${akce.pocetHodin})</span>
+                            </td>
+                            <td width="70">
+                                ${akce.ucastnickyPoplatek}
+                            </td>
+                            <td width="70">
+                                <form action="<c:url value='pridatDoKosiku'/>" method="post">
+                                    <input type="hidden"
+                                           name="akceId"
+                                           value="${akce.akceId}">
+                                    <input type="submit"
+                                           name="submit"
+                                           value="${webProp.nazev("tab_rezervovat")}">
+                                </form>
+                            </td>
+                        </tr>
+                        <tr class="detailAkceShop">
+                            
+                            <td colspan="5" width="625">                               
+                                <div id="divCharShop">                                    
+                                    <p class="tabDetailShop">${webProp.nazev("tab_detail_charakteristika")}</p>                              
+                                    <p class="tabCharakteristikaShop">${akce.charakteristika}</p>
+                                </div>
+                                <div id="divGarantShop">                                   
+                                    <p class="tabDetailShop">${webProp.nazev("tab_detail_garant")}</p>                                  
+                                    <p class="tabGarantShop">${akce.primObor.hlavniGarant.titulPred} ${akce.primObor.hlavniGarant.jmeno} ${akce.primObor.hlavniGarant.prijmeni} ${akce.primObor.hlavniGarant.titulZa}</p>
+                                </div>
+                                <div id="divDoporucenoShop">                                    
+                                    <p class="tabDetailShop">${webProp.nazev("tab_detail_doporuceno")}</p>                                  
+                                    <p class="tabDoporucenoShop">${akce.doporuceno}</p>
+                                </div>
+                                <div id="divMistoShop">                                    
+                                    <p class="tabDetailShop">${webProp.nazev("tab_detail_misto_konani")}</p>                                
+                                    <p class="tabMistoShop">${akce.mistokonaniObecne}</p> 
+                                </div> 
+                                <div id="divDokumentyShop">                                  
+                                    <p class="tabDetailShop">${webProp.nazev("tab_detail_dokumenty")}</p>                             
+                                    <a class="tabDokumentyShop" href="pdf?akceId=${akce.akceId}">
+                                        nazev.pdf
+                                        <img src="img/pdf.png" id="logoPDF" alt="pdf logo">   
+                                    </a>  
+                                </div>
+                            </td>                           
+                        </c:when>
+                        <c:otherwise>
+                            <td width="65">
+                                <a href="dvpp?vzdProgramy.jsp&akceIdDetail=${akce.akceId}">${akce.akceCislo}</a>
+                                <c:choose>
+                                    <c:when test="${akce.volno == false}">
+                                        <p class="obsazeno">
+                                            ${webProp.nazev("tab_obsazeno")}
+                                        </p>        
+                                    </c:when>
+                                    <c:otherwise>
+                                        <p class="volno">
+                                            ${webProp.nazev("tab_volno")}
+                                        </p>                                   
+                                    </c:otherwise>
+                                </c:choose>                    
+                            </td>
+                            <td width="460">
+                                <div id="divNazev">
+                                    <a href="dvpp?vzdProgramy.jsp&akceIdDetail=${akce.akceId}">${akce.nazev}</a>
+                                </div>                               
+                            </td>
+                            <td width="110">
+                                ${akce.terminObecny}
+                                <br>
+                                <span class="smallText">(${webProp.nazev("tab_pocet_hodin")} : ${akce.pocetHodin})</span>
+                            </td>
+                            <td width="70">
+                                ${akce.ucastnickyPoplatek}
+                            </td>
+                            <td width="70">
+                                <form action="<c:url value='pridatDoKosiku'/>" method="post">
+                                    <input type="hidden"
+                                           name="akceId"
+                                           value="${akce.akceId}">
+                                    <input type="submit"
+                                           name="submit"
+                                           value="${webProp.nazev("tab_rezervovat")}">
+                                </form>
+                            </td>
+                        </c:otherwise>
+                    </c:choose>
+                </tr>
+            </c:forEach>
+        </table>
+
+        <div id ="navigace">
+            <p>${webProp.nazev("tab_zobrazit_zaznamu")} :</p>               
+            <a class="navClass" href="dvpp?vzdProgramy.jsp&pocetStrana=10">10</a>
+            <a class="navClass" href="dvpp?vzdProgramy.jsp&pocetStrana=20">20</a>
+            <a class="navClass" href="dvpp?vzdProgramy.jsp&pocetStrana=50">50</a>             
+        </div>
+        <div id="strana">
+            <c:forEach var="strana" items="${strany}" varStatus="iter">
+                <c:choose>
+                    <c:when test="${strana.cislo == -1}">
+                        <a class="navClass" href="dvpp?vzdProgramy.jsp&offset=${strana.cislo}">${strana.retez}</a>
+                    </c:when>
+                    <c:when test="${strana.cislo == -2}">
+                        <span>...</span>
+                        <a class="navClass" href="dvpp?vzdProgramy.jsp&offset=${strana.cislo}">${strana.retez}</a>
+                    </c:when>
+                    <c:otherwise>
+                        <a class="navClass" href="dvpp?vzdProgramy.jsp&offset=${strana.cislo}">${strana.retez}</a>
+                    </c:otherwise>
+                </c:choose>                      
+            </c:forEach>                                 
+        </div>       
+    </body>
+</html>

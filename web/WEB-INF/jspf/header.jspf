@@ -1,0 +1,87 @@
+<%--
+   Document   : header
+   Created on : May 20, 2010, 12:20:12 AM
+   Author     : tgiunipero
+
+<%@page contentType="text/html" pageEncoding="UTF-8"%>
+<%@ page language="java" contentType="text/html; charset=utf-8" pageEncoding="utf-8"%> 
+--%>
+
+<%@taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core" %>
+<%@taglib prefix="fn" uri="http://java.sun.com/jsp/jstl/functions" %>
+<%@taglib prefix="fmt" uri="http://java.sun.com/jsp/jstl/fmt" %>
+<%@taglib prefix="sql" uri="http://java.sun.com/jsp/jstl/sql"%>
+
+<%-- Set language based on user's choice --%>
+<c:if test="${!empty language}">
+    <fmt:setLocale value="${language}" scope="session" />
+</c:if>
+
+<%@ page language="java" contentType="text/html; charset=utf-8" pageEncoding="utf-8"%> 
+
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN"
+    "http://www.w3.org/TR/html4/loose.dtd">
+
+<html>
+    <head>
+        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+        <link rel="stylesheet" type="text/css" href="${pageContext.request.contextPath}/css/affablebean2.css">
+        <link rel="stylesheet" type="text/css" href="${pageContext.request.contextPath}/css/checkmark.css">
+        <link rel="shortcut icon" href="${pageContext.request.contextPath}/css/favicon.ico" type="image/x-icon">
+        <link href='https://fonts.googleapis.com/css?family=Roboto' rel='stylesheet'>        
+        <%--<link rel="shortcut icon" href="favicon.ico">--%>
+
+        <title>Elektronické KCVJŠ</title>
+    </head>
+    <body>
+        <div id="btop">
+            <div id="header">    
+
+                <div id="indexTopColumnC1">
+                    <div id="widgetBar">                        
+                        <div class="cartWidget" id ="headerCheckout">
+                            <%--<c:if test="${!empty cart && cart.numberOfItems != 0 &&                                    
+
+                                          !fn:contains(pageContext.request.servletPath,'/cart') &&
+                                          requestScope['javax.servlet.forward.servlet_path'] ne '/cart'}">
+                            --%>
+                            <a href="viewCart" class="bubble">
+                                <img src="img/cart.png" id="kosik" alt="kosik">
+                                ${zobrazeniTabulek.webProp.nazev("header_zobrazit_kosik")}
+                            </a>
+                            <%-- </c:if>--%>
+                        </div>                    
+                        <div id="logoSovaDiv">
+                            <img src="img/logo_b.svg" id="logoSovaImg" alt="r">
+                            <div id="nazevPopis">
+                                <p>KRAJSKÉ CENTRUM VZDĚLÁVÁNÍ</p>
+                                <p>A JAZYKOVÁ ŠKOLA, PLZEŇ</p>
+                            </div>
+                        </div>
+                        <%-- login widget --%>
+                        <div class="headerWidget" id="headerLogin">
+                            <%if (request.getRemoteUser() == null) {%>
+                            <%--<a href="https://kcvjs.cz/ekcvjs/ekcvjs?prihlaseniUzivatele.jsp">${zobrazeniTabulek.webProp.nazev("header_prihlasit")}</a>--%>
+                            <a href="ekcvjs?prihlaseniUzivatele.jsp">${zobrazeniTabulek.webProp.nazev("header_prihlasit")}</a>
+
+                            <div class="slash">|</div>
+                            <a href="index?preRegistrace.jsp"> ${zobrazeniTabulek.webProp.nazev("header_registrace")}</a>
+                            
+
+                            <%} else {%>
+                            <span> ${zobrazeniTabulek.webProp.nazev("header_prihlasen")}<%out.println(" : " + request.getRemoteUser());%></span>                        
+                            <div class="slash">|</div>
+                            <a href="admin/logout"> ${zobrazeniTabulek.webProp.nazev("header_odhlasit")}</a>
+                                               
+                            <%  }%>
+
+                        </div>
+                    </div>                    
+                </div>
+            </div>
+        </div>
+        <div id="bbottom">
+            <span></span>
+        </div>
+        <div id="main">
+            <%--<div id="subMain">--%>

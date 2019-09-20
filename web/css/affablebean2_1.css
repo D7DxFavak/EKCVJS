@@ -1,0 +1,3769 @@
+/* START RESET */
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre, a,
+abbr, acronym, address, big, cite, code, del, dfn,
+em, font, img, ins, kbd, q, s, samp, small, strike,
+strong, sub, sup, tt, var, b, u, i, center, dl, dt,
+dd, ol, ul, li, fieldset, form, label, legend, table,
+caption, tbody, tfoot, thead, tr, th, td {
+
+    background: none repeat scroll 0 0 transparent;
+    border: 0 none;
+    font-size: 100%;
+    margin: 0;
+    outline: 0 none;
+    padding: 0;
+    vertical-align: baseline;
+}
+
+body {
+	/*background: #dedede;*/
+    /*background: url("../img/bg.jpg") repeat scroll 0 0 transparent;*/
+    font-family: Verdana, /**Arial,**/ Helvetica,sans-serif;
+    margin: auto;
+    width: 1024px;
+	font-size: 0.9em /* tweak z 23.11. */
+
+}
+ol, ul {
+    list-style: none outside none;
+}
+
+#btop {
+	width: 9999px;
+	height: 500px;
+	/*border: 2px solid black;*/
+	position: fixed;
+	background: url("../img/bg.jpg") repeat-x;
+	top: 0px;
+	left: -997px;
+}
+
+#bbottom {
+	width: 9999px;
+	height: 9999px;
+	/*border: 2px solid black;*/
+	position: fixed;
+	background: url("../img/bgb.jpg") repeat;
+	top: 500px;
+	left:-997px;
+}
+
+#main {
+    width: 1024px;
+    background: none repeat scroll 0 0 white;
+	/**box-shadow: 0px 4px 21px 2px #000;*/
+	margin: 10px auto;
+}
+
+/**#subMain {
+    width: 1024px;
+    background: none repeat scroll 0 0 transparent;
+	box-shadow: 0px 0px 1px 0 #C3C2C2 inset;
+	margin: 20px 0px;
+}**/
+
+#mainLogin {
+    width: 335px;
+    height: 372px;
+    background: url("../img/loginForm.png") no-repeat scroll 0 0 transparent;
+	margin: 10px auto;
+}
+
+#mainLogin > p {
+	text-align: center;
+	margin: 18px 0 0;	
+}
+
+#mainLogin > p:first-child {
+	float: left;
+	text-align: center;
+	margin: 18px 10px 10px;
+	width: 315px;
+	font-size: 0.95em;
+}
+
+#mainLogin > p.loginReg {
+	float: left;
+	width: 165px;
+	margin-left: 68px;
+}
+
+#mainLogin > a {
+	color: Maroon;
+	float: left;
+	margin: 18px 0;
+	text-decoration: underline;
+}
+
+a:link    {
+  /* Applies to all unvisited links */
+  text-decoration:  none;
+  font-weight:      bold;
+  /*background-color: #ddd;*/
+  color:            grey;
+  } 
+a:visited {
+  /* Applies to all visited links */
+  text-decoration:  none;
+  font-weight:      bold;
+  /*background-color: #ddd;*/
+  color:            grey;
+  } 
+a:hover   {
+  /* Applies to links under the pointer */
+  text-decoration:  none/*underline*/;
+  font-weight:      bold;
+  /*background-color: blue;*/
+  color:            grey;
+  } 
+a:active  {
+  /* Applies to activated links */
+  text-decoration:  none/*underline*/;
+  font-weight:      bold;
+  /*background-color: black;*/
+  color: ornagered;
+  } 
+
+
+/* END RESET */
+
+#header {
+    width: auto;
+    height: 168px /**188px**/ /*200px*/;
+    border: 0px solid black;
+	z-index: 100;
+	position: relative;
+}
+
+#widgetBar #cart {
+	
+}
+
+#loginForm {
+    height: 210px;
+    width: 365px;
+}
+
+#loginForm label {
+    /*clear: both;*/
+    float: left;
+    width: 150px;
+	height: 20px;
+    margin: 12px 10px 1px 45px;
+    /*display: inline-block;*/
+    padding: 0px 5px;
+    /*background: #F8CF00;*/
+	/*box-shadow: 3px 3px 4px #000;*/
+	font-size: 0.9em;
+	font-weight: bolder;
+	color: #3A3A3A;
+}
+
+#loginForm input {
+    /*clear: both;*/
+    float: left;
+    width: 222px;
+	height: 21px;
+    /*display: inline-block;*/
+    margin: 1px 10px 1px 51px;
+    /*padding-left: 10px;*/
+    background: #e0e0e0;
+	padding: 0px 5px;
+    font-weight: bold;
+	border: none;
+	color: #fff /*wheat*/;
+	/*box-shadow: 3px 3px 4px #000;*/
+	background: none repeat scroll 0 0 #3A3A3A;
+}
+
+#loginForm #submitLogin {
+	float: left;
+	height: 26px;
+	width: 101px;
+	margin: 22px 6px 0 113px;
+	padding-bottom: 5px;
+    font-weight: bold;
+	border: none;
+	color: wheat;
+	cursor: pointer;
+	background: url("../img/submOFF.png") no-repeat scroll 0 0 transparent;
+}
+
+#loginForm #submitLogin:hover {
+	background: url("../img/submON.png") no-repeat scroll 0 0 transparent;
+	/*background: #fff;*/
+	color: white;
+	cursor: pointer;
+}
+
+#registraceForm {
+	margin: auto;
+	margin-top: 20px;
+	height: 530px;
+    width: 319px;
+	background: none repeat scroll 0 0 rgba(255, 255, 255, 0.3);
+	padding: 0 20px;
+	box-shadow: 3px 3px 4px #000;
+}
+
+#registraceForm fieldset {
+	border: none;
+	margin: 5px 0;
+}
+
+#registraceForm label {
+    /*clear: both;*/
+    float: left;
+    width: 140px;
+	height: 20px;
+    margin: 2px 5px;
+    /*display: inline-block;*/
+    padding: 4px 5px 0;
+    background: none repeat scroll 0 0 rgba(30, 41, 71, 0.8);
+	box-shadow: 1px 1px 4px #000;
+	font-size: 0.8em;
+	font-weight: bold;
+	color: #FFF;
+}
+
+#registraceForm input {
+    /*clear: both;*/
+    float: left;
+    width: 150px;
+	height: 20px;
+    /*display: inline-block;*/
+    margin: 2px -4px;
+    /*padding-left: 10px;*/
+    background: #E0E0E0;
+	padding: 2px 5px;
+    font-weight: bold;
+	border: none;
+	color: #000;
+	box-shadow: 1px 1px 4px #000;
+}
+
+#registraceForm #submitLogin {
+	float: left;
+	height: 21px;
+	margin: 5px 5px;
+	margin-left: 83px;
+    /*padding-left: 10px;*/
+    background: #420303;
+	padding: 0px 5px;
+    font-weight: bold;
+	border: none;
+	color: wheat;
+	box-shadow: 3px 3px 4px #000;
+}
+
+#registraceVyber {
+	margin: 20px auto auto;
+	text-align: center;
+}
+
+#registraceForm #submitOsobaUdaje {
+	width: 130px;
+	height: 24px;
+	margin: 10px 5px;
+}
+
+#registraceForm #submitOsobaUdaje:hover {
+	background: #1e2947;
+	color: white;
+	box-shadow: 0px 0px 4px #FFF;
+}
+
+#logo {
+    height: 146px;
+    margin: auto;
+    width: 100%;
+    border: 0px solid black;
+}
+
+#widgetBar {
+    width: auto;
+    height: 26px;
+    margin-top: 2px;
+    border: 0px solid black;
+}
+
+#widgetBar a:link, #widgetBar a:visited, #widgetBar a:hover, #widgetBar a:active {
+	color: white;
+	text-decoration: none;
+	/*background-image: -moz-linear-gradient(right center , #F0E68C 0%, #FFA600 100%);*/
+	/*background-image: -moz-linear-gradient(left , #2A2952 10%, #2A2952 0%, #7277CC 100%);*/
+	font-weight: normal;
+}
+
+#widgetBar #headerLanguage {
+	float: right;
+	margin-left: 2px;
+	color: white;
+	/*width: 300px;*/
+}
+
+.bubble {
+	float: left;
+	margin-right: 8px;
+	font-weight: normal;
+	color: orange;
+}
+
+.slash {
+	float: left;
+	margin-right: 2px;
+	font-weight: bold;
+	color: orange;
+}
+
+#login.headerWidget {
+    display: inline;
+    float: right;
+    /*margin: 5px 50px 15px 837px;*/
+    border: 0px solid black;
+	width: 200px;
+}
+
+#headerLogin a {
+	float: left;
+	margin-right: 6px;
+}
+
+#headerLogin span {
+	color: #FEE275;
+	float: left;
+	margin-right: 6px;
+}
+
+.headerWidget {
+    /*clear:both;*/
+    display: inline;
+    float: right;
+    /*margin: 5px 50px 15px 837px;*/
+    border: 0px solid black;
+    margin-left: 10px;
+	margin-right: 8px;
+	padding: 5px 0px 0px 0px;
+}
+
+#viewCart {
+    position: relative;
+    clear: both;
+    float: left;
+    margin: 12px 20px;
+    border: 0px solid black;
+
+}
+
+#indexTopColumn {
+    clear: both;
+    height: 62px;
+    width: 1022px;
+    display: block;
+	position: relative;
+	/*background: orange;*/
+}
+
+#indexTopColumnC1 {
+    float: left;
+    height: 60px;
+    width: 1000px;
+    /*background: orange/*#fff*/;
+    /*padding-left: 264px;*/
+    margin: 5px 0px 0px 0px;
+    border: 0px solid black;
+    text-align: center;
+    display: block;
+	position: relative;
+	background: url("../img/mainM_center.png") repeat-x scroll 0 0 transparent
+}
+
+#indexTopColumnL1 {
+	float: left;
+	margin-top: 5px;
+	}
+
+#indexTopColumnC1 > ul {
+    float: left;
+    width: auto;
+	height: 50px;
+    margin-top: 5px;
+    position: relative;
+    /*display: inline;*/
+    list-style: circle;
+    cursor: pointer;
+    text-align: left; /* !!!! musi byt proto aby display: inline-block v UL LI fungoval, viz nize !!!! */
+}
+
+#indexTopColumnC1 > ul > li > ul {
+    float: left;
+	width: 1020px;
+ }
+
+#indexTopColumnC1 ul li {
+    background: url("../img/mainNavVertWhite.png") no-repeat scroll 0 11px transparent;
+    padding: 16px 18px 16px 18px;
+    display: inline; /* !!!! bude fungovat s text-align: center viz vyse !!!! */
+    position: relative; /* !!!! nejdulezitejsi pro spravny alignment drop-down menu k jednotlive polozce !!!! */
+    /***border-right: 2px solid #fff;***/
+    width: auto; /*104px;*/
+    z-index: 100; /* necessary for wrapper area shadow */
+	top: 16px;
+}
+
+#indexTopColumnC1 ul li:first-child {
+    background: none repeat scroll 0 0 transparent;
+}
+
+#indexTopColumnC1 ul li.topListItemAktivni:hover {
+    /**background: none repeat scroll 0 0 white;**/
+	position: relative;
+	/**box-shadow: 1px -1px 7px 0 grey;**/
+	z-index: 111;
+	
+	
+	/*padding: 15px 14px 14px 14px;
+	top: -10px;*/                         /* vyskakujici aktivni hover meni */
+}
+
+#indexTopColumnC1 ul li.topListItemNeaktivni {
+    background: none repeat scroll 0 0 #000;
+}
+
+#indexTopColumnC1 ul li.topListItemNeaktivni:hover {
+    /*background: none repeat scroll 0 0 #000;*/
+	color: white;
+}
+
+#indexTopColumnR1 {
+	float: right;
+	margin-top: 5px;
+}
+
+/*
+	filter: progid:DXImageTransform.Microsoft.gradient(startColorstr=#FF5900, endColorstr=#FFCC00);
+	position: relative;
+	z-index: 3;
+*/
+
+/*#indexTopColumn a:visited {
+        background-color: #000;
+        width: 60px;
+        height: 30px;
+        display: block;
+}*/
+
+
+#navigace {
+	height: 19px;
+	margin: auto;
+	text-align: center;
+	float: left;
+}
+
+#navigace a {
+	font-size: 0.75em;
+	/*color: black;*/  /* likviduje color v .navClass protoze je to tag */
+	float: left;
+	margin-left: 5px;
+	margin-top: 7px;
+	padding: 0px 2px;
+}
+
+#navigace p {
+	font-size: 0.75em;
+	color: black;
+	/**color: white;**/
+	float: left;
+	margin-left: 5px;
+	margin-top: 7px;
+}
+
+#strana, #stranaHledani {
+	float: right;
+	margin-right:10px;
+}
+
+#strana a, #stranaHledani a {
+	font-size: 0.75em;
+	/*color: black;*/ /* likviduje color v .navClass protoze je to tag */
+	float: left;
+	margin-left: 5px;
+	margin-top: 7px;
+	padding: 0px 2px;
+}
+
+#strana p, #stranaHledani p {
+	font-size: 0.8em;
+	color: black;
+}
+
+#strana span, #stranaHledani span {
+	font-size: 0.75em;
+	color: black;
+	float: left;
+	margin-left: 5px;
+	margin-top: 7px;
+}
+
+/*.navClass {
+	font-size: 0.8em;
+	color: black;
+}
+/*#wrapperPrihlasky a:link, #wrapperPrihlasky a:visited, #wrapperPrihlasky a:hover, #wrapperPrihlasky a:active {
+	font-size: 0.8em;
+	color: black;
+}*/
+
+
+#indexTopColumnC1 ul li ul li {
+    display: none;
+}
+
+#indexTopColumnC1 ul li:hover {
+    background: white /*LightSlateGray*/ /*#F66*/; /* orange */
+	cursor: pointer;
+    z-index: 100;
+	position: relative;
+	padding: 16px 18px 16px 18px;
+	/*color: white;*/
+}
+
+#indexTopColumnC1 ul li:active {
+    background-color: white; /**orangered**/; /*#F66*/; /* orange */
+	cursor: pointer;
+    z-index: 100;
+	position: relative;
+}
+
+#indexTopColumnC1 ul li:hover ul {
+    top: 33px /*40px*/;
+    left: -5px;
+    width: 158px;
+	height: auto;
+    /**background-color: white; /*orangered*/ /*#F66*//* orange */
+    position:absolute;
+    /*height:65px;*/
+    display:block;
+	/**border: 1px solid black;**/
+	
+}
+
+#indexTopColumnC1 ul li:hover ul li {
+    width: 175px;
+	height: 21px;
+    /**margin-bottom: 0px;
+	margin-top: 0px;**/ /* zruseno pri remaku na background */
+	padding: 6px 1px 2px 8px;
+	/**border-left: 0px solid black;
+	border-top: 0px solid black;**/ /* zruseny vsechny bordery -> border: none; */
+    background: url("../img/ddulCenter.png") repeat-y scroll 0 0 transparent;
+	/*background: white /*firebrick*/ /*#F90*/; /* orange */
+    /*position: absolute;*/
+    /*height:65px;*/
+    display: block;
+    font-size: 0.78em;
+    text-align: left;
+	margin: 0;
+	border: none;
+	/*box-shadow: 1px 1px 1px 1px black;*/
+}
+
+#indexTopColumnC1 ul li:hover ul li:last-child {
+    width: 175px;
+	height: 21px;
+    /**margin-bottom: 0px;
+	margin-top: 0px;**/ /* zruseno pri remaku na background */
+	padding: 6px 1px 2px 8px;
+	/**border-left: 0px solid black;
+	border-top: 0px solid black;**/ /* zruseny vsechny bordery -> border: none; */
+    background: url("../img/ddulLastItem.png") no-repeat scroll 0 0 transparent;
+	/*background: white /*firebrick*/ /*#F90*/; /* orange */
+    /*position: absolute;*/
+    /*height:65px;*/
+    display: block;
+    font-size: 0.78em;
+    text-align: left;
+	margin: 0;
+	border: none;
+	/*box-shadow: 1px 1px 1px 1px black;*/
+}
+
+
+#indexTopColumnC1 ul li:hover ul li:hover a {
+    background: url("../img/ddlideco.png") no-repeat scroll 0 -2px transparent;
+	/**background: orange;**/
+	width: 150px;
+	display: block;
+	padding: 3px 4px 0px 2px;
+	height: 23px;
+    
+}
+
+/* 
+ * DD COMPOSITE BACKGROUND 
+ */
+
+/*#indexTopColumnC1 ul il:hover #topListTop {
+	background: url("../img/ddulTop.png") no-repeat scroll 0 0 transparent;
+	width: 158px;
+	height: 7px;
+}
+
+#indexTopColumnC1 ul il:hover #topListCenter {
+	background: url("../img/ddulCenter.png") repeat-y scroll 0 0 transparent;
+	width: 158px;
+	height: auto;
+}
+
+#indexTopColumnC1 ul il:hover  #topListBottom {
+	background: url("../img/ddulBottom.png") no-repeat scroll 0 0 transparent;
+	width: 158px;
+	height: 7px;	
+}*/
+
+/* 
+ * MAIN PAGE KATEGORIE 
+ */
+
+#uciteleHome .homeKategorie {
+	color: black;
+	display: block;
+	margin-top: 10px;
+	margin-left: 7px;
+}
+
+#jsHome .homeKategorie {
+	color: black;
+	display: block;
+	margin-top: 10px;
+	margin-left: 7px;
+}
+
+#dvppHome .homeKategorie {
+	color: black;
+	display: block;
+	margin-top: 10px;
+	margin-left: 7px;
+}
+
+#ekcvjsHome .homeKategorie {
+	color: black;
+	display: block;
+	margin-top: 10px;
+	margin-left: 7px;	
+}
+
+/* -------------------------------------------------------------------------- */
+/* 
+/* -------------------------------------------------------------------------- */
+
+.catDetailLabelText {
+	color: black;
+	font-weight: normal;
+}
+
+.kontaktyLabelText {
+	background: url("../img/contOrngStrip.png") no-repeat scroll -1px 0 transparent;
+	color: black;
+	display: block;
+	padding: 6px 6px;
+	font-size: 0.75em;
+	width: 613px;
+	margin: auto;
+	margin-top: 3px;
+}
+
+.categoryBox {
+    margin: auto;
+    display: inline;
+    float: left;
+    margin: 5px 10px 0 0;
+    padding: 10px;
+    background: magenta;
+    border: 2px solid black;
+    position: absolute;
+}
+
+#panelLeftColumn {
+    margin-top: 0px;
+    padding-top: 0px;
+    clear: both;
+    float: left;
+    display: block;
+    width: 188px;
+    border: 0px solid black;
+	/**box-shadow: 1px 1px 11px 1px #91650d;**/
+}
+
+#container10, #container20, #container30, #container40, #container50, #container60, #container70 {
+    /*clear: both;
+	float: right;*/
+	/*overflow-y: scroll;*/
+	/*overflow-x: auto;*/
+	/**background: none repeat scroll 0 0 #fff;**/
+	height: auto /*1024px;*/ /*auto*/; /* AUTO zpusobuje se stinem rosekani opakujicihose bg po px u height */
+    width: 100%;
+	/**box-shadow: 0 4px 23px 4px grey;**/
+	position: relative;
+	z-index: 2;
+}
+
+#container10 {
+    /**background: none repeat scroll 0 0 #fff; /*#fc0*/  
+	/**box-shadow: 0px 4px 21px 2px #000;**/
+	position: relative;
+	
+	/*filter: progid:DXImageTransform.Microsoft.Shadow(Color=#cccccc, Strength=10, Direction=0),
+        	progid:DXImageTransform.Microsoft.Shadow(Color=#cccccc, Strength=10, Direction=90),
+        	progid:DXImageTransform.Microsoft.Shadow(Color=#cccccc, Strength=10, Direction=180),
+        	progid:DXImageTransform.Microsoft.Shadow(Color=#cccccc, Strength=10, Direction=270);
+	/*z-index: 20;*/
+}
+
+#container70 {
+    clear: both;
+	float: right;
+	/***overflow-y: scroll;***/
+	/*background: none repeat scroll 0 0 #06f;*/
+    /*background: url("../img/70hD.jpg") repeat-y scroll 0 0 transparent;*/
+}
+
+#wrapper {
+    /***margin: 10px 10px 0 10px;***/
+    margin-left: 4px;
+	padding: 0px;
+    /*clear: both;*/
+    float: left;
+    display: block;
+    width: 649px;
+	margin-top: -2px;
+    /***background: white /*#FEECBF* ***/
+    /*filter: progid:DXImageTransform.Microsoft.Glow(Color=#383838, Strength=3, Enabled);*/
+}
+
+#wrapper #wrapperTop {
+	/***height: 100%;***/
+}
+
+#wrapper #wrapperCenter {
+	background: url("../img/wrapperCenter.png") repeat-y scroll 0 0 transparent;
+	overflow: hidden;
+}
+
+#wrapperCenter #wrapperContainer {
+	margin: auto;
+	width: 625px;
+}
+
+#wrapper #wrapperCenter ul li.statickeInfoList {
+    /**background: #FEE275 /**#FED980**/; 
+    /*border: 2px solid #B25900;*/
+    /***margin: 4px 4px 10px 4px;***/
+	margin: auto;
+    padding-top: 2px;
+	width: 625px;
+}
+
+#wrapper .statickeInfoDiv {
+	margin: auto;
+	width: 608px;
+	text-align: justify;
+	font-family: Verdana;
+	font-size: 0.75em;
+	margin-bottom: 15px;
+}
+
+#wrapper #wrapperCenter ul ul > li > h2 {
+	clear: both;
+	background: url("../img/contGreyStrip.png") no-repeat scroll 11px 0 transparent;
+	/*background: red;*/
+	/***height: 28px;***/
+	padding-left: 20px;
+	padding-top: 6px;
+	font-size: 0.7em;
+	padding-bottom: 14px;
+	font-style: italic;
+	margin-top: 5px;
+	margin-bottom: 6px;
+}
+
+/* -------------------------------------------------------------------------- */
+/* EKVCS -> PRIDRUZ. OSOBY + -> ZOBRAZ. DETAILY								  */
+/* -------------------------------------------------------------------------- */
+
+#wrapperPrihlasky {
+	float: left;
+	margin: 0px 0px 0px 1px;
+    float: left;
+    display: block;
+    width: 834px;
+    border: 0px dashed #FEECBF;	
+}
+
+#wrapperPrihlaskyTop {
+	background: url("../img/wrapperPrihlaskyTop.png") norepeat scroll 0 0 transparent;
+}
+
+#wrapperPrihlaskyCenter {
+	background: url("../img/wrapperPrihlaskyCenter.png") repeat-y scroll 0 0 transparent;
+	overflow: hidden;
+}
+
+#wrapperPrihlaskyCenter #wrapperPrihlaskyContainer {
+	margin: auto;
+	width: 810px;
+}
+
+#wrapperPrihlaskyContainer #panelUdajeOsobaNadpis {
+	height: 26px;
+	background: url("../img/osobaOrngStrip.png") no-repeat scroll 0 0 transparent;
+	margin-top: 6px;
+}
+
+#wrapperPrihlaskyContainer #panelUdajeOsobaNadpis p {
+	float: left;
+	font-size: 0.75em;
+	margin-left: 16px;
+	padding: 5px 10px;
+	font-weight: bold;
+	/***background: url("../img/osobaVertStrip.png") no-repeat scroll 0 0 transparent;***/
+}
+
+#wrapperPrihlaskyContainer #panelUdajeOsobaNadpis > p:last-child {
+	float: left;
+	margin-left: 6px;
+}
+
+#wrapperPrihlaskyContainer #panelUdajeOsobaOdkazy {
+	clear: both;
+	background: url("../img/osobaGreyStrip.png") no-repeat scroll 0 0 transparent;
+	height: 26px;
+	padding-left: 15px;
+	margin-bottom: 4px;
+}
+
+#wrapperPrihlaskyContainer #panelUdajeOsobaOdkazy a:first-child {
+	background: none;
+}
+
+#wrapperPrihlaskyContainer #panelUdajeOsobaOdkazy a {
+	background: url("../img/osobaVertStrip.png") no-repeat scroll 0 0 transparent;
+	color: black;
+	float: left;
+	font-size: 0.75em;
+	font-weight: bold;
+	margin-top: 5px;
+	padding: 0 10px;
+}
+
+#wrapperPrihlaskyContainer #panelOsobyOdkazy {
+	background: url("../img/osobaOrngStrip.png") no-repeat scroll 0 0 transparent;
+	height: 26px;
+	margin-top: 6px;
+	padding-left: 15px;
+	margin-bottom: 4px;
+}
+
+#wrapperPrihlaskyContainer #panelOsobyOdkazy a:first-child {
+	background: none;
+}
+
+#wrapperPrihlaskyContainer #panelOsobyOdkazy a {
+	background: url("../img/osobaVertStrip.png") no-repeat scroll 0 0 transparent;
+	color: black;
+	float: left;
+	font-size: 0.75em;
+	font-weight: bold;
+	margin-top: 5px;
+	padding: 0 10px;
+}
+
+/* -------------------------------------------------------------------------- */
+/* EKVCS -> PRIDRUZ. OSOBY + -> ZOBRAZ. DETAILY								  */
+/* -------------------------------------------------------------------------- */
+
+#wrapperPrihlaskyContainer #vypisDokumentuOdkazy {
+	background: url("../img/osobaOrngStrip.png") no-repeat scroll 0 0 transparent;
+	margin-top: 6px;
+	margin-bottom: 4px;
+	height: 26px;
+	padding-left: 15px;
+}
+
+#wrapperPrihlaskyContainer #vypisDokumentuOdkazy a:first-child {
+	background: none repeat scroll 0 0 transparent;
+}
+
+#wrapperPrihlaskyContainer #vypisDokumentuOdkazy a {
+	background: url("../img/osobaVertStrip.png") no-repeat scroll 0 0 transparent;
+	color: black;
+	float: left;
+	font-size: 0.75em;
+	font-weight: bold;
+	margin-top: 5px;
+	padding: 0 10px;
+}
+
+/* -------------------------------------------------------------------------- */
+
+#wrapperPrihlaskyContainer #cartLeft {
+	float: left;
+	width: 500px;
+	margin-left: 4px;
+}
+
+#wrapperPrihlaskyContainer #cartRight {
+	float: left;
+	width: 266px;
+	font-size: 0.9em;
+	margin: auto;
+	text-align: left;
+	margin-left: 10px;
+}
+
+#wrapperPrihlaskyCenter #inputVybrat {
+	background: url("../img/wrapperPrihlaskyCenter.png") repeat-y scroll -6px 0 transparent;
+	height: 36px;
+}
+
+#wrapperPrihlaskyBottom {
+	/***background: url("../img/wrapperPrihlaskyBottom.png") no-repeat scroll 0 0 transparent;***/
+	clear: both;
+}
+
+/* -------------------------------------------------------------------------- */
+/* NAVIGACE na KAZDE STRANCE
+/* -------------------------------------------------------------------------- */
+
+#wrapper #wrapperCenter #navigaceTop, #wrapper #wrapperCenter #wrapperContainer #navigaceTop
+ {
+    width: 621px;
+	height: 18px;
+	margin: auto;
+}
+
+#wrapperPrihlasky #navigaceTop, #wrapperPrihlasky #wrapperPrihlaskyCenter #wrapperPrihlaskyContainer #navigaceTop {
+    width: 780px;
+	height: 15px;
+	margin: auto;
+}
+
+#wrapper > #navigaceTop > ul.navigaceList, #wrapperPrihlasky > #navigaceTop > ul.navigaceList {
+    float: right;
+}
+
+#wrapper > #wrapperCenter > #navigaceTop > ul > li, #wrapper > #wrapperCenter > #wrapperContainer > #navigaceTop > ul > li, 
+#wrapperPrihlasky > #navigaceTop > ul > li, #wrapperPrihlasky > #wrapperPrihlaskyCenter > #wrapperPrihlaskyContainer > #navigaceTop > ul > li {
+    float: right;
+	display: inline;
+	font-size: 0.7em;
+	font-style: italic;
+	margin: 0;
+	margin: 0;
+	margin-left: 4px;
+}
+
+#wrapper > #wrapperCenter > #navigaceTop > ul > li a, #wrapper > #wrapperCenter > #wrapperContainer > #navigaceTop > ul > li > a, 
+#wrapperPrihlasky > #navigaceTop > ul > li a, #wrapperPrihlasky > #wrapperPrihlaskyCenter > #wrapperPrihlaskyContainer > #navigaceTop > ul > li > a {
+    color: black;
+}
+
+#wrapper #wrapperBottom {
+	height: 100%;
+	clear: both;
+}
+
+/* -------------------------------------------------------------------------- */
+/* FORM - Organizace/Firma */
+/* -------------------------------------------------------------------------- */
+
+#organizaceInfoForm {
+	width: 604px;
+	background: none repeat scroll 0 0 lightgrey;
+	padding: 10px;
+	font-family: verdana;
+	font-size: 0.8em;
+}
+
+#organizaceInfoForm fieldset {
+	background: none repeat scroll 0 0 lightgrey;
+	border: medium none;
+	padding: 2px;	
+}
+
+#organizaceInfoForm label {
+	width: 128px;
+	float: left;
+	margin-top: 3px;
+}
+
+#organizaceInfoForm input {
+	width: 460px;
+	float: left;
+	margin-left: 10px;
+	margin-top: 3px;
+	border: medium none;
+}
+
+#organizaceInfoForm #katOrgTypy {
+	width: 598px;
+}
+
+#organizaceInfoForm #katOrgTypy p {
+	width: 138px;
+	float: left;
+	margin-top: 3px;
+}
+
+#organizaceInfoForm #katOrgTypy select {
+	width: 300px;
+	float: left;
+	border: medium none;
+	margin-top: 3px;
+}
+
+#organizaceInfoForm #katOrgDruhy {
+	clear: both;
+	width: 598px;
+}
+
+#organizaceInfoForm #katOrgDruhy p {
+	width: 138px;
+	float: left;
+	margin-top: 3px;
+}
+
+#organizaceInfoForm #katOrgDruhy select {
+	width: 300px;
+	float: left;
+	border: medium none;
+	margin-top: 1px;
+}
+
+#organizaceInfoForm #submitOrganizaceUdaje {
+	float: right;
+	width: 100px;
+	background: none repeat scroll 0 0 white;
+	border: 1px solid black;
+	margin: 8px auto;	
+}
+
+/* -------------------------------------------------------------------------- */
+/* KONTAKTY */
+/* -------------------------------------------------------------------------- */
+
+#kontaktyOsoba {
+	width: auto;
+	height: 90px;
+	margin-bottom: 16px;
+}
+
+#kontaktyLeftDiv {
+	float: left;
+	height: 90px;
+	width: 18%;
+}
+
+#kontaktyCenterDiv {
+	float: left;
+	height: 90px;
+	width: 41%;
+	border-bottom: 1px solid lightSlateGray;
+}
+
+#kontaktyCenterDiv p {
+	font-size: 0.7em;
+}
+
+#kontaktyCenterDiv .kontaktyJmeno {
+	font-size: 0.7em;
+	font-weight: bold;
+	margin-bottom: 6px;
+}
+
+#kontaktyCenterDiv .kontaktyEmail a:link, #kontaktyCenterDiv .kontaktyEmail a:visited, #kontaktyCenterDiv .kontaktyEmail a:hover, #kontaktyCenterDiv .kontaktyEmail a:active {
+	color: activeCaption;
+	font-weight: normal;
+	/*font-size: 0.7em;*/
+}  
+
+#kontaktyRightDiv {
+	float: left;
+	margin-top: 18px;
+	height: 72px;
+	width: 41%;
+	border-bottom: 1px solid lightSlateGray;
+}
+
+#kontaktyLeftDiv img {
+	width: 70px;
+	height: 90px;
+        margin-left: 15px;
+}
+
+#kontaktyRightDiv p {
+	font-size: 0.7em;
+}
+
+#kontaktyRightDiv .kontaktyJmeno {
+	font-size: 0.7em;
+	font-weight: bold;
+	margin-bottom: 6px;
+}
+
+#kontaktyRightDiv .kontaktyEmail a:link, #kontaktyRightDiv .kontaktyEmail a:visited, #kontaktyRightDiv .kontaktyEmail a:hover, #kontaktyRightDiv .kontaktyEmail a:active {
+	color: activeCaption;
+	font-weight: normal;
+	/*font-size: 0.7em;*/
+}   
+
+/* -------------------------------------------------------------------------- */
+
+/* -------------------------------------------------------------------------- */
+/* SEARCH RESULT DISPLAY
+/* -------------------------------------------------------------------------- */
+
+#wrapper .searchLeftTop {
+	width: 50%;
+	height: 21px;
+	margin-bottom: 5px;
+	text-align: left;
+	float: left;
+	border-bottom: 1px solid grey;
+}
+
+#wrapper .searchLeftTop p {
+	float: left;
+	font-family: verdana;
+	font-size: 0.85em;
+}
+
+#wrapper .searchLeftTop p span {
+	font-family: verdana;
+	font-size: 1em;
+	color: blue;
+	font-style: italic;
+	font-weight: bold;
+	/*text-decoration: underline;*/
+}
+
+#wrapper .searchRightTop {
+	width: 50%;
+	height: 21px;
+	margin-bottom: 5px;
+	text-align: left;
+	float: right;
+	border-bottom: 1px solid grey;
+}
+
+#wrapper .searchRightTop p {
+	float: right;
+	font-family: verdana;
+	font-size: 0.85em;
+}
+
+#wrapper .searchRightTop p span {
+	font-family: verdana;
+	font-size: 1em;
+	color: blue;
+	font-style: italic;
+	font-weight: bold;
+	/*text-decoration: underline;*/
+}
+
+#navigaceHledani {
+	border-top: 1px solid grey;
+}
+
+#navigaceHledani p {
+	font-size: 0.8em;
+	color: black;
+	float: left;
+	margin-left: 5px;
+	margin-top: 5px;
+}
+
+#navigaceHledani a {
+	font-size: 0.8em;
+	/*color: black;*/  /* likviduje color v .navClass protoze je to tag */
+	float: left;
+	margin-left: 5px;
+	margin-top: 5px;
+	padding: 0px 2px;
+}
+
+a.navClassHledani:link, a.navClassHledani:visited/*, a.navClass:hover/*, a.navClass:active*/ {
+	/**color: #4C4C4C;*/
+	color: black;
+}
+
+a.navClassHledani:hover {
+	color: white;
+	background: grey;
+	
+}
+
+/*----------------------------------------------------------------------------------------------------*/
+
+#wrapper span.seznamLabelText {
+	font-family: verdana;
+	font-size: 0.80em;
+	color: Navy;
+}
+
+#leftColumnUl2/*, #leftColumnUl2*/ {
+    margin: 0px 0;
+    width: 188px;
+    /**background: #FFF8AF;**/
+    padding: 2px 0px 2px 0px;
+	/*box-shadow: 1px 1px 11px 0px grey; /*darkgoldenrod*/
+    /**background: none repeat scroll 0 0 white;**/
+	background: url("../img/leftUlBg.png") repeat-y scroll 0 0 transparent;
+}
+
+#leftColumnUl1 {
+    /***margin: 5px auto;***/
+    width: 188px;
+    height: 50px;
+	/**background: #FFF8AF;**/
+    margin: 0px 0px 0px 0px;
+	/**border: 2px solid orange;**/
+	/**padding: 10px 2px 12px 0px;**/
+	/*box-shadow: 1px 1px 11px 0px grey; /*darkgoldenrod*/
+    background: url("../img/searchbg.png") no-repeat scroll 0 0 transparent;
+}
+
+#leftColumnUl1 ul li, #leftColumnUl2 ul li {
+    /*margin: 20px 0;*/
+    width: 184px;
+	height: 22px;
+    /***background: #FFCC00;***/
+	/**border-bottom: 2px solid gray;**/
+	border-left: 0px solid orange/*firebrick*/;
+    border-right: 0px solid white;
+	margin: 0px 4px;
+	padding: 2px 0;
+	/*box-shadow: 1px 1px 2px 0px grey;*/
+	cursor: pointer;
+	text-decoration:  none;
+	font-size: 12px /**14px**/;
+}
+
+#leftColumnUl1 ul li:hover, #leftColumnUl2 ul li:hover {
+    /*margin: 20px 0;*/
+    width: 180px;
+    background: orange;
+	/*border-left: 6px solid firebrick;
+    margin: 6px 0;
+	padding: 6px;
+	box-shadow: 1px 1px 2px 0px #000;*/
+	text-decoration:  none;
+}
+
+#leftColumnUl3 {
+    margin: 0px 0;
+    width: 188px;
+    padding: 0px 0;
+	/*box-shadow: 1px 1px 11px 0px grey; /*darkgoldenrod*/
+    background: url("../img/ul3bg.png") repeat scroll 0px 0 transparent;
+	position: relative;
+	height: 104px;
+}
+
+#leftColumnUl3 .citatText {
+	font-size: 0.75em;
+	font-style: italic;
+	font-weight: normal;
+	padding: 20px 10px;
+	text-align: center;
+}
+
+#leftColumnUl3 #cart {
+	margin-left: 22px;
+	margin-top: 0px;
+}
+
+#leftColumnUl3 a.zobrazKos {
+	padding: 17px 0 2px 36px;
+	color: black;
+	display: block;
+}
+
+#leftColumnUl3 a.panelButtonUl3 {
+	position: absolute;
+	top: 97px;
+	left: 140px;
+}
+
+#leftColumnUl4 {
+	position: relative;
+	width: 188px;
+	margin-top: 4px;
+}
+
+#leftColumnUl4 #kontaktTop {
+	background: url("../img/lNewsTop.png") repeat scroll 0px 0 transparent;
+	height: 32px;
+}
+
+#leftColumnUl4 #kontaktCenter {
+	background: url("../img/lNewsFill.png") repeat scroll 0px 0 transparent;
+	height: 52px;
+	padding-top: 12px;	
+}
+
+#leftColumnUl4 .kontaktNadpis {
+	font-size: 0.8em;
+    font-weight: normal;
+	margin: 12px 0px 0px 10px;
+	color: #282828;
+	display: block;
+	float: left;
+}
+
+#leftColumnUl4 .kontaktTelefonText {
+	margin: auto;
+	text-align: center;
+}
+
+#leftColumnUl4 .kontaktTelefonText span {
+	margin-left: 0px;
+	font-weight: bold;
+}
+
+#leftColumnUl4 .kontaktEmailText {
+	margin: auto;
+	font-size: 0.6em;
+	padding-top: 5px;
+	text-align: center;
+}
+
+#leftColumnUl4 .kontaktHodinyText {
+	margin: auto;
+	font-size: 0.6em;
+	padding-top: 3px;
+	text-align: center;
+}
+
+#leftColumnUl4 .kontaktDwnarr {
+	position: absolute;
+	top: 91px;
+	left: 152px;
+}
+
+#leftColumnUl5 {
+	position: relative;
+	width: 188px;
+}
+
+#leftColumnUl5 #kontaktJSTop {
+	background: url("../img/lNewsTop.png") repeat scroll 0px 0 transparent;
+	height: 32px;
+}
+
+#leftColumnUl5 #kontaktJSCenter {
+	background: url("../img/lNewsFill.png") repeat scroll 0px 0 transparent;
+	height: 52px;
+	padding-top: 12px;	
+}
+
+#leftColumnUl5 .kontaktNadpis {
+	font-size: 0.9em;
+    font-weight: normal;
+	margin: 12px 0px 0px 10px;
+	color: #282828;
+	display: block;
+	float: left;
+}
+
+#leftColumnUl5 .kontaktTelefonText {
+	margin: auto;
+	text-align: center;
+}
+
+#leftColumnUl5 .kontaktTelefonText span {
+	margin-left: 0px;
+	font-weight: bold;
+}
+
+#leftColumnUl5 .kontaktEmailText {
+	margin: auto;
+	font-size: 0.6em;
+	padding-top: 5px;
+	text-align: center;
+}
+
+#leftColumnUl5 .kontaktHodinyText {
+	margin: auto;
+	font-size: 0.6em;
+	padding-top: 3px;
+	text-align: center;
+}
+
+#leftColumnUl5 .kontaktDwnarr {
+	position: absolute;
+	top: 91px;
+	left: 152px;
+}
+
+#panelRightColumn {
+    /*background: none repeat scroll 0 0 white;*/
+    margin: 0px 0px;
+    /**padding-top: 10px;**/
+    /*clear: both;*/
+    float: right;
+    display: block;
+    width: 179px;
+    border: 0px solid black;
+	/*box-shadow: 1px 1px 11px 1px grey;*/
+}
+
+#rightColumnUl1 {
+    clear: both;
+    background: none repeat scroll 0 0 /*khaki*/; /*#d6d6d6*/
+    margin: 0px 0px;
+    /**padding-top: 5px;**/
+    /*clear: both;*/
+    float: right;
+    display: block;
+    width: 179px;
+    border: 0px solid black;
+	position: relative;
+	/*box-shadow: 0px 0px 4px 0px grey*/
+}
+
+#rightColumnUl1 #newsTop {
+	background: url("../img/rNewsTop.png") repeat scroll 0px 0 transparent;
+	width: 179px;
+	/**font-size: 0.8em;
+    font-weight: bold;
+	padding: 1px 2px;
+	color: #282828;**/
+	display: block;
+	position: relative;
+	height: 32px /**46px**/;
+}
+
+.lnews {
+	/***background: url("../img/rnewslow.png") no-repeat scroll 0px 0 transparent;***/
+	display: block;
+	height: 12px;
+	margin-bottom: 10px;
+	position: relative;
+	width: 188px;
+} 
+
+.dwnarr1 {
+	position: absolute;
+	top: 96px;
+	left: 146px;
+	z-index: 100;
+}
+
+.dwnarr2 {
+	position: absolute;
+	top: 219px;
+	left: 146px;
+	z-index: 100;
+}
+
+.dwnarr3 {
+	position: absolute;
+	top: 342px;
+	left: 146px;
+	z-index: 100;
+}
+
+#rightColumnUl1 a:link {
+    color: black;
+	text-decoration: none;
+}
+
+#rightColumnUl1 a:visited {
+    color: blue;
+	text-decoration: none;
+}
+
+#rightColumnUl1 a:hover {
+    color: DarkBlue;
+	text-decoration: none;
+}
+
+#rightColumnUl1 a:active {
+    color: red;
+	text-decoration: none;
+}
+
+#rightColumnUl1 ul li {
+    /*margin: 10px 5px 10px 5px;*/
+	margin-bottom: 10px;
+}
+
+#rightColumnUl2 {
+    clear: both;
+    margin: 0px 0px;
+    /***padding-top: 5px;***/
+    text-align: center;
+    float: right;
+    display: block;
+    width: 179px;
+    border: 0px solid black;
+}
+
+/**/
+/* UL2 -> FOR IMAGES with TEXT
+/**/
+
+#rightColumnUl2 #rightColumnlogoTop {
+	background: url("../img/rNewsTop.png") repeat scroll 0px 0 transparent;
+	width: 179px;
+	display: block;
+	position: relative;
+	height: 32px;
+}
+
+#rightColumnUl2 #rightColumnLogo {
+	background: url("../img/rNewsFill.png") repeat scroll 0px 0 transparent;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 0.7em;
+	display: block;
+	height: auto;
+	padding: 8px 8px 0px 8px;
+    /*font-style: italic;*/
+	text-align: center;
+	color: black;
+}
+
+#rightColumnUl2 #rightColumnLogo > a {
+	color: navy;
+}
+
+#rightColumnUl2 #rightColumnlogoTop p.popisLoga {
+	font-size: 0.8em;
+    font-weight: normal;
+	margin: 12px 0px 0px 10px;
+	color: #282828;
+	display: block;
+	float: left;
+}
+
+/************************************************************************************************/
+
+#rightColumnUl3 {
+    clear: both;
+    background: none repeat scroll 0 0 /*khaki*/; /*#d6d6d6*/
+    margin: 0px 0px;
+    padding-top: 5px;
+    /*clear: both;*/
+    float: right;
+    display: block;
+    width: 180px;
+    border: 0px solid black;
+	/*box-shadow: 0px 0px 4px 0px grey*/
+}
+
+#panelUdajeOsoba {
+    width: auto;
+}
+
+#panelUdajeOsoba h2 {
+    text-align: center;
+}
+
+#panelUdajeOsoba p {
+    text-align: center;
+    margin-top: 10px;
+}
+
+#klientInfoForm {
+    border: 15px;
+    display: block;
+    margin: 16px auto;
+    padding: 10px;
+    width: 290px;
+    height: 350px;
+    border-color: #F5D35E #F5BE00 #F5BE00 #F5D35E;
+    border-style: solid;
+}
+
+#klientInfoForm label {
+    /*clear: both;*/
+    float: left;
+    width: 130px;
+    margin-right: 10px;
+    /*display: inline-block;*/
+    padding: 0px 5px;
+    background: #F8CF00;
+}
+
+#klientInfoForm input {
+    /*clear: both;*/
+    float: left;
+    width: 130px;
+    /*display: inline-block;*/
+    /*margin: 0px 10px;
+    padding-left: 10px;*/
+    /*background: #F8CF00;*/
+    font-weight: bold;
+}
+
+#klientInfoForm input#submitOsobaUdaje {
+    margin-top: 15px;
+}
+
+#footer {
+    clear: both;
+    /*display: inline;
+	float: left;
+	margin-right: 288px;*/
+}
+
+#footerEsf {
+    /*width: 33%;
+    /*float: left;*/
+    /*background: url(img/logoesf.jpg) no-repeat;*/
+}
+
+#footerEsf #logo {
+    width: 98%;
+    height: auto;
+    background: url(img/logoesf.jpg) no-repeat;
+}
+
+#footer #footerKontakt {
+    width: 50%;
+    float: left;
+    /*text-align: center;*/
+}
+
+#footer #footerTM {
+    width: 50%;
+    float: left;
+    text-align: right;
+}
+
+.popisAktuality {
+	font-size: 0.8em;
+    font-weight: normal;
+	margin: 12px 0px 0px 10px;
+	color: #282828;
+	display: block;
+	float: left;
+}
+
+.datumAktuality {
+    /**background: url("../img/rNewsTop.png") repeat scroll -4px 0 transparent;**/
+	/**width: 98%;**/
+	font-size: 0.6em;
+    font-weight: normal;
+	margin: 14px 12px 0px 0px;
+	/**padding: 13px 12px 10px 10px;**/
+	color: #282828;
+	display: block;
+	float: right;
+	/**height: 46px;**/
+}
+
+/* -------------------------------------------------------------------------- */
+/* AKTUALITY MAIN PAGE STYLE
+/* -------------------------------------------------------------------------- */
+
+#wrapper #aktualitySeznamMain {
+	margin: 6px 5px;
+	padding: 2px;
+	display: block;
+	/***border-bottom: 1px solid lightSteelBlue;***/
+    text-align: justify;
+	font-size: 0.75em;
+	/**height: 46px;**/
+	width: 608px;
+}
+
+#wrapper .aktualitySeznamDatum {
+	/***background: url("../img/mainlideco.png") no-repeat scroll 0 0 transparent;***/
+	/**width: 98%;**/
+	/***border-bottom: 1px solid orangered;***/
+	font-size: 0.8em;
+    font-weight: normal;
+	margin: 0px 0px 0px 0px;
+	padding: 4px 10px;
+	color: #282828;
+	display: block;
+	/***width: 628px;***/
+	height: 16px;
+	float: right;
+}
+/***
+#wrapper .aktualitySeznamText {
+	font-family: Verdana, Helvetica, sans-serif;
+    font-size: 0.85em;
+	font-weight: bold;
+	display: block;
+	padding: 7px 1px 3px;
+	color: #000;
+}
+***/
+
+#wrapper .aktualitySeznamPopis {
+	/*background: url("../img/rNewsFill.png") repeat scroll -4px 0 transparent;*/
+    font-family: Verdana, Helvetica, sans-serif;
+    font-size: 0.75em;
+	display: block;
+	/*height: 80px;*/
+	padding: 4px 8px;
+	color: #000;
+    /*font-style: italic;*/
+}
+
+#wrapper #aktualitaAutor p {
+	float: right;
+	font-size: 0.7em;
+	font: verdana;
+}
+
+#wrapperContainer #aktualitaAutor {
+	float: right;
+	margin-top: 16px;
+	margin-bottom: 18px;
+	height: 12px;
+	font-size: 0.64em;
+	margin-right: 12px;
+}
+
+#wrapperContainer ul #aktualitaAutor {
+	float: right;
+	margin-top: 16px;
+	margin-bottom: 18px;
+	height: 12px;
+	font-size: 0.8em;
+}
+
+#aktualitySeznamNadpis {
+	background: url("../img/mainlideco.png") no-repeat scroll 0 0 transparent;
+	height: 24px;
+	width: 628px;
+}
+
+#aktualitySeznamNadpis > a {
+	/***background: url("../img/mainlideco.png") no-repeat scroll 0 0 transparent;***/
+	/**width: 98%;**/
+	/***border-bottom: 1px solid orangered;***/
+	font-size: 0.8em;
+    font-weight: normal;
+	margin: 0px 0px 0px 0px;
+	padding: 4px;
+	color: #282828;
+	display: block;
+	/***width: 628px;***/
+	height: 16px;
+	float: left;
+}
+
+#wrapperContainer #aktualitySeznamNadpis span.aktualitySeznamText {
+	display: block;
+	padding: 1px 2px;
+}
+
+#wrapperContainer #aktualitySeznamNadpis span.aktualitySeznamText2 {
+	display: block;
+	padding: 5px 6px;
+	font-size: 0.8em;
+}
+
+#aktualitaAutor .aktualitySeznamAutor {
+	font-weight: bold;
+}
+
+#aktualitySeznamOdkaz {
+	font-size: 0.7em;
+	margin: 12px 8px;
+}
+
+#aktualitySeznamOdkaz span.aktualitySeznamText {
+	color: black;
+	border-bottom: 1px solid darkgrey;
+}
+
+#wrapperContainer #aktualitaText {
+	display: block;
+	font-size: 0.75em;
+	margin: 6px 10px;
+	padding: 2px;
+	text-align: justify;
+}
+
+.aktualitySeznamList {
+	clear: both;
+}
+	
+.default a:link, .default a:visited, .default a:hover, .default a:active {
+	color: Navy;
+	font-weight: bold;
+	text-decoration: none;
+}
+
+/*--------------------------------------------------------------------------------------------------------------------------*/
+
+
+/* -------------------------------------------------------------------------- */
+/* VZDELAVANI UCITELU -> HLAVNI CINNOST, DALSI VZDELAVANI 
+/* -------------------------------------------------------------------------- */
+
+#wrapper .statickeInfoNazev {
+	background: url("../img/mainlideco.png") no-repeat scroll 0 0 transparent;
+	display: block;
+	height: 24px;
+	margin-bottom: 0px;
+	padding: 4px 8px;
+	width: 622px;
+        font-size: 0.85em;
+	
+}
+
+
+#wrapper p.statickeInfoText {
+	font: verdana;
+	font-size: 0.8em;
+	text-align: justify;
+	padding: 0 8px;
+}
+
+.aktualityLabelText {
+	background: url("../img/rNewsFill.png") repeat scroll 0px 0 transparent;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 0.7em;
+	display: block;
+	height: 60px;
+	padding: 8px 20px 0px 20px;
+    /*font-style: italic;*/
+	text-align: center;
+	color: black;
+}
+
+.categoryLabelTextAktivni {
+    font-family: Verdana, Helvetica, sans-serif;
+    font-size: 0.85em;
+    /**font-size: 1.05em;**/
+    /*font-size: 16px;*/
+	color: darkRed;
+	font-weight: normal;
+}
+
+.categoryLabelTextAktivni:hover {
+    font-family: Verdana, Helvetica, sans-serif;
+    font-size: 0.85em;
+    /**font-size: 1.05em;**/
+    /*font-size: 16px;*/
+	color: darkslategrey;
+}
+
+.categoryLabelTextNektivni {
+    font-family: Verdana, Helvetica, sans-serif;
+    /*font-family: Arial, Helvetica, sans-serif;*/
+    font-size: 0.85em;
+	/**font-size: 1.05em;**/
+    /*font-size: 16px;*/
+	color: black;
+	font-weight: normal;
+}
+
+.categoryLabelTextNektivni:hover {
+    font-family: Verdana, Helvetica, sans-serif;
+    font-size: 0.85em;	
+    /**font-size: 1.05em;**/
+    /*font-size: 16px;*/
+	/*color: white;*/
+}
+
+.aktualityPanelNazev {
+    background: none repeat scroll 0 0 #FFB200;
+    border: 2px solid #FF9900;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 1em;
+    font-weight: bolder;
+    margin-top: 2px;
+    margin-bottom: 2px;
+    padding: 1px 0 1px 3px;
+}
+
+.aktualityPanelText { /* !!!! zda se ze SPAN nereaguje na MARGIN ani PADDING, sice se zpracuje ale nedela to nic !!!! */
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 1em;
+    display: block;
+    margin-bottom: 2px;
+    /*font-weight: bolder;*/
+}
+
+.aktualityPanelOdkaz {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: .9em;
+    font-weight: normal;
+    display: block;
+    margin-top: -2px;	
+}
+
+/* -------------------------------------------------------------------------- */
+/* PRIHLASENI K AKCIM v menu KCVJS */
+/* -------------------------------------------------------------------------- */
+
+#prihlaseniTable {
+	clear: both;
+}
+
+#prihlaseniTable th {
+	/**background-color: rgba(255, 132, 0, 0.5);**/
+	background: none repeat scroll 0 0 #FAC600;
+}
+
+#prihlaseniTable tr > th > a {
+	/**background-color: rgba(255, 132, 0, 0.5);**/
+	color: #000;
+}
+
+#prihlaseniTable .tlacitkoRezervace {
+	background: url("../img/inputButton.png") no-repeat scroll 0 0 transparent;
+	border-style: none;
+	display: block;
+	cursor: pointer;
+	height: 37px;
+	width: 93px;
+	margin: auto;
+	font-family: Verdana, Helvetica, sans-serif;
+	font-size: 1.1em;
+}
+
+tr.lightBlue {
+	color: black;
+	background-color: #f1f1f1 /**#FFDE98**/ /**#e2d7b6**/ /*rgba(156, 152, 122, 0.3);*/;
+	font-size: 1.0em;
+}
+
+.lightBlue td {
+	text-align: center;
+        vertical-align: middle;
+	padding: 2px 6px;
+	font-size: 0.7em;
+	background: none repeat scroll 0 0 #ECECEC;
+}
+
+.lightBlue td a:link, .lightBlue td a:visited, .lightBlue td a:hover, .lightBlue td a:active {
+	color: #0e2b82;
+	
+}
+
+tr.white {
+	color: black;
+	background-color: #f1f1f1 /**#f5d693**/ /**#dcd1b1*/ /*rgba(162, 168, 162, 0.3)*/;
+	font-size: 1.0em;
+}
+
+.white td {
+	text-align: center;
+        vertical-align: middle;
+	padding: 2px 6px;
+	font-size: 0.7em; /** 0.9em**/
+	background: none repeat scroll 0 0 #DCDADB;
+}
+
+.white td a:link, .white td a:visited, .white td a:hover, .white td a:active {
+	color: #0e2b82;
+}
+
+tr.detailAkce {
+	background-color: #ebe5d1 /**#DCD1B1**/;
+	color: black;
+	font-size: 0.8em;
+}
+
+.smallText {
+	font-size: 0.9em;
+}
+
+#skupinaOboru, #NazevAkce, #Obory, #obdobi {
+	background: url("../img/navFilterBg.png") no-repeat scroll 2px 0 transparent;
+	float: left;
+	height: 66px;
+	width: 269px;
+}
+
+#logoPdf img {
+	clear: both;
+	position: relative;
+	width: 48px;
+	height: 48px;
+	display: block;
+	margin-top: 16px;
+}
+
+#divNazev {
+	margin: 16px auto 10px;
+	font-size: 1.0em;
+}
+
+#osobyOrgPrihlasitTable tr th {
+	font-size: 0.8em;
+	padding: 2px;
+	background: none repeat scroll 0 0 lightgrey;
+}
+
+/* ------------------------------------------------------------------------- */
+/* NAVIGACE STRIP v AKCICH s UP/DOWN ARROWS */
+/* ------------------------------------------------------------------------- */
+
+#wrapperPrihlasky #tableHeaderAkce {
+	clear: both;
+	width: 806px;
+	height: 29px;
+	background: url("../img/osobaNav.png") repeat-y scroll 0 0 transparent;
+}
+
+/**/
+#wrapperPrihlasky #tableHeaderAkce #headerVolnoAkce {
+	float: left;
+	padding: 6px 6px 6px 9px;	
+}
+/**/
+/**/
+#wrapperPrihlasky #tableHeaderAkce #headerCisloAkce {
+	float: left;
+	width: 104px;	
+}
+
+#wrapperPrihlasky #tableHeaderAkce #headerCisloAkce a p {
+	float: left;
+	color: white;
+	font-size: 0.8em;
+	padding: 7px 9px 6px 10px;	
+}
+
+#wrapperPrihlasky #tableHeaderAkce #headerCisloAkce a img {
+	float: right;
+	padding: 12px 9px 10px 10px;	
+}
+/**/
+/**/
+#wrapperPrihlasky #tableHeaderAkce #headerNazevAkce {
+	float: left;
+	width: 385px;	
+}
+
+#wrapperPrihlasky #tableHeaderAkce #headerNazevAkce a p {
+	float: left;
+	color: white;
+	font-size: 0.8em;
+	padding: 7px 9px 6px 10px;	
+}
+
+#wrapperPrihlasky #tableHeaderAkce #headerNazevAkce a img {
+	float: right;
+	padding: 12px 9px 10px 10px;	
+}
+/**/
+/**/
+#wrapperPrihlasky #tableHeaderAkce #headerTerminAkce {
+	float: left;
+	width: 153px;	
+}
+
+#wrapperPrihlasky #tableHeaderAkce #headerTerminAkce a p {
+	float: left;
+	color: white;
+	font-size: 0.8em;
+	padding: 7px 9px 6px 10px;	
+}
+
+#wrapperPrihlasky #tableHeaderAkce #headerTerminAkce a img {
+	float: right;
+	padding: 12px 9px 10px 10px;	
+}
+/**/
+/**/
+#wrapperPrihlasky #tableHeaderAkce #headerCenaAkce {
+	float: left;
+	width: 130px;	
+}
+
+#wrapperPrihlasky #tableHeaderAkce #headerCenaAkce a p {
+	float: left;
+	color: white;
+	font-size: 0.8em;
+	padding: 7px 9px 6px 10px;	
+}
+
+#wrapperPrihlasky #tableHeaderAkce #headerCenaAkce a img {
+	float: right;
+	padding: 12px 9px 10px 10px;	
+}
+
+/* ------------------------------------------------------------------------- */
+/* NAVIGACE STRIP v keStazeni s UP/DOWN ARROWS */
+/* ------------------------------------------------------------------------- */
+
+#wrapper #tableHeaderDokumenty {
+	clear: both;
+	width: 625px;
+	height: 29px;
+	background: url("../img/akceNavDownl.png") no-repeat scroll 0 0 transparent;
+	
+}
+
+/**/
+#wrapper #tableHeaderDokumenty #headerDokumentyNazev {
+	float: left;
+	width: 180px;	
+}
+
+#wrapper #tableHeaderDokumenty #headerDokumentyNazev a p {
+	float: left;
+	color: white;
+	font-size: 0.8em;
+	padding: 6px 2px 0px 4px;	
+}
+
+#wrapper #tableHeaderDokumenty #headerDokumentyNazev a img {
+	float: right;
+	padding: 12px 9px 10px 10px;	
+}
+/**/
+/**/
+#wrapper #tableHeaderDokumenty #headerDokumentDatumVlozeni {
+	float: left;
+	width: 140px;	
+}
+
+#wrapper #tableHeaderDokumenty #headerDokumentDatumVlozeni a p {
+	float: left;
+	color: white;
+	font-size: 0.8em;
+	padding: 7px 3px 6px 2px;	
+}
+
+#wrapper #tableHeaderDokumenty #headerDokumentDatumVlozeni a img {
+	float: right;
+	padding: 12px 9px 10px 10px;	
+}
+
+#wrapper #tableHeaderDokumenty #headerDokumentVelikost {
+	float: left;
+	width: 100px;	
+}
+
+#wrapper #tableHeaderDokumenty #headerDokumentVelikost a p {
+	float: left;
+	color: white;
+	font-size: 0.8em;
+	padding: 7px 3px 6px 2px;	
+}
+
+#wrapper #tableHeaderDokumenty #headerDokumentVelikost a img {
+	float: right;
+	padding: 12px 9px 10px 10px;	
+}
+/**/
+/**/
+#wrapper #tableHeaderDokumenty #headerDokumentPopis {
+	float: left;
+	width: 100px;	
+}
+
+#wrapper #tableHeaderDokumenty #headerDokumentPopis a p {
+	float: left;
+	color: white;
+	font-size: 0.8em;
+	padding: 7px 9px 6px 10px;	
+}
+
+#wrapper #tableHeaderDokumenty #headerDokumentPopis a img {
+	float: right;
+	padding: 12px 9px 10px 10px;	
+}
+/**/
+/**/
+#wrapper #tableHeaderDokumenty #headerDokumentStahnout {
+	float: left;
+	width: 100px;	
+}
+
+#wrapper #tableHeaderDokumenty #headerDokumentStahnout a p {
+	float: left;
+	color: white;
+	font-size: 0.8em;
+	padding: 7px 9px 6px 10px;	
+}
+
+#wrapper #tableHeaderDokumenty #headerDokumentStahnout a img {
+	float: right;
+	padding: 12px 9px 10px 10px;	
+}
+
+/* ------------------------------------------------------------------------- */
+/* NAVIGACE STRIP v Dokumenty faktury s UP/DOWN ARROWS */
+/* ------------------------------------------------------------------------- */
+
+#wrapperPrihlasky #tableHeaderFaktury {
+	clear: both;
+	width: 810px;
+	height: 29px;
+	background: url("../img/akceNavDownlFav.png") no-repeat scroll 0 0 transparent;
+}
+
+/**/
+#wrapperPrihlasky #tableHeaderFaktury #headerCisloFaktury {
+	float: left;
+	width: 80px;	
+}
+
+#wrapperPrihlasky #tableHeaderFaktury #headerCisloFaktury a p {
+	float: left;
+	color: white;
+	font-size: 0.8em;
+	padding: 6px 2px 0px 4px;	
+}
+
+#wrapperPrihlasky #tableHeaderFaktury #headerCisloFaktury a img {
+	float: right;
+	padding: 12px 9px 10px 10px;	
+}
+/**/
+/**/
+#wrapperPrihlasky #tableHeaderFaktury #headerDatumVystaveni {
+	float: left;
+	width: 160px;	
+}
+
+#wrapperPrihlasky #tableHeaderFaktury #headerDatumVystaveni a p {
+	float: left;
+	color: white;
+	font-size: 0.8em;
+	padding: 7px 3px 6px 2px;	
+}
+
+#wrapperPrihlasky #tableHeaderFaktury #headerDatumVystaveni a img {
+	float: right;
+	padding: 12px 9px 10px 10px;	
+}
+
+#wrapperPrihlasky #tableHeaderFaktury #headerDatumSplatnosti {
+	float: left;
+	width: 160px;	
+}
+
+#wrapperPrihlasky #tableHeaderFaktury #headerDatumSplatnosti a p {
+	float: left;
+	color: white;
+	font-size: 0.8em;
+	padding: 7px 3px 6px 2px;	
+}
+
+#wrapperPrihlasky #tableHeaderFaktury #headerDatumSplatnosti a img {
+	float: right;
+	padding: 12px 9px 10px 10px;	
+}
+/**/
+/**/
+#wrapperPrihlasky #tableHeaderFaktury #headerfakturovanaCastka {
+	float: left;
+	width: 140px;	
+}
+
+#wrapperPrihlasky #tableHeaderFaktury #headerfakturovanaCastka a p {
+	float: left;
+	color: white;
+	font-size: 0.8em;
+	padding: 7px 9px 6px 10px;	
+}
+
+#wrapperPrihlasky #tableHeaderFaktury #headerfakturovanaCastka a img {
+	float: right;
+	padding: 12px 9px 10px 10px;	
+}
+/**/
+/**/
+#wrapperPrihlasky #tableHeaderFaktury #headeruhrazenaCastka {
+	float: left;
+	width: 140px;	
+}
+
+#wrapperPrihlasky #tableHeaderFaktury #headeruhrazenaCastka a p {
+	float: left;
+	color: white;
+	font-size: 0.8em;
+	padding: 7px 9px 6px 10px;	
+}
+
+#wrapperPrihlasky #tableHeaderFaktury #headeruhrazenaCastka a img {
+	float: right;
+	padding: 12px 9px 10px 10px;	
+}
+
+#wrapperPrihlasky #tableHeaderFaktury #headerfakturovanaCastka a img {
+	float: right;
+	padding: 12px 9px 10px 10px;	
+}
+/**/
+/**/
+#wrapperPrihlasky #tableHeaderFaktury #headerFakturaDokument {
+	float: left;
+	width: 120px;	
+}
+
+#wrapperPrihlasky #tableHeaderFaktury #headerFakturaDokument a p {
+	float: left;
+	color: white;
+	font-size: 0.8em;
+	padding: 7px 9px 6px 10px;	
+}
+
+#wrapperPrihlasky #tableHeaderFaktury #headerFakturaDokument a img {
+	float: right;
+	padding: 12px 9px 10px 10px;	
+}
+
+
+/* ------------------------------------------------------------------------- */
+/* NAVIGACE STRIP v Dokumenty certifikaty s UP/DOWN ARROWS */
+/* ------------------------------------------------------------------------- */
+
+#wrapperPrihlasky #tableHeaderCertifikaty {
+	clear: both;
+	width: 810px;
+	height: 29px;
+	background: url("../img/akceNavDownlFav.png") no-repeat scroll 0 0 transparent;
+}
+
+/**/
+#wrapperPrihlasky #tableHeaderCertifikaty #headerCertifikatCisloAkce {
+	float: left;
+	width: 156px;	
+}
+
+#wrapperPrihlasky #tableHeaderCertifikaty #headerCertifikatCisloAkce a p {
+	float: left;
+	color: white;
+	font-size: 0.8em;
+	padding: 6px 2px 0px 4px;	
+}
+
+#wrapperPrihlasky #tableHeaderCertifikaty #headerCertifikatCisloAkce a img {
+	float: right;
+	padding: 12px 9px 10px 10px;	
+}
+/**/
+/**/
+#wrapperPrihlasky #tableHeaderCertifikaty #headerCertifikatJmenoPrijmeni {
+	float: left;
+	width: 236px;	
+}
+
+#wrapperPrihlasky #tableHeaderCertifikaty #headerCertifikatJmenoPrijmeni a p {
+	float: left;
+	color: white;
+	font-size: 0.8em;
+	padding: 7px 3px 6px 2px;	
+}
+
+#wrapperPrihlasky #tableHeaderCertifikaty #headerCertifikatJmenoPrijmeni a img {
+	float: right;
+	padding: 12px 9px 10px 10px;	
+}
+
+#wrapperPrihlasky #tableHeaderCertifikaty #headerCertifikatDatumVystaveni {
+	float: left;
+	width: 155px;	
+}
+
+#wrapperPrihlasky #tableHeaderCertifikaty #headerCertifikatDatumVystaveni a p {
+	float: left;
+	color: white;
+	font-size: 0.8em;
+	padding: 7px 3px 6px 2px;	
+}
+
+#wrapperPrihlasky #tableHeaderCertifikaty #headerCertifikatDatumVystaveni a img {
+	float: right;
+	padding: 12px 9px 10px 10px;	
+}
+/**/
+/**/
+#wrapperPrihlasky #tableHeaderCertifikaty #headerCertifikatDokument {
+	float: left;
+	width: 150px;	
+}
+
+#wrapperPrihlasky #tableHeaderCertifikaty #headerCertifikatDokument a p {
+	float: left;
+	color: white;
+	font-size: 0.8em;
+	padding: 7px 9px 6px 10px;	
+}
+
+#wrapperPrihlasky #tableHeaderCertifikaty #headerCertifikatDokument a img {
+	float: right;
+	padding: 12px 9px 10px 10px;	
+}
+
+/* ------------------------------------------------------------------------- */
+/* NAVIGACE STRIP v Dokumenty certifikaty s UP/DOWN ARROWS */
+/* ------------------------------------------------------------------------- */
+
+#wrapperPrihlasky #tableHeaderPridruzeneOsobu {
+	clear: both;
+	width: 810px;
+	height: 29px;
+	background: url("../img/akceNavDownlFav.png") no-repeat scroll -1px 0 transparent;
+}
+
+/**/
+#wrapperPrihlasky #tableHeaderPridruzeneOsobu #headerJmeno {
+	float: left;
+	width: 110px;	
+}
+
+#wrapperPrihlasky #tableHeaderPridruzeneOsobu #headerJmeno a p {
+	float: left;
+	color: white;
+	font-size: 0.8em;
+	padding: 7px 2px 0px 11px;	
+}
+
+#wrapperPrihlasky #tableHeaderPridruzeneOsobu #headerJmeno a img {
+	float: right;
+	padding: 12px 9px 10px 10px;	
+}
+/**/
+/**/
+#wrapperPrihlasky #tableHeaderPridruzeneOsobu #headerPrijmeni {
+	float: left;
+	width: 138px;	
+}
+
+#wrapperPrihlasky #tableHeaderPridruzeneOsobu #headerPrijmeni a p {
+	float: left;
+	color: white;
+	font-size: 0.8em;
+	padding: 7px 2px 0px 10px;	
+}
+
+#wrapperPrihlasky #tableHeaderPridruzeneOsobu #headerJmeno a img {
+	float: right;
+	padding: 12px 9px 10px 10px;	
+}
+
+#wrapperPrihlasky #tableHeaderPridruzeneOsobu #headerDatumNarozeni {
+	float: left;
+	width: 146px;	
+}
+
+#wrapperPrihlasky #tableHeaderPridruzeneOsobu #headerDatumNarozeni a p {
+	float: left;
+	color: white;
+	font-size: 0.8em;
+	padding: 7px 3px 6px 10px;	
+}
+
+#wrapperPrihlasky #tableHeaderPridruzeneOsobu #headerDatumNarozeni a img {
+	float: right;
+	padding: 12px 9px 10px 10px;	
+}
+
+#wrapperPrihlasky #tableHeaderPridruzeneOsobu #headerRodneCislo {
+	float: left;
+	width: 148px;	
+}
+
+#wrapperPrihlasky #tableHeaderPridruzeneOsobu #headerRodneCislo a p {
+	float: left;
+	color: white;
+	font-size: 0.8em;
+	padding: 7px 3px 6px 10px;	
+}
+
+#wrapperPrihlasky #tableHeaderPridruzeneOsobu #headeruDetailyOsoby {
+	float: left;
+	width: 146px;	
+}
+
+#wrapperPrihlasky #tableHeaderPridruzeneOsobu #headeruDetailyOsoby a p {
+	float: left;
+	color: white;
+	font-size: 0.8em;
+	padding: 7px 3px 6px 10px;	
+}
+
+#wrapperPrihlasky #tableHeaderPridruzeneOsobu #headeruDetailyOsoby a img {
+	float: right;
+	padding: 12px 9px 10px 10px;	
+}
+/**/
+/**/
+#wrapperPrihlasky #tableHeaderPridruzeneOsobu #headerTlacitkoOsoby {
+	float: left;
+	width: 120px;	
+}
+
+#wrapperPrihlasky #tableHeaderPridruzeneOsobu #headerTlacitkoOsoby a p {
+	float: left;
+	color: white;
+	font-size: 0.8em;
+	padding: 7px 9px 6px 10px;	
+}
+
+#wrapperPrihlasky #tableHeaderPridruzeneOsobu #headerTlacitkoOsoby a img {
+	float: right;
+	padding: 12px 9px 10px 10px;	
+}
+
+/* ------------------------------------------------------------------------- */
+/* ROZBALOVACI CAST TABULKY AKCE - PRIHLASKY (bez REGISTRACE buttonu) */
+/* ------------------------------------------------------------------------- */
+
+#divChar {
+	width: auto;
+	padding: 5px;
+}
+
+.levaCara {
+	float: left;
+	width: 42%;
+	background: none repeat scroll 0 0 black;
+	height: 1px;
+	margin: 19px 0px 5px 0px;
+}
+	
+	/* CHARAKTERISTIKA */
+
+#divChar p.tabDetail {
+	float: left;
+	width: 16%;
+	height: 10px;
+	background: none repeat scroll 0 0 transparent;
+	margin-top: 6px;
+	font-size: 1.0em;
+	color: #1b2954;
+	text-align: center;
+}
+
+#divChar p.tabCharakteristika {
+	clear: both;
+	background: none repeat scroll 0 0 transparent;
+	width: auto;
+	font-size: 1.0em;
+	text-align: left;
+}
+
+	/* GARANT */
+
+#divGarant {
+	width: auto;
+	padding: 5px;
+}
+
+#divGarant p.tabDetail {
+	float: left;
+	width: 16%;
+	height: 10px;
+	background: none repeat scroll 0 0 transparent;
+	margin-top: 6px;
+	font-size: 1.0em;
+	color: #1b2954;
+	text-align: center;
+}
+
+#divGarant p.tabGarant {
+	clear: both;
+	background: none repeat scroll 0 0 transparent;
+	width: auto;
+	font-size: 1.0em;
+	text-align: center;
+}
+
+	/* DOPORUCENO */
+
+#divDoporuceno {
+	width: auto;
+	padding: 5px;
+}
+	
+#divDoporuceno p.tabDetail {
+	float: left;
+	width: 16%;
+	height: 10px;
+	background: none repeat scroll 0 0 transparent;
+	margin-top: 6px;
+	font-size: 1.0em;
+	color: #1b2954;
+	text-align: center;
+}
+
+#divDoporuceno p.tabDoporuceno {
+	clear: both;
+	background: none repeat scroll 0 0 transparent;
+	width: auto;
+	font-size: 1.0em;
+	text-align: center;
+}
+
+	/* MISTO */
+#divMisto p.tabDetail {
+	float: left;
+	width: 16%;
+	height: 10px;
+	background: none repeat scroll 0 0 transparent;
+	margin-top: 6px;
+	font-size: 1.0em;
+	color: #1b2954;
+	text-align: center;
+}
+
+#divMisto p.tabMisto {
+	clear: both;
+	background: none repeat scroll 0 0 transparent;
+	width: auto;
+	font-size: 1.0em;
+	text-align: center;
+}
+
+#divDokumenty p.tabDetail {
+	float: left;
+	width: 16%;
+	height: 10px;
+	background: none repeat scroll 0 0 transparent;
+	margin-top: 6px;
+	font-size: 1.0em;
+	color: #1b2954;
+	text-align: center;
+}
+
+#tabDokumenty {
+	clear: both;
+	width: auto;
+	margin: auto;
+	text-align: center;
+}
+
+#tabDokumenty a {
+	/*clear: both;*/
+	background: grey;
+}
+
+/* ------------------------------------------------------------------- */
+/* ROZBALOVACI CAST TABULKY AKCE - SHOP = REGISTRACE button) */
+/* ------------------------------------------------------------------- */
+
+/*.levaCaraShop {
+	float: left;
+	width: 42%;
+	background: none repeat scroll 0 0 black;
+	height: 1px;
+	margin: 19px 0px 5px 0px;
+}*/
+	
+	/* CHARAKTERISTIKA */
+#divCharShop {
+	width: auto;
+	padding: 0px /**5px**/;
+}	
+	
+#divCharShop p.tabDetailShop {
+	float: left;
+	width: 791px;
+	height: 19px;
+	background: none repeat scroll 0 0 grey; 
+	/**background:url("../img/mainlideco.png") no-repeat scroll 0 0 transparent;*/
+	/**margin-top: 6px;**/
+	font-size: 0.85em;
+	color: white;
+	/**color: #1b2954;**/
+	text-align: left;
+	font-weight: bold;
+	padding-left: 10px;
+	padding-top: 4px;
+	border: 1px solid lightgrey;
+}
+
+#divCharShop p.tabCharakteristikaShop {
+	clear: both;
+	background: none repeat scroll 0 0 transparent;
+	width: auto;
+	font-size: 0.8em;
+	text-align: justify;
+	padding: 4px;
+	padding-left: 8px;
+	
+}
+
+	/* GARANT */
+#divGarantShop {
+	width: auto;
+	padding: 0px;
+}
+	
+#divGarantShop p.tabDetailShop {
+	float: left;
+	width: 791px;
+	height: 19px;
+	background: none repeat scroll 0 0 grey; 
+	/**background:url("../img/mainlideco.png") no-repeat scroll 0 0 transparent;*/
+	/**margin-top: 6px;**/
+	font-size: 0.85em;
+	color: white;
+	/**color: #1b2954;**/
+	text-align: left;
+	font-weight: bold;
+	padding-left: 10px;
+	padding-top: 4px;
+	border: 1px solid lightgrey;
+}
+
+#divGarantShop p.tabGarantShop {
+	clear: both;
+	background: none repeat scroll 0 0 transparent;
+	width: auto;
+	font-size: 0.8em;
+	text-align: justify;
+	padding: 4px;
+	padding-left: 8px;
+}
+
+	/* DOPORUCENO */
+#divDoporucenoShop {
+	width: auto;
+	padding: 0px;
+}	
+	
+#divDoporucenoShop p.tabDetailShop {
+	float: left;
+	width: 791px;
+	height: 19px;
+	background: none repeat scroll 0 0 grey; 
+	/**background:url("../img/mainlideco.png") no-repeat scroll 0 0 transparent;*/
+	/**margin-top: 6px;**/
+	font-size: 0.85em;
+	color: white;
+	/**color: #1b2954;**/
+	text-align: left;
+	font-weight: bold;
+	padding-left: 10px;
+	padding-top: 4px;
+	border: 1px solid lightgrey;
+}
+
+#divDoporucenoShop p.tabDoporucenoShop {
+	clear: both;
+	background: none repeat scroll 0 0 transparent;
+	width: auto;
+	font-size: 0.8em;
+	text-align: justify;
+	padding: 4px;
+	padding-left: 8px;
+}
+
+	/* MISTO */
+#divMistoShop {
+	width: auto;
+	padding: 0px;
+}	
+	
+#divMistoShop p.tabDetailShop {
+	float: left;
+	width: 791px;
+	height: 19px;
+	background: none repeat scroll 0 0 grey; 
+	/**background:url("../img/mainlideco.png") no-repeat scroll 0 0 transparent;*/
+	/**margin-top: 6px;**/
+	font-size: 0.85em;
+	color: white;
+	/**color: #1b2954;**/
+	text-align: left;
+	font-weight: bold;
+	padding-left: 10px;
+	padding-top: 4px;
+	border: 1px solid lightgrey;
+}
+
+#divMistoShop p.tabMistoShop {
+	clear: both;
+	background: none repeat scroll 0 0 transparent;
+	width: auto;
+	font-size: 0.8em;
+	text-align: justify;
+	padding: 4px;
+	padding-left: 8px;
+}
+
+	/* DOKUMENTY */
+#divDokumentyShop {
+	width: auto;
+	padding: 0px;
+}		
+
+#divDokumentyShop p.tabDetailShop {
+	float: left;
+	width: 791px;
+	height: 19px;
+	background: none repeat scroll 0 0 grey; 
+	/**background:url("../img/mainlideco.png") no-repeat scroll 0 0 transparent;*/
+	/**margin-top: 6px;**/
+	font-size: 0.85em;
+	color: white;
+	/**color: #1b2954;**/
+	text-align: left;
+	font-weight: bold;
+	padding-left: 10px;
+	padding-top: 4px;
+	border: 1px solid lightgrey;
+}
+
+#divDokumentyShop p.tabMistoShop {
+	clear: both;
+	background: none repeat scroll 0 0 transparent;
+	width: auto;
+	font-size: 0.8em;
+	text-align: justify;
+	padding: 4px;
+	padding-left: 8px;
+}
+
+#divDokumentyShop a {
+	color: black;
+	display: block;
+	margin: auto;
+	text-align: center;
+	font-size: 0.7em;
+}
+
+#divDokumentyShop ul {
+	float: left;
+	margin: 5px;
+}
+
+#divDokumentyShop ul li {
+	margin-right: 20px;
+	padding: 3px 0;
+}
+
+/**	
+#divDokumentyShop p.tabDetailShop {
+	float: left;
+	width: 16%;
+	height: 10px;
+	background: none repeat scroll 0 0 transparent;
+	margin-top: 6px;
+	font-size: 1.0em;
+	color: #1b2954;
+	text-align: center;
+}
+
+#tabDokumentyShop {
+	clear: both;
+	width: auto;
+	margin: auto;
+	text-align: center;
+}
+
+#tabDokumentyShop a {
+	clear: both;
+	background: grey;
+}**/
+
+#wrapperPrihlasky #NazevAkce #hledatFormAkce input {
+	/*clear: both;*/
+	/*float: left;*/
+	font-size: 0.9em;
+	margin: 5px 0px 5px 5px;
+	width: 248px;
+	/*background-image: -moz-linear-gradient(right center , #F0E68C 0%, #FFA600 100%);*/
+}
+
+#wrapperPrihlasky p.wrapperP, #wrapperPrihlasky select {
+	/*clear: both;*/
+	/*float: left;*/
+	font-size: 0.9em;
+	margin: 5px 0px 5px 5px;
+	width: 260px;
+	/*background-image: -moz-linear-gradient(right center , #F0E68C 0%, #FFA600 100%);*/
+}
+
+#wrapperPrihlasky p.wrapperP {
+	/**background-image: -moz-linear-gradient(right center , #F0E68C 0%, #FFA600 100%);**/
+	/**background: url("../img/navFilterBg.png") repeat scroll 0 0 transparent;**/
+	/*background: none repeat scroll 0 0 #FAC600;*/
+	/**padding: 2px;**/
+	padding: 2px 1px 0px 20px;
+	font-weight: bold;
+	color: #291a0b;
+}
+
+/* --------------------------------------------------------------------------------------------------- */
+/* NAVIGACE v AKCE SHOPU, 1 2 3 Predchozi, Dalsi, 10 20 50
+/* --------------------------------------------------------------------------------------------------- */
+
+/* nefunguje, zjistit cileni classy a A: */
+a.navClass:link, a.navClass:visited/*, a.navClass:hover/*, a.navClass:active*/ {
+	color: #4C4C4C;
+	/**color: white;**/
+}
+
+a.navClass:hover {
+	/**color: white;**/
+	color: MidnightBlue;
+	background: lightgrey;
+}
+
+a.navClass:active {
+	color: white;
+	background: black;
+}
+
+.volno {
+	background: green;
+	padding: 2px;
+	margin-top: 2px;
+	font-size: 0.8em;
+	font-weight: bold;
+	padding: 2px;
+	color: white;
+	border: 2px solid #419f1a;
+	cursor: default;
+}
+
+.obsazeno {
+	background: none repeat scroll 0 0 #FF7410;
+	padding: 2px;
+	margin-top: 2px;
+	font-size: 0.8em;
+	font-weight: bold;
+	padding: 2px;
+	color: white;
+	border: 2px solid orange;
+}
+
+/* --------------------------------------------------------------------------------------------------- */
+/* SEZNAM PRIHLASENYCH LIDI NA AKCI v SHOPU,
+/* --------------------------------------------------------------------------------------------------- */
+
+
+#wrapperPrihlasky h2 {
+	margin: 0px 1px;
+	color: black;
+	background: url("../img/osobaOrngStrip.png") no-repeat scroll 2px 0 transparent;
+	height: 19px;
+	padding: 5px 28px;
+	font-size: 0.8em;
+	font-weight: bold;
+}
+
+#wrapperPrihlasky #inputPrihlaseniOsoba {
+	float: right;
+	/***margin: 10px 3px;***/
+	cursor: pointer;
+	border: medium none;
+	height: 29px;
+	width: 60px;
+	/***padding: 0px 2px 2px 2px;***/
+	background: url("../img/button2.png") no-repeat scroll 0 0 transparent;
+	/***box-shadow: 0px 0px 5px black;***/
+	margin-top: 7px;
+}
+
+#wrapperPrihlasky #inputPrihlaseniOsoba:hover {
+	background: url("../img/button1.png") no-repeat scroll 0 0 transparent;
+	cursor: pointer;
+	border: medium none;
+	height: 29px;
+	width: 60px;
+}
+
+#osobyOrgTable {
+	width: 500px;
+}
+
+#osobyOrgTable .header {
+	background: none repeat scroll 0 0 #FAC600;
+	font-size: 0.8em;
+	height: 15px;
+}
+
+#osobyOrgTable .hlavniHeader {
+	text-align: center;
+	background: none repeat scroll 0 0 #FAC600;
+	width: 100%;
+	font-size: 0.9em;
+}
+
+#wrapperPrihlasky .kosikCisloAkce {
+	background: url("../img/cartTrBg.png") repeat scroll 0 0 transparent;
+	width: 492px;
+	margin-bottom: 1px;
+	margin-left: 2px;
+	font-weight: bold;
+	padding: 2px;
+	font-size: 0.9em;
+}
+
+#wrapperPrihlasky .kosikNazevAkce {
+	background: none repeat scroll 0 0 lightgrey;
+	width: 492px;
+	margin-bottom: 5px;
+	margin-left: 2px;
+	padding: 2px;
+	font-size: 0.9em;
+}
+
+#wrapperPrihlasky #kosikCenaAkce {
+	background: none repeat scroll 0 0 #828282;
+	width: 478px;
+	margin-bottom: 15px;
+	font-weight: bold;
+	font-size: 0.8em;
+	padding: 3px 9px 0px;
+	color: white;
+	height: 18px;
+	margin-left: 2px;
+}
+
+#wrapperPrihlasky #kosikCenaAkce > span:first-child {
+	float: left;
+}
+
+#wrapperPrihlasky #kosikCenaAkce > span:last-child {
+	float: right;
+	margin-right: 10px;
+}
+
+/* -------------------------------------------------------------------------------------- */
+/* NAKUPNI KOSIK - NAKOUPENE ITEMY */
+/* -------------------------------------------------------------------------------------- */
+
+#singleColumn {
+	/***background: none repeat scroll 0 0 rgba(255, 255, 255, 0.3);***/
+	width: 817px;
+	margin: 6px auto;
+	clear: both;
+}
+
+#singleColumn > p {
+	margin-left: 8px;
+	margin-top: 10px;
+}
+
+#singleColumn form {
+	width: 803px;
+	margin: 6px auto auto;
+}
+
+#singleColumn form > p {
+	margin-top: 10px;
+}
+
+#singleColumn #checkoutTable {
+	background: none repeat scroll 0 0 lightgrey;
+	border-top: 1px solid black;
+}
+
+#singleColumn #checkoutTable td {
+	padding: 2px;
+}
+
+#singleColumn #checkoutTable tr {
+	padding: 2px;
+}
+
+#actionBar {
+	/**margin: 2px 0px 0px 83px;**/
+	height: 38px;
+	background: url("../img/cartMBar.png") no-repeat scroll 2px 0 transparent;
+	width: 500px;
+}
+
+#actionBar a:link, #actionBar a:visited, #actionBar a:hover, #actionBar a:active {
+	background: url("../img/cartVertSep.png") no-repeat scroll 0 0 transparent;
+	float: right;
+	margin: 7px 2px;
+	padding: 2px 8px;
+	/***background: none repeat scroll 0 0 #FAC600;***/
+	text-decoration: none;
+	color: black;
+	font-size: 0.9em;
+}
+
+#actionBar a:first-child {
+	color: Maroon;
+}
+
+#cartLeft #subtotal, #singleColumn #subtotal {
+	background: url("../img/cartBBar.png") no-repeat scroll 1px 0 transparent;
+	color: white;
+	height: 26px;
+	/***padding-left: 10px;***/
+	padding-top: 8px;
+	width: 500px;
+}
+
+#subtotal p.cenaObjs {
+	float: left;
+	margin-left: 32px;
+}
+
+#subtotal p.cenaSum {
+	float: right;
+	margin-right: 20px;
+}
+
+#singleColumn #subtotal p.cenaObjs {
+	float: left;
+	margin: 0;
+	margin-left: 32px;
+}
+
+#singleColumn #subtotal p.cenaSum {
+	/***float: right;***/
+	margin: 0;
+	margin-right: 20px;
+}
+
+#singleColumn input {
+	margin-top: 6px;
+	float: right;
+	margin-right: 304px;
+}
+
+#singleColumn h4 {
+	background: none repeat scroll 0 0 rgba(35, 25, 100, 0.6);
+	color: white;
+	clear: both;
+	float: right;
+	margin-right: 88px;
+	padding: 4px;
+}
+
+#singleColumn form > ul {
+	background: none repeat scroll 0 0 white;
+	padding: 0;
+	margin: 5px 0;
+	width: 500px;
+}
+
+#singleColumn form > ul > li {
+	background: none repeat scroll 0 0 white;
+	padding: 2px;
+	margin: 0 auto;
+}
+
+#singleColumn form > ul > li > p {
+	background: none repeat scroll 0 0 #FAC600;
+	margin: 0 auto;
+	font-size: 0.8em;
+	padding: 2px;
+}
+
+#singleColumn form > ul > li > p:last-child {
+	background: none repeat scroll 0 0 grey;
+	margin: 1px 0;
+	margin: 1px 0;
+	padding: 2px 10px;
+	color: white;
+}
+
+#panelOrganizaceOsoba { 
+	/*background: url("../img/contOrngStrip.png") no-repeat scroll -1px 0 transparent;*/
+}
+
+#panelOrganizaceOsoba h2 {
+	background: url("../img/contOrngStripArr.png") no-repeat scroll -1px 0 transparent;
+	font-size: 0.8em;
+	height: 23px;
+	padding-left: 28px;
+	padding-top: 4px;
+}
+
+#cartTable {
+	clear: both;
+	color: black;
+	background: none repeat scroll 0 0 #FEECBF;
+	/*background-color: rgba(55, 45, 105, 0.7);*/
+	font-size: 1em;
+	margin: 8px auto;
+}
+
+#cartTable th {
+	clear: both;
+	background-color: rgba(255, 132, 0, 0.5);
+}
+
+#cartTable td {
+	color: black;
+	background-color: #E2D7B6;
+	font-size: 1em;
+	padding: 2px 6px;
+	font-weight: bold;
+}
+
+.cartTlacitkoOdebrat {
+	background: url("../img/cartOdebrat.png") no-repeat scroll 0 0 transparent;
+	border-style: none;
+	display: block;
+	cursor: pointer;
+	height: 25px;
+	width: 71px;
+	margin: auto;
+	font-family: Verdana, Helvetica, sans-serif;
+	font-size: 1em;
+	
+}
+
+/* ---------------------------------------------------------------------------- */
+/* HOME - 4 TABY s bodovym popisem VZEDL. UCITELU, JAZYK.SKOLA, DALS.VZ, EKCVJS */
+/* -----------------------------------------------------------------------------*/
+
+#uciteleHome {
+    width: auto;
+   /* margin: auto 12px;*/
+     margin: 10px 10px 0 10px;
+    padding: 6px;
+    /*clear: both;*/
+    float: left;
+    display: block;
+    width: 584px;
+    /**background: none repeat scroll 0 0 #FCEC9D;**/
+    /**border: 3px solid #F1E296;**/
+	/*box-shadow: 1px 1px 11px 1px grey;*/
+	/*filter: progid:DXImageTransform.Microsoft.Glow(Color=#383838, Strength=3, Enabled);*/
+}
+
+#uciteleHome a:link, #uciteleHome a:visited, #uciteleHome a:hover, #uciteleHome a:link  {
+    color: #5B5B5B;
+}
+
+#uciteleHome ul {
+    margin: auto 12px;
+}
+
+
+#uciteleHome ul li {
+    list-style: disc;
+    background: none; /* !!!! - workaround pro likwidace stylu z #wrapper ul li - !!!! */
+	margin-bottom: 5px;
+}
+
+#jsHome {
+    width: auto;
+   /* margin: auto 12px;*/
+    margin: 10px 10px 0 10px;
+    padding: 6px;
+    clear: both;
+    float: left;
+    display: block;
+    width: 584px;
+    background: white /*#FEECBF*/;
+    /**border: 3px solid #F1E296;**/
+    /*box-shadow: 1px 1px 11px 1px grey;*/
+    /*filter: progid:DXImageTransform.Microsoft.Glow(Color=#383838, Strength=3, Enabled);*/
+}
+
+#jsHome a:link, #jsHome a:visited, #jsHome a:hover, #jsHome a:link  {
+    color: #5B5B5B;
+}
+
+#jsHome ul {
+    margin: auto 12px;
+}
+
+
+#jsHome ul li {
+    list-style: disc;
+    background: none; /* !!!! - workaround pro likwidace stylu z #wrapper ul li - !!!! */
+}
+
+#dvppHome {
+    width: auto;
+    /*margin: auto 12px;*/
+    margin: 10px 10px 0 10px;
+    padding: 6px;
+    clear: both;
+    float: left;
+    display: block;
+    width: 584px;
+    background: white /*#FEECBF*/;
+    /**border: 2px dashed #FEECBF;**/
+	/*box-shadow: 1px 1px 11px 1px grey;*/
+	/*filter: progid:DXImageTransform.Microsoft.Glow(Color=#383838, Strength=3, Enabled);*/
+}
+
+#dvppHome a:link, #dvppHome a:visited, #dvppHome a:hover, #dvppHome a:link  {
+    color: #5B5B5B;
+}
+
+#dvppHome ul {
+    margin: auto 12px;
+}
+
+
+#dvppHome ul li {
+    list-style: disc;
+    background: none; /* !!!! - workaround pro likwidace stylu z #wrapper ul li - !!!! */
+}
+
+#ekcvjsHome {
+    width: auto;
+    margin: 20px 10px 0 10px;
+    padding: 6px;
+    clear: both;
+    float: left;
+    display: block;
+    width: 584px;
+    background: white; 
+}
+
+#ekcvjsHome a:link, #ekcvjsHome a:visited, #ekcvjsHome a:hover, #ekcvjsHome a:link  {
+    color: #5B5B5B;
+}
+
+#ekcvjsHome ul {
+    margin: auto 12px;
+}
+
+#ekcvjsHome ul li {
+    list-style: disc;
+    background: none; /* !!!! - workaround pro likwidace stylu z #wrapper ul li - !!!! */
+}
+
+#spolupraceHome {
+	width: auto;
+    margin: 20px 10px 0 10px;
+    padding: 6px;
+    clear: both;
+    float: left;
+    display: block;
+    width: 584px;
+    background: white;
+}
+
+#spolupraceHome ul li {
+	float: left;
+}
+
+#spolupraceHome p.spolupraceNadpis {
+	font-size: 0.8em;
+}
+
+/*----------------------------------------------------------------------------------------------------------------------*/
+
+#uciteleHome .homePanelNazev1 {
+	float: left;
+	background: url("../img/tEdu.png") no-repeat scroll 0 0 transparent;
+	/**background: none repeat scroll 0 0 #FCF49D;**/
+	width: 172px;
+	height: 101px; /* background style box */
+	margin-top: 6px;
+	padding-left: 4px;
+	margin-top: 6px;
+}
+
+#jsHome .homePanelNazev2 {
+	float: left;
+	background: url("../img/nEdu.png") no-repeat scroll 0 0 transparent;
+	/**background: none repeat scroll 0 0 #FCF49D;**/
+	width: 172px;
+	height: 101px; /* background style box */
+	margin-top: 6px;
+	padding-left: 4px;
+	margin-top: 6px;
+}
+
+#dvppHome .homePanelNazev3 {
+	float: left;
+	background: url("../img/forLang.png") no-repeat scroll 0 0 transparent;
+	/**background: none repeat scroll 0 0 #FCF49D;**/
+	width: 172px;
+	height: 101px; /* background style box */
+	margin-top: 6px;
+	padding-left: 4px;
+	margin-top: 6px;
+}
+
+#ekcvjsHome .homePanelNazev4 {
+	float: left;
+	background: url("../img/emKcvjs.png") no-repeat scroll 0 0 transparent;
+	/**background: none repeat scroll 0 0 #FCF49D;**/
+	width: 172px;
+	height: 101px; /* background style box */
+	margin-top: 6px;
+	padding-left: 4px;
+	margin-top: 6px;
+}
+
+/* -------------------------------------------------------------------------- */
+/* DOKUMENTY TABULKA
+/* -------------------------------------------------------------------------- */
+
+#dokumentyTable tbody tr td p {
+	background: lightgrey;
+	font-size: 0.8em;
+	padding: 2px;
+}
+
+#dokumentyTable tbody tr td img {
+	vertical-align: text-top;
+}
+
+/* -------------------------------------------------------------------------- */
+
+
+
+/* -------------------------------------------------------------------------- */
+
+#wrapperContainer ul > li > p {
+	width: 500px;
+	clear: both;
+}
+
+
+.homePanelDetail {
+	float: left;
+	margin: 8px 20px;
+	width: 59%;
+	font-size: 0.8em;
+}
+
+.homePanelDetail > h2 {
+	font-family: verdana;
+	font-size: 1.2em;
+}
+
+.homePanelDetail > p {
+	font-family: verdana;
+	margin-top: 5px;
+	line-height: 1.5em;
+}
+
+.homePanelDetail > a {
+	float: right;
+	font-family: verdana;
+	margin-top: 12px;
+	font-size: 0.85em;
+	text-decoration: underline;
+	color: black;
+}
+
+.ekcvjsPanelNazev {
+	float: left;
+	width: 30%;
+	margin-top: 6px;
+}
+
+.ekcvjsPanelDetail {
+	float: left;
+	margin: auto 20px;
+	width: 63%;
+}
+
+.detailAkceShop {
+	background-color: #E6E6E6;
+}
+
+a.categoryLabelText:link, a.categoryLabelText:visited, a.categoryLabelText:hover, a.categoryLabelText:link {
+	color: grey;
+}
+
+.panelText {
+	float: left;
+	color: black;
+	margin: 5px 0px 0px 4px;
+	font-family: verdana;
+	font-size: 0.8em;
+	font-weight: normal;
+}
+
+.cenaTabulka {
+	padding: 2px;
+	margin: 2px;
+}
+
+/*-----------------------------------------------------------------------------*/
+/* FOOTER */
+/*-----------------------------------------------------------------------------*/
+
+#footer {
+clear: both;
+height: 91px;
+padding: 14px 12px 12px 12px;
+/***border: 1px dotted black;***/
+position: relative;
+z-index: 100;
+background: url("../img/footerImg.png") no-repeat scroll 0 0 transparent;
+margin-bottom: 14px;
+}
+
+#footer #footerLeft {
+float: left;
+height: 83px;
+width: 100px;			
+}
+
+#footer #footerCenter {
+float: left;
+height: 83px;
+width: 100px;
+}
+
+#footer #footerRight {
+float: right;
+/***background: url("../img/footerLogo.png") no-repeat scroll 0 0 transparent;***/
+width: 325px;
+height: 83px;
+}
+
+/** NEW MAVERICK **/
+
+#panelLeftColumn input.inp_text {
+	border: medium none;
+	width: 124px;
+	margin: 20px 12px 0 18px;
+}
+
+.panelButton img {
+	float: left;
+	/**margin: 3px 5px 2px 10px;**/
+	margin: 3px 1px 2px 8px;
+	width: 21px;
+}
+
+
+/*-----------------------------------------------------------------------------*/
+/* MAIN PAGE TILES, HOVER STATE, LINE HEIGHT... */
+/*-----------------------------------------------------------------------------*/
+
+.homePanelNazev1, .homePanelNazev2, .homePanelNazev3, .homePanelNazev4 {
+	float: left;
+	margin-left: 26px;
+	margin-top: 8px;
+	width: 188px;
+	height: 127px;
+	cursor: pointer;
+}
+
+.homePanelNazev1 {
+	background: url("../img/tile01.png") no-repeat scroll 0 0 transparent;
+}
+
+.homePanelNazev2 {
+	background: url("../img/tile02.png") no-repeat scroll 0 0 transparent;
+}
+
+.homePanelNazev3 {
+	background: url("../img/tile03.png") no-repeat scroll 0 0 transparent;
+}
+
+.homePanelNazev4 {
+	background: url("../img/tile04.png") no-repeat scroll 0 0 transparent;
+} 
+
+.homePanelNazev1 > a, .homePanelNazev2 > a, .homePanelNazev3 > a, .homePanelNazev4 > a {
+	width: 188px;
+	height: 128px;
+	cursor: pointer;
+	display: block;
+}
+
+#wrapperCenter ul li.homePanelLi2 {
+	clear: both;
+}
+
+#wrapperCenter ul li.homePanelLi3 {
+	clear: both;
+}
+
+#wrapperCenter ul li.homePanelLi4 {
+	clear: both;
+}
+
+.homePanelNazev1:hover {
+	background: url("../img/tile01h.png") no-repeat scroll 0 0 transparent;
+}
+
+.homePanelNazev2:hover {
+	background: url("../img/tile02h.png") no-repeat scroll 0 0 transparent;
+}
+
+.homePanelNazev3:hover {
+	background: url("../img/tile03h.png") no-repeat scroll 0 0 transparent;
+}
+
+.homePanelNazev4:hover {
+	background: url("../img/tile04h.png") no-repeat scroll 0 0 transparent;
+}
+
+.homePanelDetail span {
+	float: right;
+	margin-top: 10px;
+}
+
+#stripMainPage {
+	float: left;
+	margin-left: 8px;
+	margin-top: 18px;
+}
+
+/*-----------------------------------------------------------------------------*/
+
+/*-----------------------------------------------------------------------------*/
+/* GALLERY, GALERIE - MAIN PAGE */
+/*-----------------------------------------------------------------------------*/
+
+.galerieSeznamList {
+	clear: both;
+	height: 144px;
+}
+
+.galerieSeznamList:last-child {
+	margin-bottom: 10px;
+}
+
+.galerieLogo {
+		width: 164px;
+		height: 134px;
+		/*margin-left: 10px;*/
+		cursor: pointer;
+		float: left;
+}
+	
+.galerieLogo .galerieSub {
+		background: url("../img/bgcut.png") repeat scroll 0 0 transparent;
+		width: 164px;
+		height: 134px;
+		position: relative;
+		z-index: 100;
+		top: 10px;
+		left: 10px;
+}
+	
+.galerieLogo > img {
+		position: absolute;
+		z-index: 5;
+		margin: 10px;
+		float: left;
+		width: 164px;
+		height: 134px;
+}
+	
+.galerieSub img {
+		/*background: url(images/bgcut.png) no-repeat;*/
+		width: 164px;
+		height: 134px;
+		position: relative;
+		z-index: 100;
+		top: 10px;
+		left: 10px;
+}
+
+.galerieInfo {
+	float: right;
+	width: 446px;
+	margin-top: 24px;
+	height: 94px;
+}
+
+.galerieInfo a {
+	float: left;
+	color: black;
+}
+
+.galerieInfo > span {
+	float: right;
+	font-size: 0.75em;
+	margin-right: 20px;
+	margin-top: 2px;
+	font-weight: bold;
+}
+
+.galerieInfo img {
+	clear: both;
+	width: 430px;
+}
+
+.galeriePopis {
+	margin-top: 3px;
+	height: 70px;
+	font-size: 0.75em;
+	width: 433px;
+}
+
+#galerieVlozil {
+	float: right;
+	margin-right: 10px;
+}
+
+.galerieAutor {
+	font-size: 0.64em;
+	font-weight: bold;
+}
+
+.galerieAutorJmeno {
+	font-size: 0.64em;
+}
+
+/*-----------------------------------------------------------------------------*/
+
+/*-----------------------------------------------------------------------------*/
+/* GALLERY, GALERIE - PREVIEW STRIP, FULL IMAGE */
+/*-----------------------------------------------------------------------------*/
+
+#fotoSeznamTop {
+	margin: auto;
+	width: 800px;
+}
+
+#fotoSeznamTop ul {
+	margin: auto;
+	height: 100px;
+	background: url("../img/gallPrevBg.png") no-repeat scroll 0 0 transparent;
+	margin-top: 10px;
+}
+
+#fotoSeznamTop li {
+	float: left;
+	margin: 6px 5px;
+	/*width: 120px;
+	height: 85px;*/
+}
+
+#fotoSeznamTop li:first-child, #fotoSeznamTop li:last-child {
+	margin: 2px 0 0 0;
+}
+
+#fotoSeznamTop li img:first-child, #fotoSeznamTop li img:last-child {
+	/*float: left;*/
+	width: 55px;
+	height: 98px;
+}
+
+#fotoSeznamTop li.fotoSeznamList > a > img {
+	/*float: left;*/
+	width: 126px;
+	height: 88px;
+}
+
+#fotoSeznamBottom {
+	margin: auto;
+	text-align: center;
+}
+
+
+/*-----------------------------------------------------------------------------*/
+/*-----------------------------------------------------------------------------*/
+/* Registrace made by Favak  */
+/*-----------------------------------------------------------------------------*/
+
+#panelRegistrace h2 {
+    background: url("../img/mainlideco.png") no-repeat scroll 0 0 transparent;
+    display: block;
+    font-size: 0.85em;
+    height: 24px;
+    margin-bottom: 0;
+    padding: 4px 8px;
+    width: 622px;
+}
+

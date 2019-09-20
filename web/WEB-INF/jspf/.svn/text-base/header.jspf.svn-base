@@ -1,0 +1,173 @@
+<%--
+    Document   : header
+    Created on : May 20, 2010, 12:20:12 AM
+    Author     : tgiunipero
+
+<%@page contentType="text/html" pageEncoding="UTF-8"%>
+<%@ page language="java" contentType="text/html; charset=utf-8" pageEncoding="utf-8"%> 
+--%>
+
+<%@taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core" %>
+<%@taglib prefix="fn" uri="http://java.sun.com/jsp/jstl/functions" %>
+<%@taglib prefix="fmt" uri="http://java.sun.com/jsp/jstl/fmt" %>
+<%@taglib prefix="sql" uri="http://java.sun.com/jsp/jstl/sql"%>
+
+<%-- Set language based on user's choice --%>
+<c:if test="${!empty language}">
+    <fmt:setLocale value="${language}" scope="session" />
+</c:if>
+
+<%@ page language="java" contentType="text/html; charset=utf-8" pageEncoding="utf-8"%> 
+
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN"
+    "http://www.w3.org/TR/html4/loose.dtd">
+
+<html>
+    <head>
+        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+        <link rel="stylesheet" type="text/css" href="${pageContext.request.contextPath}/css/affablebean2.css">
+        <link rel="shortcut icon" href="img/favicon.ico">
+
+        <title>KCVJŠ</title>
+    </head>
+    <body>
+        <div id="btop">
+            <span></span>
+        </div>
+        <div id="bbottom">
+            <span></span>
+        </div>
+        <div id="main">
+            <%--<div id="subMain">--%>
+            <div id="header">
+                <div id="widgetBar">
+
+                    <%-- language selection widget --%>
+                    <div class="headerWidget" id ="headerLanguage">
+                        <c:choose>
+                            <%-- When user hasn't explicitly set language,
+                                 render toggle according to browser's preferred locale --%>
+                            <c:when test="${empty sessionScope['javax.servlet.jsp.jstl.fmt.locale.session']}">
+                                <c:choose>
+                                    <c:when test="${pageContext.request.locale.language eq 'cs'}">
+                                        <div class="bubble">CZ</div>
+                                        <div class="slash">|</div>
+                                    </c:when>
+                                    <c:otherwise>
+                                        <c:url var="url" value="chooseLanguage">
+                                            <c:param name="language" value="cs"/>
+                                        </c:url>
+                                        <div class="bubble"><a href="${url}">CZ</a></div>
+                                        <div class="slash">|</div>
+                                    </c:otherwise>
+                                </c:choose> 
+
+                                <c:choose>
+                                    <c:when test="${pageContext.request.locale.language eq 'en'}">
+                                        <div class="bubble">EN</div> 
+                                        <div class="slash">|</div>
+                                    </c:when>
+                                    <c:otherwise>
+                                        <c:url var="url" value="chooseLanguage">
+                                            <c:param name="language" value="en"/>
+                                        </c:url>
+                                        <div class="bubble"><a href="${url}">EN </a></div>
+                                        <div class="slash">|</div>
+                                    </c:otherwise>
+                                </c:choose> 
+
+                                <c:choose>
+                                    <c:when test="${pageContext.request.locale.language eq 'de'}">
+                                        <div class="bubble">DE</div>
+                                    </c:when>
+                                    <c:otherwise>
+                                        <c:url var="url" value="chooseLanguage">
+                                            <c:param name="language" value="de"/>
+                                        </c:url>
+                                        <div class="bubble"><a href="${url}">DE</a></div>
+                                    </c:otherwise>
+                                </c:choose>
+                            </c:when>
+
+                            <%-- Otherwise, render widget according to the set locale --%>
+                            <c:otherwise>
+                                <c:choose>
+                                    <c:when test="${sessionScope['javax.servlet.jsp.jstl.fmt.locale.session'] eq 'cs'}">
+                                        <div class="bubble">CZ</div>
+                                        <div class="slash">|</div>
+                                    </c:when>
+                                    <c:otherwise>
+                                        <c:url var="url" value="chooseLanguage">
+                                            <c:param name="language" value="cs"/>
+                                        </c:url>
+                                        <div class="bubble"><a href="${url}">CZ</a></div>
+                                        <div class="slash">|</div>
+                                    </c:otherwise>
+                                </c:choose> 
+
+                                <c:choose>
+                                    <c:when test="${sessionScope['javax.servlet.jsp.jstl.fmt.locale.session'] eq 'en'}">
+                                        <div class="bubble">EN</div>
+                                        <div class="slash">|</div>
+                                    </c:when>
+                                    <c:otherwise>
+                                        <c:url var="url" value="chooseLanguage">
+                                            <c:param name="language" value="en"/>
+                                        </c:url>
+                                        <div class="bubble"><a href="${url}">EN</a></div>
+                                        <div class="slash">|</div>
+                                    </c:otherwise>
+                                </c:choose> 
+
+                                <c:choose>
+                                    <c:when test="${sessionScope['javax.servlet.jsp.jstl.fmt.locale.session'] eq 'de'}">
+                                        <div class="bubble">DE</div>
+                                    </c:when>
+                                    <c:otherwise>
+                                        <c:url var="url" value="chooseLanguage">
+                                            <c:param name="language" value="de"/>
+                                        </c:url>
+                                        <div class="bubble"><a href="${url}">DE</a></div>
+                                    </c:otherwise>
+                                </c:choose>
+                            </c:otherwise>
+                        </c:choose>
+                    </div>
+
+                    <%-- login widget --%>
+                    <div class="headerWidget" id="headerLogin">
+                        <%
+                            if (request.getRemoteUser() == null) {%>
+                        <a href="admin/login.jsp">${webProp.nazev("header_prihlasit")}</a>
+                        <div class="slash">|</div>
+                        <a href="registrace.jsp"> ${webProp.nazev("header_registrace")}</a>
+                        <div class="slash">|</div>
+                        <%--               out.print("<a href=\"admin/login.jsp\">");
+                               ${webProp.nazev("header_prihlasit")}                         
+                               <%out.println("</a>");%>
+                               <div class="slash">|</div>
+                                   <%out.println("<a href=\"registrace.jsp\">");%>
+                               ${webProp.nazev("header_registrace")}
+                               <%out.println("</a>");%>
+                               <div class="slash">|</div>--%>
+                        <%} else {%>
+                        <span> ${webProp.nazev("header_prihlasen")}<%out.println(" : " + request.getRemoteUser());%></span>                        
+                        <div class="slash">|</div>
+                        <a href="admin/logout"> ${webProp.nazev("header_odhlasit")}</a>
+                        <div class="slash">|</div>
+
+                        <%--    out.println("<p>");%>
+                        ${webProp.nazev("header_prihlasen")}
+                        <%out.println(" : " + request.getRemoteUser());%>
+                        <div class="slash">|</div>
+                          <%  out.println("  <a href=\"admin/logout\">");%> 
+                        ${webProp.nazev("header_odhlasit")}
+                        <%out.println("</a><div class=\"slash\">|</div></p>");--%>
+                        <%  }%>
+
+                    </div>
+                </div>
+                <a href="index.jsp">
+                    <img src="img/logokcv.png" id="logo" alt="Kcvjs logo">
+                </a>
+            </div>

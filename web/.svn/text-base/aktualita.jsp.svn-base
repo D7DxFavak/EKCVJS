@@ -1,0 +1,32 @@
+<%-- 
+    Document   : aktualita
+    Created on : 5.12.2011, 11:06:52
+    Author     : 7Data Gotzy
+--%>
+
+<%@taglib prefix="fmt" uri="http://java.sun.com/jsp/jstl/fmt"%>
+
+<%@page contentType="text/html" pageEncoding="UTF-8"%>
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+        <title>${vyberAktualita.webAktualityNazev}</title>
+    </head>
+    <body>      
+        <div id ="aktualitaNazev">
+            <p class="aktualitySeznamDatum"> 
+                <fmt:formatDate value="${vyberAktualita.webAktualityDatumVlozeni}" pattern="d.M.yyyy"/>               
+            </p>    
+            <span class="aktualitySeznamText">${vyberAktualita.webAktualityNazev}</span>
+             
+        </div>
+        <div id="aktualitaText">
+            <p class="aktualitySeznamPopis">${vyberAktualita.webAktualityPopis}</p>
+        </div>   
+
+        <div id="aktualitaAutor">
+            <p class="aktualitySeznamAutor">${webProp.nazev("autor_textu")} : ${vyberAktualita.webAktualityVlozil.titulPred} ${vyberAktualita.webAktualityVlozil.jmeno} ${vyberAktualita.webAktualityVlozil.prijmeni} ${vyberAktualita.webAktualityVlozil.titulZa}</p>
+        </div>   
+    </body>
+</html>

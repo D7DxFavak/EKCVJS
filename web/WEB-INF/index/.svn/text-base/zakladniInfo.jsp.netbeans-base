@@ -1,0 +1,120 @@
+<%-- 
+    Document   : zakladniInfoDVPP
+    Created on : 27.10.2011, 13:00:10
+    Author     : 7Data Gotzy
+--%>
+
+<%@page contentType="text/html" pageEncoding="UTF-8"%>
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">        
+    </head>
+    <body>    
+        <div id="navigaceTop">
+            <ul class="navigaceList">
+                <li> 
+                    <a href="index?index.jsp">
+                        <span class="navigacePopis">${webProp.nazev("zakladni_info")}</span>                                
+                    </a></li>
+                <li>
+                    <div class="slash">></div>
+                </li>    
+                <li> 
+                    <a href="index.jsp">
+                        <span class="navigacePopis">${webProp.nazev("home")}</span>                                
+                    </a>
+                </li>               
+            </ul>
+        </div>
+
+        <div id="uciteleHome">
+            <div class="homePanelNazev1">
+                <a href="ucitele.jsp">                
+                    <span class="homeKategorie">Vzdělávání učitelů</span>                                
+                </a>
+            </div>
+            <div class="homePanelDetail">
+                <ul type="disk">
+                    <li> 
+                        <a href="ucitele.jsp">
+                            <span class="homePopis">nabídka vzdělávacích programů DVPP</span>                                
+                        </a></li>
+                    <li> 
+                        <a href="ucitele.jsp">
+                            <span class="homePopis">příhláška na vzdělávací programy</span>                                
+                        </a></li>
+                    <li> 
+                        <a href="ucitele.jsp">
+                            <span class="homePopis">výukové materiály</span>                                
+                        </a></li>
+                </ul>
+            </div>         
+        </div>
+        <div id="jsHome">
+            <div class="homePanelNazev2">
+                <a href="js.jsp">                
+                    <span class="homeKategorie">Jazyková škola</span>                                
+                </a>
+            </div>
+            <div class="homePanelDetail">
+                <ul type="disk">
+                    <li> 
+                        <a href="js.jsp">
+                            <span class="homePopis">nabídka jazykového vzdělávání</span>                                
+                        </a></li>
+                    <li> 
+                        <a href="js.jsp">
+                            <span class="homePopis">přihláška na jazykový kurz</span>                                
+                        </a></li>
+                    <li> 
+                        <a href="js.jsp">
+                            <span class="homePopis">jazykové zkoušky</span>                                
+                        </a></li>
+                </ul>
+            </div>         
+        </div>
+        <div id="dvppHome">
+            <div class="homePanelNazev3">
+                <a href="dvpp.jsp">                
+                    <span class="homeKategorie">Další vzdělávání</span>                                
+                </a>
+            </div>
+            <div class="homePanelDetail">
+                <ul type="disk">
+                    <li> 
+                        <a href="dvpp.jsp">
+                            <span class="homePopis">nabídka vzdělávacích programů DV</span>                                
+                        </a></li>
+                    <li> 
+                        <a href="dvpp.jsp">
+                            <span class="homePopis">přihláška na vzdělávací program DV</span>                                
+                        </a></li>
+                    <li> 
+                        <a href="dvpp.jsp">
+                            <span class="homePopis">vzdělávací programy na klíč</span>                                
+                        </a></li>
+                </ul>
+            </div>         
+        </div>
+        <div id="ekcvjsHome">
+            <div class="homePanelNazev4">
+                <a href="ekcvjs.jsp">                
+                    <span class="homeKategorie">Elektronické KCVJŠ</span>                                
+                </a>
+            </div>
+            <div class="homePanelDetail">
+                <ul type="disk">
+                    <li> 
+                        <a href="ekcvjs.jsp">
+                            <span class="homePopis">správa přihlášek na vzdělávací akce</span>                                
+                        </a></li>
+                    <li> 
+                        <a href="ekcvjs.jsp">
+                            <span class="homePopis">úložistě vystavených dokumentů</span>                                
+                        </a></li>                    
+                </ul>
+            </div>         
+        </div>
+    </body>
+</html>

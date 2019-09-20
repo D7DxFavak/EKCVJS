@@ -1,0 +1,227 @@
+<%@taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core"%>
+<%@taglib prefix="sql" uri="http://java.sun.com/jsp/jstl/sql"%>
+<%@taglib prefix="fmt" uri="http://java.sun.com/jsp/jstl/fmt"%>
+
+<c:set var='view' value='/category' scope='session' />
+
+<div id="indexTopColumn">
+    <div id="indexTopColumnL1">
+        <img src="img/mainM_left.png" alt="altL">
+    </div>
+    <div id="indexTopColumnC1">
+        <ul>
+            <li class="topListItemNektivni">
+                <a href="index.jsp">
+                    <span class="categoryLabelTextNektivni">${webProp.nazev("home")}</span>                   
+                </a>
+                <ul>
+                    <c:forEach var="odkazDetail" items ="${panelyHomeData}">                    
+                        <li onclick="location.href='index?${odkazDetail.webPanelyOdkaz}';"> 
+                            <a href="index?${odkazDetail.webPanelyOdkaz}">
+                                <span class="catDetailLabel"></span>
+                                <span class="catDetailLabelText">${webProp.nazev(odkazDetail.webPanelyNazev)}</span>                                
+                            </a>
+                        </li>                       
+                    </c:forEach>
+                </ul>
+            </li>
+            <li class="topListItemNektivni">
+                <a href="ucitele?ucitele.jsp">
+                    <span class="categoryLabelTextNektivni">${webProp.nazev("ucitele")}</span>                   
+                </a>
+                <ul>
+                    <c:forEach var="odkazDetail" items ="${panelyUciteleData}">
+                        <li onclick="location.href='ucitele?${odkazDetail.webPanelyOdkaz}';"> 
+                            <a href="ucitele?${odkazDetail.webPanelyOdkaz}">
+                                <span class="catDetailLabel"></span>
+                                <span class="catDetailLabelText">${webProp.nazev(odkazDetail.webPanelyNazev)}</span>                                
+                            </a>
+                        </li>                
+                    </c:forEach>
+                </ul>
+            </li>
+            <li class="topListItemAktivni">
+                <a href="js?js.jsp">
+                    <span class="categoryLabelTextAktivni">${webProp.nazev("js")}</span>                   
+                </a>
+                <ul>
+                    <c:forEach var="odkazDetail" items ="${panelyJsData}">
+                        <li onclick="location.href='js?${odkazDetail.webPanelyOdkaz}';"> 
+                            <a href="js?${odkazDetail.webPanelyOdkaz}">
+                                <span class="catDetailLabel"></span>
+                                <span class="catDetailLabelText">${webProp.nazev(odkazDetail.webPanelyNazev)}</span>                                
+                            </a>
+                        </li>
+                    </c:forEach>
+                </ul>
+            </li>
+            <li class="topListItemNektivni">
+                <a href="dvpp?dvpp.jsp">
+                    <span class="categoryLabelTextNektivni">${webProp.nazev("dvpp")}</span>                   
+                </a>
+                <ul>
+                    <c:forEach var="odkazDetail" items ="${panelyDvppData}">
+                        <li onclick="location.href='dvpp?${odkazDetail.webPanelyOdkaz}';"> 
+                            <a href="dvpp?${odkazDetail.webPanelyOdkaz}">
+                                <span class="catDetailLabel"></span>
+                                <span class="catDetailLabelText">${webProp.nazev(odkazDetail.webPanelyNazev)}</span>                                
+                            </a>
+                        </li>
+                    </c:forEach>
+                </ul>
+            </li>       
+            <li class="topListItemNektivni">
+                <a href="ekcvjs?ekcvjs.jsp">
+                    <span class="categoryLabelTextNektivni">${webProp.nazev("ekcvjs")}</span>                   
+                </a>
+                <ul>
+                    <c:forEach var="odkazDetail" items ="${panelyEkcvjsData}">
+                        <li onclick="location.href='ekcvjs?${odkazDetail.webPanelyOdkaz}';"> 
+                            <a href="ekcvjs?${odkazDetail.webPanelyOdkaz}">
+                                <span class="catDetailLabel"></span>
+                                <span class="catDetailLabelText">${webProp.nazev(odkazDetail.webPanelyNazev)}</span>                                
+                            </a>
+                        </li>
+                    </c:forEach>
+                </ul>
+            </li>
+        </ul>  
+    </div>	
+    <div id="indexTopColumnR1">
+        <img src="img/mainM_right.png" alt="altR">
+    </div>
+</div>
+
+<div id="container30">
+
+    <div id="panelLeftColumn">
+        <div id="leftColumnUl1">
+            <input type="text" name="vyraz"
+                   value="hledaný výraz"
+                   class="inp_text" onfocus=
+                   "javascript:{if (this.value == 'hledaný výraz') this.value='';}">
+
+        </div>
+        <div id="leftColumnUl2">   
+            <ul>
+                <c:forEach var="panely" items="${panelyJsData}">     
+                    <li onclick="location.href='js?${odkazDetail.webPanelyOdkaz}';">  
+                        <a href="js?${panely.webPanelyOdkaz}" class="panelButton">
+                            <img src="img/mbuttarr.png" alt="mbutar">
+                            <span class="panelText">
+                                ${webProp.nazev(panely.webPanelyNazev)}
+                            </span>
+                        </a>
+                    </li>
+                </c:forEach>
+            </ul>
+        </div>
+        <div id="leftColumnUl3">
+            <c:if test="${cart.numberOfItems != null}">
+                <c:if test="${cart.numberOfItems > 0}">
+                    <img src="img/cart.png" alt="shopping cart icon" id="cart">
+                    <%-- If 'numberOfItems' property doesn't exist, or if number of items
+                                                   in cart is 0, output '0', otherwise output 'numberOfItems' --%>
+                    <span class="horizontalMargin">
+                        <c:choose>
+                            <c:when test="${cart.numberOfItems == null}">
+                                0
+                            </c:when>
+                            <c:otherwise>
+                                ${cart.numberOfItems}
+                            </c:otherwise>
+                        </c:choose>
+
+                        <%-- Handle singular/plural forms of 'item' --%>
+                        <c:choose>
+                            <c:when test="${cart.numberOfItems == 1}">
+                                ${webProp.nazev("header_polozka")}
+                            </c:when>
+                            <c:when test="${cart.numberOfItems == 2}">
+                                ${webProp.nazev("header_polozky")}
+                            </c:when>
+                            <c:when test="${cart.numberOfItems == 3}">
+                                ${webProp.nazev("header_polozky")}
+                            </c:when>
+                            <c:when test="${cart.numberOfItems == 4}">
+                                ${webProp.nazev("header_polozky")}
+                            </c:when>                                    
+                            <c:otherwise>
+                                ${webProp.nazev("header_polozek")}
+                            </c:otherwise>
+                        </c:choose>
+                    </span>
+                    <br>
+
+                    <c:if test="${!empty cart && cart.numberOfItems != 0 &&
+
+                                  !fn:contains(pageContext.request.servletPath,'/cart') &&
+                                  requestScope['javax.servlet.forward.servlet_path'] ne '/cart'}">                     
+                          <a href="viewCart" class="zobrazKos">
+                              ${webProp.nazev("header_zobrazit_kosik")}
+                          </a>
+                    </c:if>
+                </c:if> 
+            </c:if>          
+        </div>
+    </div>
+    <%--  <div id="wrapper">
+          <c:choose>
+              <c:when test="${selectedCenter == null}">
+                  <jsp:include page="WEB-INF/js/zakladniInfo.jsp"/>
+              </c:when>
+              <c:otherwise>
+                  <jsp:include page="${selectedCenter}"/>
+              </c:otherwise>
+          </c:choose>
+      </div>--%>
+
+    <c:choose>
+        <c:when test="${selectedCenter eq 'WEB-INF/js/vzdProgramy.jsp'}">
+            <div id="wrapperPrihlasky">                
+                <jsp:include page="${selectedCenter}"/>                              
+            </div>
+        </c:when>
+        <c:otherwise>
+            <div id="wrapper">
+                <c:choose>       
+                    <c:when test="${selectedCenter == null}">
+                        <jsp:include page="WEB-INF/js/zakladniInfo.jsp"/>
+                    </c:when>
+                    <c:otherwise>
+                        <jsp:include page="${selectedCenter}"/>
+                    </c:otherwise>
+                </c:choose>
+            </div>
+        </c:otherwise>       
+    </c:choose>   
+
+    <c:if test= "${selectedCenter ne 'WEB-INF/js/vzdProgramy.jsp'}">
+        <div id="panelRightColumn">
+            <div id="rightColumnUl1">
+                <ul>
+                    <c:forEach var="aktuality" items ="${aktualitySouhrn}" varStatus="i">                        
+                        <li>
+                            <div id="newsTop">
+                                <p class="datumAktuality"><fmt:formatDate value="${aktuality.webAktualityDatumVlozeni}" pattern="d.M.yyyy"/></p>
+                            </div>
+                            <a href="index?aktualita.jsp&idAktualita=${aktuality.webAktualityPK.webAktualityId}">
+                                <span class="aktualityLabel"></span>
+                                <span class="aktualityLabelText">${aktuality.webAktualityNazev}</span>
+                            </a>
+                            <img src="img/rNewsLow.png" class="rnews" alt="rnews">
+                            <a href="index?aktualita.jsp&idAktualita=${aktuality.webAktualityPK.webAktualityId}">
+                                <img src="img/rNewsArr.png" class="dwnarr${i.count}" alt="dwnarr"></a>
+                        </li>                        
+                    </c:forEach>
+                </ul>
+            </div>
+            <div id="rightColumnUl2">
+                <ul></ul>
+            </div>
+            <div id="rightColumnUl3">
+
+            </div>
+        </div>
+    </c:if>
+</div>

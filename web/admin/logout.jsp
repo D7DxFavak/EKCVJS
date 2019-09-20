@@ -1,0 +1,31 @@
+<%-- 
+    Document   : logout
+    Created on : 10.11.2011, 16:03:38
+    Author     : 7Data Gotzy
+--%>
+
+
+
+<%@page contentType="text/html" pageEncoding="UTF-8"%>
+<!DOCTYPE html>
+<html>
+    <head>
+       <meta http-equiv="refresh" content="0;url=http://www.kcvjs.cz">        
+    </head>
+    <body>       
+    </body>
+</html>
+
+<%--<%@page contentType="text/html" pageEncoding="UTF-8"%>
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+        <title>Odhlaseni</title>
+    </head>
+    <body>
+        <h2>Odhlaseni uspesne</h2>
+        
+        <a href="${pageContext.request.contextPath}/index.jsp">Pokracujte na vychozi stranku</a>
+    </body>
+</html>--%>

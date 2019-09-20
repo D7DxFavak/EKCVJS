@@ -1,0 +1,5638 @@
+/* START RESET */
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre, a,
+abbr, acronym, address, big, cite, code, del, dfn,
+em, font, img, ins, kbd, q, s, samp, small, strike,
+strong, sub, sup, tt, var, b, u, i, center, dl, dt,
+dd, ol, ul, li, fieldset, form, label, legend, table,
+caption, tbody, tfoot, thead, tr, th, td {
+
+    background: none repeat scroll 0 0 transparent;
+    border: 0 none;
+    font-size: 100%;
+    margin: 0;
+    outline: 0 none;
+    padding: 0;
+    vertical-align: baseline;
+}
+
+html {
+    overflow-y: scroll;
+}
+
+body {
+    font-family: "Roboto";
+    /*font-family: Verdana,Helvetica,sans-serif;*/
+    /**/
+    margin: auto;
+
+}
+ol, ul {
+    list-style: none outside none;
+}
+
+#btop {
+    background: #FFFFFF none repeat scroll 0 0;
+    box-shadow: 7px 3px 18px #D3D3D3;
+    height: 98px;
+    top: 0;
+}
+
+#bbottom {
+    background: #FFFFFF none repeat scroll 0 0;
+    top: 500px;
+}
+
+#main {
+    margin: auto;
+    width: 1280px;
+}
+
+/**#subMain {
+    width: 1024px;
+    background: none repeat scroll 0 0 transparent;
+        box-shadow: 0px 0px 1px 0 #C3C2C2 inset;
+        margin: 20px 0px;
+}**/
+
+#mainLogin {
+    
+    box-shadow: 0 0 10px #A9A9A9;
+    display: block;
+    margin: 40px auto;
+    padding-bottom: 10px;
+    width: 600px;
+}
+
+#mainLogin > p {
+    clear: both;
+    color: #FFFFFF;
+    margin: 2px 0 0;
+    text-align: center;
+}
+
+#mainLogin > p:first-child {
+    background: #D3D3D3 none repeat scroll 0 0;
+    
+    color: #000000;
+    margin: auto;
+    padding-bottom: 10px;
+    padding-top: 10px;
+    text-align: center;
+}
+
+#mainLogin > p.loginReg {
+    color: #000000;
+    float: left;
+    margin: 11px auto auto 185px;
+    width: 166px;
+}
+
+#mainLogin > a {
+    background: #2F4F4F none repeat scroll 0 0;
+    color: #F5FFFA;
+    float: left;
+    margin: 5px auto auto;
+    overflow: hidden;
+    padding: 6px 2px;
+    text-align: center;
+    text-decoration: underline;
+    width: 50px;
+}
+
+#loginBox {
+    margin: 16px auto auto;
+    width: 368px;
+}
+
+a:link    {
+    /* Applies to all unvisited links */
+    text-decoration:  none;
+    font-weight:      bold;
+    /*background-color: #ddd;*/
+    color:            grey;
+} 
+a:visited {
+    /* Applies to all visited links */
+    text-decoration:  none;
+    font-weight:      bold;
+    /*background-color: #ddd;*/
+    color:            grey;
+} 
+a:hover   {
+    /* Applies to links under the pointer */
+    text-decoration:  none/*underline*/;
+    font-weight:      bold;
+    /*background-color: blue;*/
+    color:            grey;
+} 
+a:active  {
+    /* Applies to activated links */
+    text-decoration:  none/*underline*/;
+    font-weight:      bold;
+    /*background-color: black;*/
+    color: orangered;
+} 
+
+
+/* END RESET */
+
+#header {
+    width: auto;
+    height: /**188px**/ /*200px*/;
+    border: 0px solid black;
+    z-index: 100;
+    position: relative;
+}
+
+#logoSovaImg {
+    width: 116px;
+}
+
+ .select-style {
+    border: 1px solid #ccc;
+    width: 120px;
+    
+    overflow: hidden;
+    background: #fafafa url("../img/icon-select.png") no-repeat 90% 50%;
+}
+
+.select-style select {
+    padding: 5px 8px;
+    width: 130%;
+    border: none;
+    box-shadow: none;
+    background: transparent;
+    background-image: none;
+    -webkit-appearance: none;
+}
+
+.select-style select:focus {
+    outline: none;
+}
+
+
+#widgetBar #cart {
+
+}
+
+#loginForm {
+    margin: auto;
+    width: 420px;
+}
+
+#loginForm label {
+    color: #000000;
+    float: left;
+    font-weight: bolder;
+    height: 20px;
+    margin: 20px 10px 1px 1px;
+    padding: 0 5px;
+    width: 138px;
+}
+
+#loginForm input {
+    background: #3A3A3A none repeat scroll 0 0;
+    border: medium none;
+    
+    color: #FFFFFF;
+    float: left;
+    font-weight: bold;
+    height: 30px;
+    margin: 14px 12px 1px 0;
+    padding: 0 11px;
+    width: 175px;
+}
+
+#loginForm #submitLogin {
+    background: #FFA500 none repeat scroll 0 0;
+    border: medium none;
+    clear: both;
+    color: #000000;
+    cursor: pointer;
+    float: left;
+    font-weight: bold;
+    height: 33px;
+    margin: 20px auto auto 116px;
+    width: 134px;
+}
+
+#loginForm #submitLogin:hover {
+    background: #FF4500 none repeat scroll 0 0;
+    color: #FFFFFF;
+    cursor: pointer;
+}
+
+#registraceForm {
+    background: #2A9789 none repeat scroll 0 0;
+    
+    display: block;
+    margin: auto;
+    padding: 10px;
+    width: 604px;
+}
+
+
+#registraceVyber {       
+    background: #D3D3D3 none repeat scroll 0 0;
+    
+    border-top: 3px solid #A9A9A9;
+    margin: auto;
+    padding-bottom: 6px;
+    padding-left: 10px;
+    padding-top: 6px;
+    text-align: left;
+}
+
+#registraceVyber a:link {
+    color: maroon;
+}
+
+#registraceVyber a:visited {
+    color: maroon;
+}
+
+#registraceVyber a:hover {
+    color: #930b0b;
+}
+
+#registraceVyber a:active {
+    color: #930b0b;
+}
+
+#registraceForm fieldset {
+    border: none;
+    margin: 0px 0;
+}
+
+#registraceForm label {
+    clear: both;
+    color: #FFFFFF;
+    float: left;
+    font-family: "Roboto";
+    margin-right: 10px;
+    padding: 6px 5px;
+    width: 160px;
+}
+
+/*#registraceForm input {
+    border: medium none;
+    float: left;
+    margin-left: 10px;
+    margin-top: 3px;
+    width: 260px;
+}*/
+
+#registraceForm #submitLogin {
+    float: left;
+    height: 21px;
+    margin: 5px 5px;
+    margin-left: 83px;
+    /*padding-left: 10px;*/
+    background: #420303;
+    padding: 0px 5px;
+    font-weight: bold;
+    border: none;
+    color: wheat;
+    box-shadow: 3px 3px 4px #000;
+}
+
+#registracePotvrzeni {
+    color: #FFFFFF;
+    float: left;
+    font-style: italic;
+    height: 30px;
+    margin-top: 5px;
+}
+
+#registracePotvrzeni input{
+    margin-left: 0;
+    margin-right: 6px;
+    margin-top: 1px;
+    width: auto;
+}
+
+#registracePotvrzeni span{
+    margin-top: 7px;
+    height: 25px;
+}
+
+#registracePotvrzeni > span > a {
+    color: red;
+}
+
+/*#registraceForm {
+    background: none repeat scroll 0 0 maroon;
+    border: 2px solid;
+    border-color: DarkGrey black black DarkGrey;
+    color: white;
+    cursor: pointer;
+    float: right;
+    height: 20px;
+    margin: 10px 0;
+    width: 88px;
+}*/
+
+#registraceForm > #submitOsobaUdaje {
+    background: none repeat scroll 0 0 maroon;
+    border: 2px solid;
+    border-color: DarkGrey black black DarkGrey;
+    color: white;
+    cursor: pointer;
+    float: right;
+    height: 20px;
+    margin: 10px 0;
+    width: 88px;
+}
+/*
+#submitOsobaUdaje {
+    background: none repeat scroll 0 0 maroon;
+    border: 2px solid;
+    border-color: DarkGrey black black DarkGrey;
+    color: white;
+    cursor: pointer;
+    float: right;
+    height: 20px;
+    margin: 10px 0;
+    width: 288px;
+}*/
+
+#zapomenuteHeslo {
+    clear: both;
+    margin: 55px 5px auto;
+    overflow: hidden;
+}
+
+#zapomenuteHeslo p {
+    color: #2A9789;
+    margin: 2px 0;
+    text-align: center;
+}
+
+#zapomenuteHeslo form {
+    margin: 10px auto 0;
+    text-align: center;
+}
+
+#zapomenuteHeslo form label {
+    /*font-size: 0.85em;*/
+    font-weight: bold;
+}
+
+#zapomenuteHeslo form #uzivJmeno {
+    height: 15px;
+    margin-top: 2px;
+}
+
+#zapomenuteHeslo #uzivEmail {
+    border: medium none;
+    box-shadow: 0 0 6px 2px #D3D3D3 inset;
+    color: #2F4F4F;
+    height: 26px;
+    margin-left: 5px;
+    padding-left: 10px;
+}
+
+#zapomenuteHeslo form input.hesloButton {
+    background: #FFA500 none repeat scroll 0 0;
+    border: medium none;
+    color: #000000;
+    cursor: pointer;
+    font-weight: bold;
+    margin-top: 12px;
+    padding: 7px 37px;
+}
+
+#zapomenuteHeslo form input.hesloButton:hover {
+    background: #FF4500 none repeat scroll 0 0;
+    color: #FFFFFF;
+}
+
+/*-----------------------------------------------------------------------------------*/
+
+/*-----------------------------------------------------------------------------------*/
+/* REGISTRACE
+/*-----------------------------------------------------------------------------------*/
+
+#wrapperRegistrace {
+    clear: both;
+}
+
+#registraceForm #submitOsobaUdaje:hover {
+    background: none repeat scroll 0 0 #930b0b;
+    color: white;
+    box-shadow: 0px 0px 4px #FFF;
+}
+
+#logo {
+    height: 146px;
+    margin: auto;
+    width: 100%;
+    border: 0px solid black;
+}
+
+#widgetBar {
+    width: auto;
+    height: 26px;
+    margin-top: 2px;
+    border: 0px solid black;
+}
+
+#widgetBar #headerLogin > a:link, #widgetBar #headerLogin > a:visited, #widgetBar #headerLogin > a:hover, #widgetBar #headerLogin > a:active {
+    background: #FFA500 none repeat scroll 0 0;
+    color: #000000;
+    font-weight: normal;
+    margin-left: 3px;
+    padding: 4px 10px;
+    text-decoration: none;
+}
+
+#widgetBar #headerLanguage {
+    float: right;
+    margin-left: 2px;
+    color: white;
+    /*width: 300px;*/
+}
+
+#widgetBar .bubble {
+    background: #FFA500 none repeat scroll 0 0;
+    color: #000000;
+    float: left;
+    font-weight: normal;
+    height: 33px;
+    margin-right: 8px;
+    margin-top: 6px;
+    padding: 12px 20px 0 0;
+    transition: background 0.33s ease 0s;
+}
+
+#widgetBar a.bubble:hover {
+    background: #FF4500 none repeat scroll 0 0;
+    transition: background 0.33 ease 0;
+}
+
+#kosik {
+    clear: both;
+    float: left;
+    padding-right: 12px;
+}
+
+.slash {
+    color: #000000;
+    float: left;
+    font-weight: bold;
+    margin-right: 2px;
+    margin-top: 4px;
+}
+
+#login.headerWidget {
+    display: inline;
+    float: right;
+    /*margin: 5px 50px 15px 837px;*/
+    border: 0px solid black;
+    width: 200px;
+}
+
+#headerLogin a {
+    float: left;
+    margin-right: 6px;
+}
+
+#headerLogin span {
+    color: #2F4F4F;
+    float: left;
+    margin-right: 6px;
+    margin-top: 4px;
+}
+
+.headerWidget {
+    border: 0 solid #000000;
+    display: inline;
+    float: right;
+    margin-left: 10px;
+    margin-right: 8px;
+    padding: 5px 0 0;
+}
+
+#logoSovaDiv {
+    float: left;
+    padding-left: 230px;
+}
+
+#nazevPopis {
+    float: right;
+    font-family: "Roboto";
+    font-size: 1.4em;
+    padding-top: 10px;
+}
+
+#viewCart {
+    position: relative;
+    clear: both;
+    float: left;
+    margin: 12px 20px;
+    border: 0px solid black;
+
+}
+
+#indexTopColumn {
+    clear: both;
+    height: 62px;
+    width: 1022px;
+    display: block;
+    position: relative;
+    /*background: orange;*/
+}
+
+#indexTopColumnC1 {
+    border: 0 solid #000000;
+    display: block;
+    margin-bottom: auto;
+    margin-left: auto;
+    margin-right: auto;
+    position: relative;
+    text-align: center;
+    width: 1280px;
+}
+
+#indexTopColumnFCB {
+    float: left;
+    height: 60px;
+    width: 60px;
+    /*background: orange/*#fff*/;
+    /*padding-left: 264px;*/
+    margin: 5px 0px 0px 0px;
+    border: 0px solid black;
+    text-align: center;
+    display: block;
+    position: relative;
+    background: url("../img/mainM_center.png") repeat-x scroll 0 0 transparent
+}
+
+
+#logoFCB {
+    height: 35px;
+    width: 35px;
+    padding-top: 12px;
+}
+
+
+#indexTopColumnL1 {
+    float: left;
+    margin-top: 5px;
+}
+
+#indexTopColumnC1 > ul {
+    cursor: pointer;
+    display: block;
+    height: 55px;
+    list-style: outside none circle;
+    padding-top: 12px;
+    position: relative;
+    text-align: center;
+    width: auto;
+}
+
+#indexTopColumnC1 > ul > li > ul {
+    float: left;
+    width: 1020px;
+}
+
+#indexTopColumnC1 ul li {
+    background: #FFFFFF none repeat scroll 0 0;
+    padding: 16px 18px 16px 18px;
+    display: inline; /* !!!! bude fungovat s text-align: center viz vyse !!!! */
+    position: relative; /* !!!! nejdulezitejsi pro spravny alignment drop-down menu k jednotlive polozce !!!! */
+    /***border-right: 2px solid #fff;***/
+    width: auto; /*104px;*/
+    z-index: 100; /* necessary for wrapper area shadow */
+    top: 16px;
+}
+
+#indexTopColumnC1 ul li:first-child {
+    background: #FFFFFF none repeat scroll 0 0;
+    
+}
+
+#indexTopColumnC1 ul li.topListItemAktivni:hover {
+    background: darkslategrey none repeat scroll 0 0;
+    /**background: none repeat scroll 0 0 white;**/
+    position: relative;
+    /**box-shadow: 1px -1px 7px 0 grey;**/ 
+    z-index: 111;
+    color: white;
+    
+
+
+    /*padding: 15px 14px 14px 14px;
+    top: -10px;*/                         /* vyskakujici aktivni hover meni */
+}
+
+#indexTopColumnC1 ul li.topListItemNeaktivni {
+    background: none repeat scroll 0 0 #FFFFFF;
+}
+
+#indexTopColumnC1 ul li.topListItemNeaktivni:hover {
+    /*background: none repeat scroll 0 0 #000;*/
+    color: white;
+}
+
+#indexTopColumnR1 {
+    float: right;
+    margin-top: 5px;
+}
+
+/*
+        filter: progid:DXImageTransform.Microsoft.gradient(startColorstr=#FF5900, endColorstr=#FFCC00);
+        position: relative;
+        z-index: 3;
+*/
+
+/*#indexTopColumn a:visited {
+        background-color: #000;
+        width: 60px;
+        height: 30px;
+        display: block;
+}*/
+
+
+#navigace {
+    clear: both;
+    float: left;
+    height: 32px;
+    margin: auto auto auto 10px;
+    text-align: center;
+}
+
+#navigace a {
+    
+    /*color: black;*/  /* likviduje color v .navClass protoze je to tag */
+    float: left;
+    margin-left: 5px;
+    margin-top: 7px;
+    padding: 0px 2px;
+}
+
+#navigace p {
+    
+    color: black;
+    /**color: white;**/
+    float: left;
+    margin-left: 5px;
+    margin-top: 7px;
+}
+
+#zobrZaznam {
+    float: left;
+}
+
+#strana, #stranaHledani {
+    float: right;
+    margin-bottom: 4px;
+    margin-right: 4px;
+}
+
+#strana a, #stranaHledani a {
+    
+    /*color: black;*/ /* likviduje color v .navClass protoze je to tag */
+    float: left;
+    margin-left: 5px;
+    margin-top: 7px;
+    padding: 0px 2px;
+}
+
+#strana p, #stranaHledani p {
+    
+    color: black;
+}
+
+#strana span, #stranaHledani span {
+    
+    color: black;
+    float: left;
+    margin-left: 5px;
+    margin-top: 7px;
+}
+
+/*.navClass {
+        
+        color: black;
+}
+/*#wrapperPrihlasky a:link, #wrapperPrihlasky a:visited, #wrapperPrihlasky a:hover, #wrapperPrihlasky a:active {
+        
+        color: black;
+}*/
+
+
+#indexTopColumnC1 ul li ul li {
+    display: none;
+}
+
+#indexTopColumnC1 ul li:hover {
+    background: #2F4F4F none repeat scroll 0 0;
+    
+    cursor: pointer;
+    padding: 16px 18px;
+    position: relative;
+    z-index: 100;
+    color: white;
+}
+
+#indexTopColumnC1 ul li:active {
+    background-color: white; /**orangered**/; /*#F66*/; /* orange */
+    cursor: pointer;
+    z-index: 100;
+    position: relative;
+}
+
+#indexTopColumnC1 ul li:hover ul {
+    top: 33px /*40px*/;
+    left: -5px;
+    width: 158px;
+    height: auto;
+    /**background-color: white; /*orangered*/ /*#F66*//* orange */
+    position:absolute;
+    /*height:65px;*/
+    display:block;
+    /**border: 1px solid black;**/
+
+}
+
+#indexTopColumnC1 ul li:hover ul li {
+    width: 175px;
+    height: 21px;
+    /**margin-bottom: 0px;
+        margin-top: 0px;**/ /* zruseno pri remaku na background */
+    padding: 6px 1px 2px 8px;
+    /**border-left: 0px solid black;
+    border-top: 0px solid black;**/ /* zruseny vsechny bordery -> border: none; */
+    /*background: url("../img/ddulCenter.png") repeat-y scroll 0 0 transparent;*/
+    /*background: white /*firebrick*/ /*#F90*/; /* orange */
+    /*position: absolute;*/
+    /*height:65px;*/
+    display: block;
+    /*font-size: 0.78em;*/
+    text-align: left;
+    margin: 0;
+    border: none;
+    /*box-shadow: 1px 1px 1px 1px black;*/
+}
+
+#indexTopColumnC1 ul li:hover ul li:last-child {
+    width: 175px;
+    height: 21px;
+    /**margin-bottom: 0px;
+        margin-top: 0px;**/ /* zruseno pri remaku na background */
+    padding: 6px 1px 2px 8px;
+    /**border-left: 0px solid black;
+    border-top: 0px solid black;**/ /* zruseny vsechny bordery -> border: none; */
+    /*background: url("../img/ddulLastItem.png") no-repeat scroll 0 0 transparent;*/
+    /*background: white /*firebrick*/ /*#F90*/; /* orange */
+    /*position: absolute;*/
+    /*height:65px;*/
+    display: block;
+    /*font-size: 0.78em;*/
+    text-align: left;
+    margin: 0;
+    border: none;
+    /*box-shadow: 1px 1px 1px 1px black;*/
+}
+
+
+#indexTopColumnC1 ul li:hover ul li:hover a {
+    /*background: url("../img/ddlideco.png") no-repeat scroll 0 -2px transparent;*/
+    /**background: orange;**/
+    width: 150px;
+    display: block;
+    padding: 3px 4px 0px 2px;
+    height: 23px;
+
+}
+
+/* AKCE NOVE */
+/* AKCE NOVE */
+/* AKCE NOVE */
+
+#divSeznamKurzu {
+    clear: both;
+    margin-top: 16px;
+}
+
+.listSeznamKurzu {
+    clear: both;
+    width: 1024px;
+}
+
+.itemSeznamKurzu {
+    box-shadow: 0 0 3px 0 #778899;
+    min-height: 40px;
+    margin-bottom: 10px;
+    margin-left: 4px;
+    padding: 14px 10px;
+    width: 996px;
+    clear: both;
+}
+
+.itemSeznamKurzu a {
+    color: black;
+}
+
+.detailAkceInfo {
+    display: block;
+    margin-top: 65px;
+}
+
+.kurzCisloAkce {
+    float: left;
+    width: 140px;
+    padding-top: 10px;
+}
+
+.kurzNazevTerminAkce {
+    border-left: 2px solid #2F4F4F;
+    float: left;
+    padding: 2px 10px;
+    /*width: 600px;*/
+}
+
+.kurzNazevTerminAkce > p {
+    color: #2A9789;
+}
+
+.kurzVolnoCenaAkce {
+    border-left: 2px solid #2F4F4F;
+    float: right;
+    text-align: right;
+    width: 100px;
+}
+
+.kurzVolnoCenaAkce > p:first-child {
+    color: #2A9789;
+}
+
+
+
+/* 
+ * DD COMPOSITE BACKGROUND 
+*/
+
+/*#indexTopColumnC1 ul il:hover #topListTop {
+        background: url("../img/ddulTop.png") no-repeat scroll 0 0 transparent;
+        width: 158px;
+        height: 7px;
+}
+
+#indexTopColumnC1 ul il:hover #topListCenter {
+        background: url("../img/ddulCenter.png") repeat-y scroll 0 0 transparent;
+        width: 158px;
+        height: auto;
+}
+
+#indexTopColumnC1 ul il:hover  #topListBottom {
+        background: url("../img/ddulBottom.png") no-repeat scroll 0 0 transparent;
+        width: 158px;
+        height: 7px;	
+}*/
+
+/* 
+ * MAIN PAGE KATEGORIE 
+*/
+
+#uciteleHome .homeKategorie {
+    color: black;
+    display: block;
+    margin-top: 10px;
+    margin-left: 7px;
+}
+
+#jsHome .homeKategorie {
+    color: black;
+    display: block;
+    margin-top: 10px;
+    margin-left: 7px;
+}
+
+#dvppHome .homeKategorie {
+    color: black;
+    display: block;
+    margin-top: 10px;
+    margin-left: 7px;
+}
+
+#ekcvjsHome .homeKategorie {
+    color: black;
+    display: block;
+    margin-top: 10px;
+    margin-left: 7px;	
+}
+
+#karieraHome .homeKategorie {
+    color: black;
+    display: block;
+    margin-top: 10px;
+    margin-left: 7px;	
+}
+
+/* -------------------------------------------------------------------------- */
+/* 
+/* -------------------------------------------------------------------------- */
+
+.catDetailLabelText {
+    color: black;
+    font-weight: normal;
+}
+
+.kontaktyLabelText {
+    background: url("../img/contOrngStrip.png") no-repeat scroll -1px 0 transparent;
+    color: black;
+    display: block;
+    padding: 6px 6px;
+    
+    width: 613px;
+    margin: auto;
+    margin-top: 3px;
+}
+
+.categoryBox {
+    margin: auto;
+    display: inline;
+    float: left;
+    margin: 5px 10px 0 0;
+    padding: 10px;
+    background: magenta;
+    border: 2px solid black;
+    position: absolute;
+}
+
+#panelLeftColumn {
+    border: 0 solid #000000;
+    clear: both;
+    display: block;
+    float: left;
+    margin-top: 0;
+    padding-top: 0;
+}
+
+#container10, #container20, #container30, #container40, #container50, #container60, #container70 {
+    /*clear: both;
+        float: right;*/
+    /*overflow-y: scroll;*/
+    /*overflow-x: auto;*/
+    /**background: none repeat scroll 0 0 #fff;**/
+    height: auto /*1024px;*/ /*auto*/; /* AUTO zpusobuje se stinem rosekani opakujicihose bg po px u height */
+    width: 100%;
+    /**box-shadow: 0 4px 23px 4px grey;**/
+    position: relative;
+    z-index: 2;
+}
+
+#container10 {
+    /**background: none repeat scroll 0 0 #fff; /*#fc0*/  
+    /**box-shadow: 0px 4px 21px 2px #000;**/
+    position: relative;
+
+    /*filter: progid:DXImageTransform.Microsoft.Shadow(Color=#cccccc, Strength=10, Direction=0),
+            progid:DXImageTransform.Microsoft.Shadow(Color=#cccccc, Strength=10, Direction=90),
+            progid:DXImageTransform.Microsoft.Shadow(Color=#cccccc, Strength=10, Direction=180),
+            progid:DXImageTransform.Microsoft.Shadow(Color=#cccccc, Strength=10, Direction=270);
+    /*z-index: 20;*/
+}
+
+#container10, #container70 {
+    clear: both;
+    /*float: right;*/
+    /***overflow-y: scroll;***/
+    /*background: none repeat scroll 0 0 #06f;*/
+    /*background: url("../img/70hD.jpg") repeat-y scroll 0 0 transparent;*/
+}
+
+#navig {
+    clear: both;
+    font-weight: bold;
+    margin: 22px auto auto;
+    width: 1024px;
+}
+#vyberOboruPrihlasky {
+    clear: both;
+    width: 1024px;
+    background: orange;
+    margin: auto;
+}
+
+#vyberOboruPrihlasky a.navClassAktivni {
+    background: #2A9789 none repeat scroll 0 0;
+    
+    box-shadow: 0 0 6px 2px #808080;
+    clear: both;
+    color: #FFFFFF;
+    display: block;
+    font-size: 1.2em;
+    margin: 5px auto auto;
+    padding: 12px;
+    text-align: center;
+    width: 330px;
+}
+
+#vyberOboruPrihlasky a.navClassNeaktivni {
+   
+    box-shadow: 0 0 6px 2px #A9A9A9;
+    clear: both;
+    color: #2F4F4F;
+    display: block;
+    font-size: 1.2em;
+    margin: 5px auto auto;
+    padding: 12px;
+    text-align: center;
+    width: 330px;
+    
+}
+
+#vyberOboruPrihlasky a.navClassAktivni:hover {
+    background: #FFA500 none repeat scroll 0 0;
+    transition: background 0.33s ease 0s;
+    color: white;
+}
+
+#vyberOboruPrihlasky a.navClassNeaktivni:hover {
+    background: #FFA500 none repeat scroll 0 0;
+    transition: background 0.33s ease 0s;
+    color: white;
+}
+
+#vyberVzdelavaniUcitelu {
+    border-right: 1px dotted #D3D3D3;
+    clear: both;
+    float: left;
+    height: 50px;
+    margin: auto;
+    width: 49%;
+}
+
+#vyberJazykovaSkola {
+    width: 50%;
+    float: left;
+    margin: auto;
+    height: 50px;
+}
+
+#obor {
+    float: left;
+    position: relative;
+    width: 33%;    
+}
+
+#obdobii {
+    float: left;
+    position: relative;
+    width: 33%;    
+}
+
+#kurz {
+    float: left;
+    position: relative;
+    width: 33%;    
+}
+
+#wrapper {
+    float: right;
+}
+
+#wrapperPrihlasky {
+    float: right;
+    margin: 40px auto auto;
+    padding: 0;
+    width: 1024px;
+}
+
+#wrapper #wrapperTop {
+   clear: both;
+    margin: auto;
+    width: 1024px;
+}
+
+#wrapper #wrapperCenter {
+    margin-top: 40px;
+    overflow: hidden;
+    width: 1024px;
+}
+
+
+#wrapperCenter #wrapperContainer {
+    
+    margin: auto;
+    width: 1024px;
+}
+
+#wrapper #wrapperCenter ul li.statickeInfoList {
+    /**background: #FEE275 /**#FED980**/; 
+    /*border: 2px solid #B25900;*/
+    /***margin: 4px 4px 10px 4px;***/
+    margin: auto;
+    padding-top: 2px;
+    /*width: 625px;*/
+    overflow: hidden;
+}
+
+#wrapper #wrapperCenter ul li.statickeInfoListHelp {
+    /**background: #FEE275 /**#FED980**/; 
+    /*border: 2px solid #B25900;*/
+    /***margin: 4px 4px 10px 4px;***/
+    margin: auto;
+    padding-top: 2px;
+    width: 300px;
+    overflow: hidden;
+}
+
+#wrapperPrihlasky #wrapperPrihlaskyCenter ul li.statickeInfoList {
+    /**background: #FEE275 /**#FED980**/; 
+    /*border: 2px solid #B25900;*/
+    /***margin: 4px 4px 10px 4px;***/
+    margin: auto;
+    padding-top: 2px;
+    width: 625px;
+    overflow: hidden;
+}
+
+#wrapperPrihlasky #wrapperPrihlaskyCenter ul li.statickeInfoListHelp {
+    margin: auto;
+    overflow: hidden;
+    padding-top: 0;
+    width: 300px;
+}
+
+#wrapper .statickeInfoDiv {
+    margin: auto auto 15px;
+    padding: 6px 15px;
+    text-align: justify;
+}
+
+.statickeInfoDiv > a {
+    color: orangered;
+}
+
+
+#wrapper #wrapperCenter ul ul > li > h2 {
+    clear: both;
+    background: url("../img/contGreyStrip.png") no-repeat scroll 11px 0 transparent;
+    /*background: red;*/
+    /***height: 28px;***/
+    padding-left: 20px;
+    padding-top: 6px;
+    /**/
+    padding-bottom: 14px;
+    font-style: italic;
+    margin-top: 5px;
+    margin-bottom: 6px;
+}
+
+#wrapperCenter .wrapperPrihlaskyNadpis p {
+    color: #2F4F4F;
+    font-style: italic;
+    padding: 0 0 10px 20px;
+}
+
+/* -------------------------------------------------------------------------- */
+/* EKVCS -> PRIDRUZ. OSOBY + -> ZOBRAZ. DETAILY								  */
+/* -------------------------------------------------------------------------- */
+
+/*#wrapperPrihlasky {
+    float: left;
+    margin: 0px 0px 0px 1px;
+    float: left;
+    display: block;
+    width: 834px;
+    border: 0px dashed #FEECBF;	
+}*/
+
+#wrapperPrihlaskyTop {
+    
+}
+
+#wrapperPrnihlaskyCenter {
+    background: url("../img/wrapperPrihlaskyCenter.png") repeat-y scroll 0 0 transparent;
+    overflow: hidden;
+    width: 835px;
+}
+
+/*#wrapperPrihlaskyCenter #wrapperPrihlaskyContainer {
+    margin: auto;
+    width: 810px;
+}*/
+
+#wrapperPrihlaskyCenter, #wrapperPrihlaskyContainer {
+    /*background: rgba(0, 0, 0, 0) url("../img/wrapperKurz.png") repeat-y scroll 0 0;*/
+    margin: auto;
+    /*width: 834px;
+    height: 803px;*/
+}
+
+#panelUdajeOsobaInfo {
+    background: #D3D3D3 none repeat scroll 0 0;
+    margin: auto;
+    width: 624px;
+}
+
+#wrapperPrihlasky .wrapperPrihlaskyNadpis p {
+    color: #2F4F4F;
+    font-style: italic;
+    padding: 0 0 10px 20px;
+}
+
+#wrapperPrihlaskyContainer #panelUdajeOsobaNadpis {
+    background: #D3D3D3 none repeat scroll 0 0;
+    
+    clear: both;
+    height: 30px;
+    margin: auto;
+    width: 470px;
+}
+
+#wrapperPrihlaskyContainer #panelUdajeOsobaNadpis p {
+    float: left;
+    font-weight: bold;
+    margin-left: 5px;
+    padding: 5px;
+}
+
+#wrapperContainer #panelUdajeOsobaNadpis {
+    margin: auto;
+    padding-bottom: 4px;
+    padding-left: 24px;
+    padding-top: 4px;
+    width: 624px;
+}
+
+#wrapperContainer #panelUdajeOsobaNadpis p {
+    font-weight: bold;
+    /***background: url("../img/osobaVertStrip.png") no-repeat scroll 0 0 transparent;***/
+}
+
+#wrapperPrihlaskyContainer #panelUdajeOsobaNadpis > p:last-child {
+    color: #008080;
+    float: left;
+    margin-left: 6px;
+}
+
+#wrapperPrihlaskyContainer #panelUdajeOsobaOdkazy {
+    /*background: #D3D3D3 none repeat scroll 0 0;*/
+   
+    clear: both;
+    height: 26px;
+    margin: auto;
+    width: 470px;
+}
+
+#wrapperPrihlaskyContainer #panelUdajeOsobaOdkazy a:first-child {
+    background: none;
+}
+
+#wrapperPrihlaskyContainer #panelUdajeOsobaOdkazy a {
+    /*background: url("../img/osobaVertStrip.png") no-repeat scroll 0 0 transparent;*/
+    color: #000;
+    float: left;
+    font-weight: bold;
+    margin-top: 5px;
+    padding: 0 10px;
+}
+
+#wrapperPrihlaskyContainer #panelUdajeOsobaOdkazy a:hover {
+    color: #2A9789;
+}
+
+/*#wrapperPrihlaskyContainer #panelUdajeOsobaOdkazy a:active {
+    color: red;
+}*/
+
+#wrapperPrihlaskyContainer #panelUdajeOsobaOdkazy a:focus {
+    color: orange;
+}
+
+#wrapperPrihlaskyContainer #panelUdajeOsobaOdkazy a.activeHref {
+    background: #2A9789 none repeat scroll 0 0;
+    
+    color: #FFFFFF;
+}
+
+#wrapperPrihlaskyContainer #panelOsobyOdkazy {
+    background: url("../img/osobaOrngStrip.png") no-repeat scroll 0 0 transparent;
+    height: 26px;
+    margin-top: 6px;
+    padding-left: 15px;
+    margin-bottom: 4px;
+}
+
+#wrapperPrihlaskyContainer #panelOsobyOdkazy a:first-child {
+    background: none;
+}
+
+#wrapperPrihlaskyContainer #panelOsobyOdkazy a {
+    background: url("../img/osobaVertStrip.png") no-repeat scroll 0 0 transparent;
+    color: black;
+    float: left;
+    
+    font-weight: bold;
+    margin-top: 5px;
+    padding: 0 10px;
+}
+
+#panelOsobyOdkazyPridruzene, #panelOsobyOdkazyNavrhovane {
+    
+}
+
+#panelOsobyOdkazyPridruzene > a:first-child, #panelOsobyOdkazyNavrhovane > a:first-child {
+    background: rgba(0, 0, 0, 0) none repeat scroll 0 0;
+    border-right: 1px solid #000000;
+    padding-left: 21px;
+}
+
+
+#panelOsobyOdkazyPridruzene > a, #panelOsobyOdkazyNavrhovane > a {
+    color: #000000;
+    float: left;
+    font-weight: bold;
+    margin-bottom: 5px;
+    margin-top: 5px;
+    padding-left: 10px;
+    padding-right: 12px;
+}
+
+
+#tabulkaPridruzeneOsoby, #tabulkaNavrhovaneOsoby {
+    
+    margin-left: 12px;
+}
+
+#osobyOrgPrihlasitTable  {
+    width: 1024px;
+}
+
+/* -------------------------------------------------------------------------- */
+/* EKVCS -> PRIDRUZ. OSOBY + -> ZOBRAZ. DETAILY								  */
+/* -------------------------------------------------------------------------- */
+
+#wrapperPrihlaskyContainer #vypisDokumentuOdkazy {
+    height: 26px;
+    margin-bottom: 4px;
+    margin-top: 6px;    
+}
+
+#wrapperPrihlaskyContainer #vypisDokumentuOdkazy a:first-child {
+    background: none repeat scroll 0 0 transparent;
+}
+
+#wrapperPrihlaskyContainer #vypisDokumentuOdkazy a {
+    color: black;
+    float: left;
+    font-weight: bold;
+    margin-top: 5px;
+    padding: 0 10px;
+}
+
+#wrapperPrihlaskyContainer #vypisDokumentuOdkazy a:hover {
+    background: #2A9789 none repeat scroll 0 0;
+    
+    
+    color: #FFFFFF;
+}
+
+#wrapperPrihlaskyContainer #vypisDokumentuOdkazy a:active {
+    color: #FFA500;
+}
+
+/* -------------------------------------------------------------------------- */
+
+/* -------------------------------------------------------------------------- */
+/* EKVCS -> INF. o zamestnavateli								  */
+/* -------------------------------------------------------------------------- */
+
+#hledatZamestnavatele {
+    background: #FFA500 none no-repeat scroll 0 0;
+    
+    margin: auto;
+    width: 610px;
+}
+
+#hledatZamestnavateleForm {
+    padding: 15px 20px;
+}
+
+#zamestnavatel_ic {
+    background: #FFFFFF none repeat scroll 0 0;
+    margin-left: 42px;
+    width: 200px;
+    /*border: medium none;
+    
+    height: 22px;*/
+}
+
+#vyberZamestnavatele {
+    display: block;
+    height: 33px;
+    margin: auto auto 15px;
+    width: 333px;
+}
+
+#submitHledatZamestnavatel {
+    background: #790000 none repeat scroll 0 0;
+    border: medium none;
+    
+    color: #FFFFFF;
+    cursor: pointer;
+    display: block;
+    font-family: verdana;
+    font-size: 14px;
+    font-weight: bold;
+    height: 26px;
+    margin-left: 246px;
+    margin-top: 10px;
+    width: 200px;
+}
+
+#submitHledatZamestnavatel:hover {
+    background: #C74900 none repeat scroll 0 0;
+    box-shadow: 0 0 5px 1px #A52A2A inset;
+    cursor: pointer;
+}
+
+#zamestnavatelInfoForm {
+   background: #2A9789 none repeat scroll 0 0;
+    box-shadow: 0 -4px 0 0 #D3D3D3;
+    height: 322px;
+    margin-bottom: 10px;
+    padding: 20px 20px 16px;
+    width: 570px;
+}
+
+#zamestnavatelInfoForm > label {
+    clear: both;
+    color: #FFFFFF;
+    float: left;
+    margin-top: 10px;
+    width: 144px;
+}
+
+input.zamestnavatelInfoInput {
+    border: medium none;
+    
+    float: left;
+    margin-bottom: 7px;
+    margin-left: 10px;
+    margin-top: 3px;
+    padding: 9px 11px;
+    width: 390px;
+}
+
+#submitOsobaUdaje {
+    background: #FFA500 none repeat scroll 0 0;
+    border: medium none;
+    color: #000000;
+    cursor: pointer;
+    font-family: "Roboto";
+    font-size: 14px;
+    font-weight: bold;
+    height: 30px;
+    margin-left: 462px;
+    margin-top: 4px;
+    text-align: center;
+    vertical-align: middle;
+    width: 140px;
+}
+
+#submitOsobaUdaje:hover {
+    background: #C74900 none repeat scroll 0 0;
+    box-shadow: 0 0 5px 1px #A52A2A inset;
+    cursor: pointer;
+}
+
+/* -------------------------------------------------------------------------- */
+#wrapperPrihlaskyContainer #cartLeft {
+    float: left;
+    margin-left: 4px;
+    margin-right: 4px;
+    width: 740px;
+}
+
+#cartLeft > ul > li {
+    margin-bottom: 10px;
+}
+
+#wrapperPrihlaskyContainer #cartRight {
+    float: left;
+    width: 266px;
+    /**/
+    margin: auto;
+    text-align: left;
+    margin-left: 10px;
+}
+
+#wrapperPrihlaskyCenter #inputVybrat {
+    /*background: url("../img/wrapperPrihlaskyCenter.png") repeat-y scroll -6px 0 transparent;
+    height: 36px;*/
+}
+
+#wrapperPrihlaskyBottom {
+    /***background: url("../img/wrapperPrihlaskyBottom.png") no-repeat scroll 0 0 transparent;***/
+    clear: both;
+}
+
+/* -------------------------------------------------------------------------- */
+/* NAVIGACE na KAZDE STRANCE
+/* -------------------------------------------------------------------------- */
+
+#navigacecisla {
+    float: right;
+}
+`
+#navigaceTop > span {
+    float: left;
+}
+
+.navigaceList > li {
+    display: inline;
+}
+
+#wrapper #wrapperCenter #navigaceTop, #wrapper #wrapperCenter #wrapperContainer #navigaceTop
+{
+    width: 1024px;
+    /*height: 18px;*/
+    margin: auto;
+}
+
+#wrapperPrihlasky #navigaceTop, #wrapperPrihlasky #wrapperPrihlaskyCenter #wrapperPrihlaskyContainer #navigaceTop {
+    width: 780px;
+    /*height: 15px;*/
+    margin: auto;
+}
+
+#wrapper > #navigaceTop > ul.navigaceList, #wrapperPrihlasky > #navigaceTop > ul.navigaceList {
+    float: right;
+}
+
+#wrapper > #wrapperCenter > #navigaceTop > ul > li, #wrapper > #wrapperCenter > #wrapperContainer > #navigaceTop > ul > li, 
+#wrapperPrihlasky > #navigaceTop > ul > li, #wrapperPrihlasky > #wrapperPrihlaskyCenter > #wrapperPrihlaskyContainer > #navigaceTop > ul > li {
+    float: right;
+    display: inline;
+    /**/
+    font-style: italic;
+    margin: 0;
+    margin: 0;
+    margin-left: 4px;
+}
+
+#wrapper > #wrapperCenter > #navigaceTop > ul > li a, #wrapper > #wrapperCenter > #wrapperContainer > #navigaceTop > ul > li > a, 
+#wrapperPrihlasky > #navigaceTop > ul > li a, #wrapperPrihlasky > #wrapperPrihlaskyCenter > #wrapperPrihlaskyContainer > #navigaceTop > ul > li > a {
+    color: black;
+}
+
+#wrapper #wrapperBottom {
+    height: 100%;
+    clear: both;
+}
+
+/* -------------------------------------------------------------------------- */
+/* FORM - Organizace/Firma */
+/* -------------------------------------------------------------------------- */
+
+#organizaceInfoForm {
+    background: #2A9789 none repeat scroll 0 0;
+    
+    font-family: verdana;
+    padding: 10px;
+    width: 604px;
+}
+
+#organizaceInfoForm fieldset {
+    background: #2A9789 none repeat scroll 0 0;
+    border: medium none;
+    padding: 2px;   
+}
+
+#organizaceInfoForm label {
+    clear: both;
+    color: #FFFFFF;
+    float: left;
+    font-family: "Roboto";
+    margin-top: 10px;
+    padding: 0px 5px;
+    width: 160px;
+}
+
+#submitOrganizaceUdaje {
+    width: 200px;
+}
+
+#organizaceInfoForm > fieldset > #avizoPozvankyEmail {
+    margin: 11px 22px 24px 10px;
+    width: auto;
+}
+
+#organizaceInfoForm > fieldset > input {
+    border: medium none;
+    
+    float: left;
+    margin-bottom: 7px;
+    margin-left: 10px;
+    margin-top: 3px;
+    padding: 6px 11px;
+    width: 390px;
+}
+
+#organizaceInfoForm #submitOrganizaceUdaje {
+    -moz-border-bottom-colors: none;
+    -moz-border-left-colors: none;
+    -moz-border-right-colors: none;
+    -moz-border-top-colors: none;
+    background: #FFA500 none repeat scroll 0 0;
+    border-image: none;
+    
+    clear: both;
+    color: #000000;
+    cursor: pointer;
+    float: right;
+    font-weight: bold;
+    margin-right: 8px;
+    width: 140px;
+}
+
+#organizaceInfoForm #submitOrganizaceUdaje:hover {
+    background: none repeat scroll 0 0 #930b0b;
+    color: white;
+}
+
+#organizaceInfoForm #katOrgTypy {
+    clear:both;
+}
+
+#organizaceInfoForm #katOrgTypy p {
+    clear: both;
+    color: #FFFFFF;
+    float: left;
+    font-family: "Roboto";
+    margin-top: 10px;
+    padding: 5px;
+    width: 160px;
+}
+
+#organizaceInfoForm #katOrgTypy select {
+    border: medium none;
+    float: left;
+    margin-bottom: 7px;
+    margin-left: 10px;
+    margin-top: 3px;
+    padding: 6px 11px;
+    width: 412px;
+}
+
+#organizaceInfoForm #katOrgDruhy {
+    clear: both;
+    width: 598px;
+}
+
+#organizaceInfoForm #katOrgDruhy p {
+    clear: both;
+    color: #FFFFFF;
+    float: left;
+    font-family: "Roboto";
+    margin-top: 10px;
+    padding: 5px;
+    width: 160px;
+}
+
+#organizaceInfoForm #katOrgDruhy select {
+    border: medium none;
+    float: left;
+    margin-bottom: 7px;
+    margin-left: 10px;
+    margin-top: 3px;
+    padding: 6px 11px;
+    width: 412px;
+}
+
+/* -------------------------------------------------------------------------- */
+/* KONTAKTY */
+/* -------------------------------------------------------------------------- */
+
+#kontaktyOsoba {
+    width: auto;
+    height: 90px;
+    margin-bottom: 16px;
+}
+
+#kontaktyLeftDiv {
+    float: left;
+    height: 90px;
+    width: 18%;
+}
+
+#kontaktyCenterDiv {
+    float: left;
+    height: 90px;
+    width: 41%;
+    border-bottom: 1px solid lightSlateGray;
+}
+
+#kontaktyCenterDiv p {
+    /**/
+}
+
+#kontaktyCenterDiv .kontaktyJmeno {
+    /**/
+    font-weight: bold;
+    margin-bottom: 6px;
+}
+
+#kontaktyCenterDiv .kontaktyEmail a:link, #kontaktyCenterDiv .kontaktyEmail a:visited, #kontaktyCenterDiv .kontaktyEmail a:hover, #kontaktyCenterDiv .kontaktyEmail a:active {
+    color: activeCaption;
+    font-weight: normal;
+    /**/
+}  
+
+#kontaktyRightDiv {
+    float: left;
+    margin-top: 18px;
+    height: 72px;
+    width: 41%;
+    border-bottom: 1px solid lightSlateGray;
+}
+
+#kontaktyLeftDiv img {
+    width: 70px;
+    height: 90px;
+    margin-left: 15px;
+}
+
+#kontaktyRightDiv p {
+    /**/
+}
+
+#kontaktyRightDiv .kontaktyJmeno {
+    /**/
+    font-weight: bold;
+    margin-bottom: 6px;
+}
+
+#kontaktyRightDiv .kontaktyEmail a:link, #kontaktyRightDiv .kontaktyEmail a:visited, #kontaktyRightDiv .kontaktyEmail a:hover, #kontaktyRightDiv .kontaktyEmail a:active {
+    color: activeCaption;
+    font-weight: normal;
+    /**/
+}   
+
+/* -------------------------------------------------------------------------- */
+
+/* -------------------------------------------------------------------------- */
+/* SEARCH RESULT DISPLAY
+/* -------------------------------------------------------------------------- */
+
+#wrapper .searchLeftTop {
+    width: 50%;
+    height: 21px;
+    margin-bottom: 5px;
+    text-align: left;
+    float: left;
+    border-bottom: 1px solid grey;
+}
+
+#wrapper .searchLeftTop p {
+    float: left;
+    font-family: verdana;
+    /*font-size: 0.85em;*/
+}
+
+#wrapper .searchLeftTop p span {
+    font-family: verdana;
+    font-size: 1em;
+    color: blue;
+    font-style: italic;
+    font-weight: bold;
+    /*text-decoration: underline;*/
+}
+
+#wrapper .searchRightTop {
+    width: 50%;
+    height: 21px;
+    margin-bottom: 5px;
+    text-align: left;
+    float: right;
+    border-bottom: 1px solid grey;
+}
+
+#wrapper .searchRightTop p {
+    float: right;
+    font-family: verdana;
+    /*font-size: 0.85em;*/
+}
+
+#wrapper .searchRightTop p span {
+    font-family: verdana;
+    font-size: 1em;
+    color: blue;
+    font-style: italic;
+    font-weight: bold;
+    /*text-decoration: underline;*/
+}
+
+#navigaceHledani {
+    border-top: 1px solid grey;
+}
+
+#navigaceHledani p {
+    
+    color: black;
+    float: left;
+    margin-left: 5px;
+    margin-top: 5px;
+}
+
+#navigaceHledani a {
+    
+    /*color: black;*/  /* likviduje color v .navClass protoze je to tag */
+    float: left;
+    margin-left: 5px;
+    margin-top: 5px;
+    padding: 0px 2px;
+}
+
+a.navClassHledani:link, a.navClassHledani:visited/*, a.navClass:hover/*, a.navClass:active*/ {
+    /**color: #4C4C4C;*/
+    color: black;
+}
+
+a.navClassHledani:hover {
+    color: white;
+    background: grey;
+
+}
+
+/*----------------------------------------------------------------------------------------------------*/
+
+#wrapper span.seznamLabelText {
+    font-family: verdana;
+    /*font-size: 0.80em;*/
+    color: Navy;
+}
+
+#leftColumnUl2/*, #leftColumnUl2*/ {
+    
+    box-shadow: 0 0 8px 2px #D3D3D3;
+    margin: 30px 0 0;
+    padding: 2px 0;
+    width: 242px;
+}
+
+#leftColumnUl1 {
+    /***margin: 5px auto;***/
+    width: 188px;
+    height: 50px;
+    /**background: #FFF8AF;**/
+    margin: 0px 0px 0px 0px;
+    /**border: 2px solid orange;**/
+    /**padding: 10px 2px 12px 0px;**/
+    /*box-shadow: 1px 1px 11px 0px grey; /*darkgoldenrod*/
+    background: url("../img/searchbg.png") no-repeat scroll 0 0 transparent;
+}
+
+.leftColumnHeader {
+    background: #2A9789 none repeat scroll 0 0;
+    
+    color: #FFFFFF;
+    font-weight: bold;
+    margin-top: -2px;
+    padding-bottom: 5px;
+    padding-left: 22px;
+    padding-top: 10px;
+    transition: background .5s ease 0s;
+}
+
+
+.leftColumnText {
+    border-left: 0 solid #FFA500;
+    border-right: 0 solid #FFFFFF;
+    cursor: pointer;
+    height: 22px;
+    padding: 2px 0;
+    text-decoration: none;
+}
+
+.leftColumnText:hover {
+    color: #FFF;
+    transition: background 0.5s ease 0s;
+    background: #FFA500 none repeat scroll 0 0;
+}
+
+.leftColumnText:last-child {
+    margin-bottom: 10px;
+}
+    
+    
+    
+    /*#leftColumnUl1 ul li, #leftColumnUl2 ul li, #leftColumnUl3 ul li {
+    margin: 20px 0;
+    width: 184px;
+    height: 22px;
+    border-left: 0px solid orange;
+    border-right: 0px solid white;
+    margin: 0px 4px;
+    padding: 2px 0;
+    cursor: pointer;
+    text-decoration:  none;
+    
+}*/
+
+#leftColumnUl1 ul li:hover, #leftColumnUl2 ul li:hover, #leftColumnUl3 ul li:hover {
+    /*background: #FFA500 none repeat scroll 0 0;*/
+    text-decoration: none;
+}
+
+#leftColumnUl3 {
+    
+    box-shadow: 0 0 8px 2px #D3D3D3;
+    margin: 10px 0 0;
+    padding: 2px 0;
+    width: 242px;
+}
+
+#leftColumnUl3 .citatText {
+    
+    font-style: italic;
+    font-weight: normal;
+    padding: 20px 10px;
+    text-align: center;
+}
+
+#leftColumnUl3 #cart {
+    margin-left: 22px;
+    margin-top: 0px;
+}
+
+#leftColumnUl3 a.zobrazKos {
+    padding: 17px 0 2px 36px;
+    color: black;
+    display: block;
+}
+
+#leftColumnUl3 a.panelButtonUl3 {
+    position: absolute;
+    top: 97px;
+    left: 140px;
+}
+
+#leftColumnUl4 {
+    
+    box-shadow: 0 0 8px 2px #D3D3D3;
+    margin-top: 10px;
+    width: 242px;
+}
+
+#leftColumnUl4 #kontaktTop {
+    /*background: url("../img/lNewsTop.png") repeat scroll 0px 0 transparent;*/
+    height: 32px;
+}
+
+#leftColumnUl4 #kontaktCenter {
+    /*background: url("../img/lNewsFill.png") repeat scroll 0px 0 transparent;*/
+    /*height: 52px;*/
+    padding-top: 12px;	
+}
+
+#leftColumnUl4 .kontaktNadpis {
+    background: #2A9789 none repeat scroll 0 0;
+    
+    color: #FFFFFF;
+    display: block;
+    font-weight: bold;
+    padding: 10px;
+    width: 222px;
+}
+
+#leftColumnUl4 .kontaktNadpis:hover {
+    background: #FFA500 none repeat scroll 0 0;
+    transition: background 0.33s ease 0s;
+}
+
+#leftColumnUl4 .kontaktTelefonText {
+    margin: auto;
+    text-align: center;
+}
+
+#leftColumnUl4 .kontaktTelefonText span {
+    margin-left: 0px;
+    font-weight: bold;
+}
+
+#leftColumnUl4 .kontaktEmailText {
+    margin: auto;
+    /**/
+    padding-top: 5px;
+    text-align: center;
+}
+
+#leftColumnUl4 .kontaktHodinyText {
+    margin: auto;
+    padding-bottom: 6px;
+    padding-top: 3px;
+    text-align: center;
+
+}
+
+#leftColumnUl4 .kontaktDwnarr {
+    position: absolute;
+    top: 91px;
+    left: 152px;
+}
+
+#leftColumnUl5 {
+    box-shadow: 0 0 8px 2px #D3D3D3;
+    margin-top: 10px;
+    width: 242px;
+}
+
+#leftColumnUl5 #kontaktJSTop {
+    /*background: url("../img/lNewsTop.png") repeat scroll 0px 0 transparent;*/
+    height: 32px;
+}
+
+#leftColumnUl5 #kontaktJSCenter {
+    /*background: url("../img/lNewsFill.png") repeat scroll 0px 0 transparent;*/
+    /*height: 68px;*/
+    padding-top: 12px;	
+}
+
+#leftColumnUl5 .kontaktNadpis {
+    background: #2A9789 none repeat scroll 0 0;
+    color: #FFFFFF;
+    display: block;
+    font-weight: bold;
+    padding: 10px;
+    width: 222px;
+}
+
+#leftColumnUl5 .kontaktNadpis:hover {
+    background: #FFA500 none repeat scroll 0 0;
+    transition: background 0.33s ease 0s;
+}
+
+#leftColumnUl5 .kontaktTelefonText {
+    margin: auto;
+    text-align: center;
+}
+
+#leftColumnUl5 .kontaktTelefonText span {
+    margin-left: 0px;
+    font-weight: bold;
+}
+
+#leftColumnUl5 .kontaktEmailText {
+    margin: auto;
+    /**/
+    padding-top: 5px;
+    text-align: center;
+}
+
+#leftColumnUl5 .kontaktHodinyText {
+    margin: auto;
+    padding-bottom: 6px;
+    padding-top: 3px;
+    text-align: center;
+    width: 170px;
+}
+
+#leftColumnUl5 .kontaktDwnarr {
+    position: absolute;
+    top: 107px;
+    left: 152px;
+}
+
+#leftColumnUl6 {
+    box-shadow: 0 0 8px 2px #D3D3D3;
+    margin-top: 30px;
+    width: 242px;
+}
+
+#leftColumnUl6 #kontaktJSTop {
+    /*background: url("../img/lNewsTop.png") repeat scroll 0px 0 transparent;*/
+    height: 32px;
+}
+
+#leftColumnUl6 #kontaktCenter {
+    /*background: url("../img/lNewsFill.png") repeat scroll 0px 0 transparent;*/
+    /*height: 68px;*/
+    padding-top: 12px;	
+}
+
+#leftColumnUl6 .kontaktNadpis {
+    background: #2A9789 none repeat scroll 0 0;
+    color: #FFFFFF;
+    display: block;
+    font-weight: bold;
+    padding: 10px;
+    width: 222px;
+}
+
+#leftColumnUl6 .kontaktNadpis:hover {
+    background: #FFA500 none repeat scroll 0 0;
+    transition: background 0.33s ease 0s;
+}
+
+#leftColumnUl6 .kontaktTelefonText {
+    margin: auto;
+    text-align: center;
+}
+
+#leftColumnUl6 .kontaktTelefonText span {
+    margin-left: 0px;
+    font-weight: bold;
+}
+
+#leftColumnUl6 .kontaktEmailText {
+    margin: auto;
+    /**/
+    padding-top: 5px;
+    text-align: center;
+}
+
+#leftColumnUl6 .kontaktHodinyText {
+    margin: auto;
+    padding-bottom: 6px;
+    padding-top: 3px;
+    text-align: center;
+    width: 170px;
+}
+
+#leftColumnUl6 .kontaktDwnarr {
+    position: absolute;
+    top: 107px;
+    left: 152px;
+}
+
+#panelRightColumn {
+    /*background: none repeat scroll 0 0 white;*/
+    margin: 0px 0px;
+    /**padding-top: 10px;**/
+    /*clear: both;*/
+    float: right;
+    display: block;
+    width: 179px;
+    border: 0px solid black;
+    /*box-shadow: 1px 1px 11px 1px grey;*/
+}
+
+#rightColumnUl1 {
+    clear: both;
+    background: none repeat scroll 0 0 /*khaki*/; /*#d6d6d6*/
+    margin: 0px 0px;
+    /**padding-top: 5px;**/
+    /*clear: both;*/
+    float: right;
+    display: block;
+    width: 179px;
+    border: 0px solid black;
+    position: relative;
+    /*box-shadow: 0px 0px 4px 0px grey*/
+}
+
+#rightColumnUl1 #newsTop {
+    background: url("../img/rNewsTop.png") repeat scroll 0px 0 transparent;
+    width: 179px;
+    /**font-size: 0.8em;
+font-weight: bold;
+    padding: 1px 2px;
+    color: #282828;**/
+    display: block;
+    position: relative;
+    height: 32px /**46px**/;
+}
+
+.lnews {
+    /***background: url("../img/rnewslow.png") no-repeat scroll 0px 0 transparent;***/
+    display: block;
+    height: 12px;
+    margin-bottom: 10px;
+    position: relative;
+    width: 188px;
+} 
+
+.dwnarr1 {
+    position: absolute;
+    top: 96px;
+    left: 146px;
+    z-index: 100;
+}
+
+.dwnarr2 {
+    position: absolute;
+    top: 219px;
+    left: 146px;
+    z-index: 100;
+}
+
+.dwnarr3 {
+    position: absolute;
+    top: 342px;
+    left: 146px;
+    z-index: 100;
+}
+
+#rightColumnUl1 a:link {
+    color: black;
+    text-decoration: none;
+}
+
+#rightColumnUl1 a:visited {
+    color: blue;
+    text-decoration: none;
+}
+
+#rightColumnUl1 a:hover {
+    color: DarkBlue;
+    text-decoration: none;
+}
+
+#rightColumnUl1 a:active {
+    color: red;
+    text-decoration: none;
+}
+
+#rightColumnUl1 ul li {
+    /*margin: 10px 5px 10px 5px;*/
+    margin-bottom: 10px;
+}
+
+#rightColumnUl2 {
+    clear: both;
+    margin: 0px 0px;
+    /***padding-top: 5px;***/
+    text-align: center;
+    float: right;
+    display: block;
+    width: 179px;
+    border: 0px solid black;
+}
+
+/**/
+/* UL2 -> FOR IMAGES with TEXT
+/**/
+
+#rightColumnUl2 #rightColumnlogoTop {
+    background: url("../img/rNewsTop.png") repeat scroll 0px 0 transparent;
+    width: 179px;
+    display: block;
+    position: relative;
+    height: 32px;
+}
+
+#rightColumnUl2 #rightColumnLogo {
+    background: url("../img/rNewsFill.png") repeat scroll 0px 0 transparent;
+    font-family: Arial, Helvetica, sans-serif;
+    /**/
+    display: block;
+    height: auto;
+    padding: 8px 8px 0px 8px;
+    /*font-style: italic;*/
+    text-align: center;
+    color: black;
+}
+
+#rightColumnUl2 #rightColumnLogo > a {
+    color: navy;
+}
+
+#rightColumnUl2 #rightColumnlogoTop p.popisLoga {
+    
+    font-weight: normal;
+    margin: 12px 0px 0px 10px;
+    color: #282828;
+    display: block;
+    float: left;
+}
+
+/************************************************************************************************/
+
+#rightColumnUl3 {
+    clear: both;
+    background: none repeat scroll 0 0 /*khaki*/; /*#d6d6d6*/
+    margin: 0px 0px;
+    padding-top: 5px;
+    /*clear: both;*/
+    float: right;
+    display: block;
+    width: 180px;
+    border: 0px solid black;
+    /*box-shadow: 0px 0px 4px 0px grey*/
+}
+
+#panelUdajeLogin {
+    background: #D3D3D3 none repeat scroll 0 0;
+   
+    margin: auto;
+    width: 624px;
+}
+
+#panelUdajeOsoba {
+    background: #D3D3D3 none repeat scroll 0 0;
+    margin: auto;
+    width: 624px;
+}
+
+#offsetOsoba {
+    clear: both;
+    float: left;
+    margin-top: 6px;
+}
+
+#panelUdajeOsoba h2 {
+    padding-bottom: 4px;
+    padding-left: 24px;
+    padding-top: 4px;
+}
+
+#panelUdajeOsoba p {
+    text-align: center;
+    margin-top: 10px;
+}
+
+#panelUdajeOsobaNadpis {
+    
+}
+
+#klientInfoForm {
+    background: #2A9789 none repeat scroll 0 0;
+   
+    display: block;
+    margin: auto;
+    padding: 10px;
+    width: 604px;
+}
+
+#titulpred, #name, #surname, #titulza, #rodnecislo, #datumnarozeni, #mistonarozeni, #adresa, #mesto, #psc, #email, #telefon,
+#loginJmeno, #uzivJmeno, #hesloPrvni, #hesloNove, #hesloZnovu, #jmeno, #prijmeni {
+    border: medium none;
+    float: left;
+    margin-bottom: 7px;
+    margin-left: 10px;
+    margin-top: 3px;
+    padding: 6px 11px;
+    width: 390px;
+}
+
+#klientInfoForm label {
+    clear: both;
+    color: #FFFFFF;
+    float: left;
+    margin-right: 10px;
+    padding: 10px 5px;
+    width: 160px;
+}
+
+/*#uzivJmeno, #hesloPrvni, #hesloPrvni, #hesloNove, #hesloZnovu {
+    border: medium none;
+    
+    float: left;
+    margin-bottom: 7px;
+    margin-left: 10px;
+    margin-top: 3px;
+    padding: 9px 11px;
+    width: 388px;
+}*/
+
+#klientInfoForm #submitOsobaUdaje {
+    /*-moz-border-bottom-colors: none;
+    -moz-border-left-colors: none;
+    -moz-border-right-colors: none;
+    -moz-border-top-colors: none;
+    background: #FFFFFF none repeat scroll 0 0;
+    border-image: none;
+    border-style: solid;
+    border-width: 2px;
+    color: #000000;
+    cursor: pointer;
+    margin-right: 6px;*/
+}
+
+#klientInfoForm #submitOsobaUdaje:hover {
+    background: #930B0B none repeat scroll 0 0;
+    color: #FFFFFF;
+}
+
+#footer {
+    clear: both;
+    /*display: inline;
+        float: left;
+        margin-right: 288px;*/
+}
+
+#footerEsf {
+    /*width: 33%;
+    /*float: left;*/
+    /*background: url(img/logoesf.jpg) no-repeat;*/
+}
+
+#footerEsf #logo {
+    width: 98%;
+    height: auto;
+    background: url(img/logoesf.jpg) no-repeat;
+}
+
+#footer #footerKontakt {
+    width: 50%;
+    float: left;
+    /*text-align: center;*/
+}
+
+#footer #footerTM {
+    width: 50%;
+    float: left;
+    text-align: right;
+}
+
+.popisAktuality {
+    
+    font-weight: normal;
+    margin: 12px 0px 0px 10px;
+    color: #282828;
+    display: block;
+    float: left;
+}
+
+.datumAktuality {
+    /**background: url("../img/rNewsTop.png") repeat scroll -4px 0 transparent;**/
+    /**width: 98%;**/
+    /**/
+    font-weight: normal;
+    margin: 14px 12px 0px 0px;
+    /**padding: 13px 12px 10px 10px;**/
+    color: #282828;
+    display: block;
+    float: right;
+    /**height: 46px;**/
+}
+
+/* -------------------------------------------------------------------------- */
+/* AKTUALITY MAIN PAGE STYLE
+/* -------------------------------------------------------------------------- */
+
+#wrapper #aktualitySeznamMain {
+    margin: 6px 5px;
+    padding: 2px;
+    display: block;
+    /***border-bottom: 1px solid lightSteelBlue;***/
+    text-align: justify;
+    
+    /**height: 46px;**/
+    width: 608px;
+}
+
+#wrapper .aktualitySeznamDatum {
+    /***background: url("../img/mainlideco.png") no-repeat scroll 0 0 transparent;***/
+    /**width: 98%;**/
+    /***border-bottom: 1px solid orangered;***/
+    
+    font-weight: normal;
+    margin: 0px 0px 0px 0px;
+    padding: 4px 10px;
+    color: #282828;
+    display: block;
+    /***width: 628px;***/
+    height: 16px;
+    float: right;
+}
+/***
+#wrapper .aktualitySeznamText {
+        
+    font-size: 0.85em;
+        font-weight: bold;
+        display: block;
+        padding: 7px 1px 3px;
+        color: #000;
+}
+***/
+
+#wrapper .aktualitySeznamPopis {
+    /*background: url("../img/rNewsFill.png") repeat scroll -4px 0 transparent;*/
+    
+    
+    display: block;
+    /*height: 80px;*/
+    padding: 4px 8px;
+    color: #000;
+    /*font-style: italic;*/
+}
+
+#wrapper #aktualitaAutor p {
+    float: right;
+    
+    font-family: verdana;
+}
+
+#wrapperContainer #aktualitaAutor {
+    float: right;
+    margin-top: 16px;
+    margin-bottom: 18px;
+    height: 12px;
+    font-size: 0.64em;
+    margin-right: 12px;
+}
+
+#wrapperContainer ul #aktualitaAutor {
+    float: right;
+    margin-top: 16px;
+    margin-bottom: 18px;
+    height: 12px;
+    
+}
+
+#aktualitySeznamNadpis {
+    background: url("../img/mainlideco.png") no-repeat scroll 0 0 transparent;
+    height: 24px;
+    width: 628px;
+}
+
+#aktualitySeznamNadpis > a {
+    /***background: url("../img/mainlideco.png") no-repeat scroll 0 0 transparent;***/
+    /**width: 98%;**/
+    /***border-bottom: 1px solid orangered;***/
+    
+    font-weight: normal;
+    margin: 0px 0px 0px 0px;
+    padding: 4px;
+    color: #282828;
+    display: block;
+    /***width: 628px;***/
+    height: 16px;
+    float: left;
+}
+
+#wrapperContainer #aktualitySeznamNadpis span.aktualitySeznamText {
+    display: block;
+    padding: 1px 2px;
+}
+
+#wrapperContainer #aktualitySeznamNadpis span.aktualitySeznamText2 {
+    display: block;
+    padding: 5px 6px;
+    
+}
+
+#aktualitaAutor .aktualitySeznamAutor {
+    font-weight: bold;
+}
+
+#aktualitySeznamOdkaz {
+    
+    margin: 12px 8px;
+}
+
+#aktualitySeznamOdkaz span.aktualitySeznamText {
+    color: black;
+    border-bottom: 1px solid darkgrey;
+}
+
+#wrapperContainer #aktualitaText {
+    display: block;
+    
+    margin: 6px 10px;
+    padding: 2px;
+    text-align: justify;
+}
+
+.aktualitySeznamList {
+    clear: both;
+}
+
+.default a:link, .default a:visited, .default a:hover, .default a:active {
+    color: Navy;
+    font-weight: bold;
+    text-decoration: none;
+}
+
+/*--------------------------------------------------------------------------------------------------------------------------*/
+
+
+/* -------------------------------------------------------------------------- */
+/* VZDELAVANI UCITELU -> HLAVNI CINNOST, DALSI VZDELAVANI 
+/* -------------------------------------------------------------------------- */
+
+#wrapper .statickeInfoNazev {
+    background: #2A9789 none no-repeat scroll 0 0;
+    
+    color: #FFFFFF;
+    display: block;
+    font-weight: bold;
+    margin-bottom: 0;
+    padding: 4px 8px;
+}
+
+#wrapperPrihlasky .statickeInfoNazev {
+    background: #2A9789 none repeat scroll 0 0;
+    
+    color: #FFFFFF;
+    display: block;
+    font-weight: bold;
+    margin-bottom: 0;
+    padding: 4px 8px;
+}
+
+/*#souhlasUdajeDiv .statickeInfoNazev {
+    background: url("../img/mainlideco.png") no-repeat scroll 0 0 transparent;
+    display: block;
+    height: 24px;
+    margin-bottom: 0px;
+    padding: 4px 8px;
+    width: 622px;
+    font-size: 0.85em;
+}*/
+
+
+#wrapper p.statickeInfoText {
+    font-family: verdana;
+    
+    text-align: justify;
+    padding: 0 8px;
+}
+
+.aktualityLabelText {
+    background: url("../img/rNewsFill.png") repeat scroll 0px 0 transparent;
+    font-family: Arial, Helvetica, sans-serif;
+    
+    display: block;
+    height: 60px;
+    padding: 8px 20px 0px 20px;
+    /*font-style: italic;*/
+    text-align: center;
+    color: black;
+}
+
+.categoryLabelTextAktivni {
+    color: #2F4F4F;
+    
+    font-weight: normal;
+}
+
+
+.categoryLabelTextNektivni {
+    color: #000000;
+    
+    font-weight: normal;
+}
+
+.categoryLabelTextAktivni:hover {
+    color: #FFFFFF;
+    font-weight: normal;
+}
+
+
+.categoryLabelTextNektivni:hover {
+    color: #FFFFFF;
+    
+}
+
+.aktualityPanelNazev {
+    background: none repeat scroll 0 0 #FFB200;
+    border: 2px solid #FF9900;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 1em;
+    font-weight: bolder;
+    margin-top: 2px;
+    margin-bottom: 2px;
+    padding: 1px 0 1px 3px;
+}
+
+.aktualityPanelText { /* !!!! zda se ze SPAN nereaguje na MARGIN ani PADDING, sice se zpracuje ale nedela to nic !!!! */
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 1em;
+    display: block;
+    margin-bottom: 2px;
+    /*font-weight: bolder;*/
+}
+
+.aktualityPanelOdkaz {
+    font-family: Arial, Helvetica, sans-serif;
+    
+    font-weight: normal;
+    display: block;
+    margin-top: -2px;	
+}
+
+/* -------------------------------------------------------------------------- */
+/* PRIHLASENI K AKCIM v menu KCVJS */
+/* -------------------------------------------------------------------------- */
+
+#prihlaseniTable {
+    clear: both;
+    margin: auto;
+    width: 1024px;
+}
+
+#prihlaseniTable th {
+    /**background-color: rgba(255, 132, 0, 0.5);**/
+    background: none repeat scroll 0 0 #FAC600;
+}
+
+#prihlaseniTable tr > th > a {
+    /**background-color: rgba(255, 132, 0, 0.5);**/
+    color: #000;
+}
+
+#prihlaseniTable .tlacitkoRezervace {
+    background: #FFA500 none repeat scroll 0 0;
+    border: medium none;
+    
+    box-shadow: 0 0 3px #FF0000 inset;
+    color: #FFFFFF;
+    cursor: pointer;
+    font-family: "Roboto";
+    font-size: 1.1em;
+    font-weight: bold;
+    left: 1126px;
+    padding: 12px 18px;
+    position: absolute;
+    width: 107px;   
+}
+
+#prihlaseniTable .tlacitkoRezervace:hover {
+    color: brown;
+    font-weight: bold;
+}
+
+tr.lightBlue {
+    
+    box-shadow: 0 0 2px #D3D3D3;
+    color: #000000;
+    font-size: 1em;
+    height: 32px;
+    padding: 0;
+}
+
+.lightBlue td {
+    border-right: 1px solid #D3D3D3;
+    text-align: center;
+    vertical-align: middle;
+}
+
+/*.lightBlue td:nth-child(2) {
+    text-align: right;
+}*/
+
+.lightBlue td:last-child {
+    border: none;
+}
+
+.lightBlue td a:link, .lightBlue td a:visited, .lightBlue td a:hover, .lightBlue td a:active {
+    color: #0e2b82;
+
+}
+
+tr.white {
+    
+    box-shadow: 0 0 2px #D3D3D3;
+    color: #000000;
+    font-size: 1em;
+    height: 32px;
+    padding: 0;
+}
+
+.white td {
+    border-right: 1px solid #D3D3D3;
+    text-align: center;
+    vertical-align: middle;    
+}
+
+.white td:last-child {
+    border: none;    
+}
+
+.white td a:link, .white td a:visited, .white td a:hover, .white td a:active {
+    color: #0e2b82;
+}
+
+tr.detailAkce {
+    background-color: #ebe5d1 /**#DCD1B1**/;
+    color: black;    
+}
+
+tr:hover {
+    background-color: #f5f5f5;
+}
+
+.smallText {
+    
+}
+
+#fulltextSearch, #skupinaOboru, #NazevAkce, #Obory, #obdobi {
+    
+    box-shadow: 0 0 8px #D3D3D3 inset;
+    float: left;
+    height: 70px;
+    margin-left: 8px;
+    margin-top: 30px;
+    padding: 14px;
+    width: 304px;
+}
+
+#hledanyText, #Obory > select, #obdobi > select {
+    border: medium none;
+    
+    box-shadow: 0 0 8px 2px #D3D3D3 inset;
+    padding: 7px;
+    width: 278px;
+}
+
+#hledanyText {
+    
+    padding-left: 10px;
+}
+
+#logoPdf img {
+    clear: both;
+    position: relative;
+    width: 48px;
+    height: 48px;
+    display: block;
+    margin-top: 16px;
+}
+
+#divNazev {
+    margin: 16px auto 10px;
+    font-size: 1.0em;
+}
+
+#osobyOrgPrihlasitTable tr th {
+    
+    padding: 2px;
+    background: none repeat scroll 0 0 lightgrey;
+}
+
+/* ------------------------------------------------------------------------- */
+/* NAVIGACE STRIP v AKCICH s UP/DOWN ARROWS */
+/* ------------------------------------------------------------------------- */
+
+#wrapperPrihlasky #tableHeaderAkce {
+    clear: both;
+    width: 806px;
+    height: 29px;
+    background: url("../img/osobaNav.png") repeat-y scroll 0 0 transparent;
+    margin: auto;
+}
+
+/**/
+#wrapperPrihlasky #tableHeaderAkce #headerVolnoAkce {
+    float: left;
+    padding: 6px 6px 6px 9px;	
+}
+/**/
+/**/
+/* akce 1 */
+#wrapperPrihlasky #tableHeaderAkce #headerCisloAkce {
+    float: left;
+    width: 104px;	
+}
+
+#wrapperPrihlasky #tableHeaderAkce #headerCisloAkce a p {
+    float: left;
+    color: white;
+    
+    padding: 7px 9px 6px 10px;	
+}
+
+#wrapperPrihlasky #tableHeaderAkce #headerCisloAkce a img {
+    float: right;
+    padding: 12px 9px 10px 10px;	
+}
+/**/
+/**/
+#wrapperPrihlasky #tableHeaderAkce #headerNazevAkce {
+    float: left;
+    width: 385px;	
+}
+
+#wrapperPrihlasky #tableHeaderAkce #headerNazevAkce a p {
+    float: left;
+    color: white;
+    
+    padding: 7px 9px 6px 10px;	
+}
+
+#wrapperPrihlasky #tableHeaderAkce #headerNazevAkce a img {
+    float: right;
+    padding: 12px 9px 10px 10px;	
+}
+/**/
+/**/
+#wrapperPrihlasky #tableHeaderAkce #headerTerminAkce {
+    float: left;
+    width: 153px;	
+}
+
+#wrapperPrihlasky #tableHeaderAkce #headerTerminAkce a p {
+    float: left;
+    color: white;
+    
+    padding: 7px 9px 6px 10px;	
+}
+
+#wrapperPrihlasky #tableHeaderAkce #headerTerminAkce a img {
+    float: right;
+    padding: 12px 9px 10px 10px;	
+}
+/**/
+/**/
+#wrapperPrihlasky #tableHeaderAkce #headerCenaAkce {
+    float: left;
+    width: 130px;	
+}
+
+#wrapperPrihlasky #tableHeaderAkce #headerCenaAkce a p {
+    float: left;
+    color: white;
+    
+    padding: 7px 9px 6px 10px;	
+}
+
+#wrapperPrihlasky #tableHeaderAkce #headerCenaAkce a img {
+    float: right;
+    padding: 12px 9px 10px 10px;	
+}
+/* konec akce 1 */
+
+/* - akce 2 */
+#wrapperPrihlasky #tableHeaderProgramy {
+    background: #2A9789 none repeat scroll 0 0;
+    
+    clear: both;
+    height: 33px;
+    margin: auto;
+    width: 1024px;
+}
+
+#wrapperPrihlasky #tableHeaderProgramy #headerCisloAkce {
+    border-right: 1px solid #FFFFFF;
+    float: left;
+    width: 109px;	
+}
+
+#wrapperPrihlasky #tableHeaderProgramy #headerCisloAkce a p {
+    float: left;
+    color: white;
+    
+    padding: 7px 9px 6px 10px;	
+}
+
+#wrapperPrihlasky #tableHeaderProgramy #headerCisloAkce a img {
+    float: right;
+    padding: 12px 9px 10px 10px;	
+}
+
+#wrapperPrihlasky #tableHeaderProgramy #headerNazevAkce {
+    border-right: 1px solid #FFFFFF;
+    float: left;
+    width: 656px;	
+}
+
+#wrapperPrihlasky #tableHeaderProgramy #headerNazevAkce a p {
+    float: left;
+    color: white;
+    
+    padding: 7px 9px 6px 7px;	
+}
+
+#wrapperPrihlasky #tableHeaderProgramy #headerNazevAkce a img {
+    float: right;
+    padding: 12px 9px 10px 10px;	
+}
+/**/
+/**/
+#wrapperPrihlasky #tableHeaderProgramy #headerTerminAkce {
+    border-right: 1px solid #FFFFFF;
+    float: left;
+    width: 149px;
+}
+
+#wrapperPrihlasky #tableHeaderProgramy #headerTerminAkce a p {
+    float: left;
+    color: white;
+    
+    padding: 7px 9px 6px 7px;	
+}
+
+#wrapperPrihlasky #tableHeaderProgramy #headerTerminAkce a img {
+    float: right;
+    padding: 12px 9px 10px 10px;	
+}
+/**/
+/**/
+#wrapperPrihlasky #tableHeaderProgramy #headerCenaAkce {
+    float: left;
+    width: 73px;	
+}
+
+#wrapperPrihlasky #tableHeaderProgramy #headerCenaAkce a p {
+    color: #FFFFFF;
+    float: left;
+    padding: 7px 9px 6px 8px;	
+}
+
+#wrapperPrihlasky #tableHeaderProgramy #headerCenaAkce a img {
+    float: right;
+    padding: 12px 0px 10px 0px;	
+}
+
+/* ------------------------------------------------------------------------- */
+/* NAVIGACE STRIP v keStazeni s UP/DOWN ARROWS */
+/* ------------------------------------------------------------------------- */
+
+#wrapper #tableHeaderDokumenty {
+    background: #2A9789 none repeat scroll 0 0;
+    
+    clear: both;
+    height: 33px;
+    /*margin-top: 46px;*/
+}
+
+/**/
+#wrapper #tableHeaderDokumenty #headerDokumentyNazev {
+    border-right: 1px solid #FFFFFF;
+    float: left;
+    width: 298px;	
+}
+
+#wrapper #tableHeaderDokumenty #headerDokumentyNazev a p {
+    color: #FFFFFF;
+    padding: 7px 9px 6px 0;
+    text-align: center;	
+}
+
+#wrapper #tableHeaderDokumenty #headerDokumentyNazev a img {
+    float: right;
+    padding: 12px 9px 10px 10px;	
+}
+/**/
+/**/
+#wrapper #tableHeaderDokumenty #headerDokumentDatumVlozeni {
+    border-right: 1px solid #FFFFFF;
+    float: left;
+    width: 230px;	
+}
+
+#wrapper #tableHeaderDokumenty #headerDokumentDatumVlozeni a p {
+    color: #FFFFFF;
+    padding: 7px 9px 6px 0;
+    text-align: center;	
+}
+
+#wrapper #tableHeaderDokumenty #headerDokumentDatumVlozeni a img {
+    float: right;
+    padding: 12px 9px 10px 10px;	
+}
+
+#wrapper #tableHeaderDokumenty #headerDokumentVelikost {
+    border-right: 1px solid #FFFFFF;
+    float: left;
+    width: 176px;	
+}
+
+#wrapper #tableHeaderDokumenty #headerDokumentVelikost a p {
+    color: #FFFFFF;
+    padding: 7px 9px 6px 0;
+    text-align: center;	
+}
+
+#wrapper #tableHeaderDokumenty #headerDokumentVelikost a img {
+    float: right;
+    padding: 12px 9px 10px 12px;	
+}
+/**/
+/**/
+#wrapper #tableHeaderDokumenty #headerDokumentPopis {
+    border-right: 1px solid #FFFFFF;
+    float: left;
+    width: 148px;	
+}
+
+#wrapper #tableHeaderDokumenty #headerDokumentPopis a p {
+    color: #FFFFFF;
+    padding: 7px 9px 6px 0;
+    text-align: center;	
+}
+
+#wrapper #tableHeaderDokumenty #headerDokumentPopis a img {
+    float: right;
+    padding: 12px 9px 10px 10px;	
+}
+/**/
+/**/
+#wrapper #tableHeaderDokumenty #headerDokumentStahnout {
+    text-align: center;	
+}
+
+#wrapper #tableHeaderDokumenty #headerDokumentStahnout a p {
+    color: #FFFFFF;
+    padding: 7px 9px 6px 0;
+    text-align: center;	
+}
+
+#wrapper #tableHeaderDokumenty #headerDokumentStahnout a img {
+    float: right;
+    padding: 12px 9px 10px 10px;	
+}
+
+#dokumentyTable {
+    clear: both;
+    margin: auto;
+    width: 1024px;
+}
+
+/* ------------------------------------------------------------------------- */
+/* NAVIGACE STRIP v Dokumenty faktury s UP/DOWN ARROWS */
+/* ------------------------------------------------------------------------- */
+
+#wrapperPrihlasky #tableHeaderFaktury {
+    background: #2A9789 none repeat scroll 0 0;
+    
+    clear: both;
+    height: 33px;
+    margin: auto;
+}
+
+/**/
+#wrapperPrihlasky #tableHeaderFaktury #headerCisloFaktury {
+    border-right: 1px solid #FFFFFF;
+    float: left;
+    width: 117px;	
+}
+
+#wrapperPrihlasky #tableHeaderFaktury #headerCisloFaktury a p {
+    color: #FFFFFF;
+    padding: 7px 3px 6px 0;
+    text-align: center;	
+}
+
+#wrapperPrihlasky #tableHeaderFaktury #headerCisloFaktury a img {
+    float: right;
+    padding: 12px 9px 10px 10px;	
+}
+/**/
+/**/
+#wrapperPrihlasky #tableHeaderFaktury #headerDatumVystaveni {
+    border-right: 1px solid #FFFFFF;
+    float: left;
+    width: 216px;	
+}
+
+#wrapperPrihlasky #tableHeaderFaktury #headerDatumVystaveni a p {
+    color: #FFFFFF;
+    padding: 7px 3px 6px 0;
+    text-align: center;	
+}
+
+#wrapperPrihlasky #tableHeaderFaktury #headerDatumVystaveni a img {
+    float: right;
+    padding: 12px 9px 10px 10px;	
+}
+
+#wrapperPrihlasky #tableHeaderFaktury #headerDatumSplatnosti {
+    border-right: 1px solid #FFFFFF;
+    float: left;
+    width: 211px;	
+}
+
+#wrapperPrihlasky #tableHeaderFaktury #headerDatumSplatnosti a p {
+    color: #FFFFFF;
+    padding: 7px 3px 6px 0;
+    text-align: center;	
+}
+
+#wrapperPrihlasky #tableHeaderFaktury #headerDatumSplatnosti a img {
+    float: right;
+    padding: 12px 9px 10px 10px;	
+}
+/**/
+/**/
+#wrapperPrihlasky #tableHeaderFaktury #headerfakturovanaCastka {
+    border-right: 1px solid #FFFFFF;
+    float: left;
+    width: 177px;	
+}
+
+#wrapperPrihlasky #tableHeaderFaktury #headerfakturovanaCastka a p {
+    color: #FFFFFF;
+    padding: 7px 3px 6px 0;
+    text-align: center;	
+}
+
+#wrapperPrihlasky #tableHeaderFaktury #headerfakturovanaCastka a img {
+    float: right;
+    padding: 12px 9px 10px 10px;	
+}
+/**/
+/**/
+#wrapperPrihlasky #tableHeaderFaktury #headeruhrazenaCastka {
+    border-right: 1px solid #FFFFFF;
+    float: left;
+    width: 155px;
+}
+
+#wrapperPrihlasky #tableHeaderFaktury #headeruhrazenaCastka a p {
+    color: #FFFFFF;
+    padding: 7px 3px 6px 0;
+    text-align: center;	
+}
+
+#wrapperPrihlasky #tableHeaderFaktury #headeruhrazenaCastka a img {
+    float: right;
+    padding: 12px 9px 10px 10px;	
+}
+
+#wrapperPrihlasky #tableHeaderFaktury #headerfakturovanaCastka a img {
+    float: right;
+    padding: 12px 9px 10px 10px;	
+}
+/**/
+/**/
+#wrapperPrihlasky #tableHeaderFaktury #headerFakturaDokument {
+    float: left;
+    width: 142px;	
+}
+
+#wrapperPrihlasky #tableHeaderFaktury #headerFakturaDokument a p {
+    color: #FFFFFF;
+    padding: 7px 3px 6px 0;
+    text-align: center;	
+}
+
+#wrapperPrihlasky #tableHeaderFaktury #headerFakturaDokument a img {
+    float: right;
+    padding: 12px 9px 10px 10px;	
+}
+
+
+/* ------------------------------------------------------------------------- */
+/* NAVIGACE STRIP v Dokumenty certifikaty s UP/DOWN ARROWS */
+/* ------------------------------------------------------------------------- */
+
+#wrapperPrihlasky #tableHeaderCertifikaty {
+    background: #2A9789 none repeat scroll 0 0;
+    
+    clear: both;
+    height: 33px;
+    margin: auto;
+}
+
+/**/
+#wrapperPrihlasky #tableHeaderCertifikaty #headerCertifikatCisloAkce {
+    border-right: 1px solid #FFFFFF;
+    float: left;
+    width: 190px;
+}
+
+#wrapperPrihlasky #tableHeaderCertifikaty #headerCertifikatCisloAkce a p {
+    color: #FFFFFF;
+    padding: 7px 3px 6px 0;
+    text-align: center;	
+}
+
+#wrapperPrihlasky #tableHeaderCertifikaty #headerCertifikatCisloAkce a img {
+    float: right;
+    padding: 12px 9px 10px 10px;	
+}
+/**/
+/**/
+#wrapperPrihlasky #tableHeaderCertifikaty #headerCertifikatJmenoPrijmeni {
+    float: left;
+    width: 235px;	
+}
+
+#wrapperPrihlasky #tableHeaderCertifikaty #headerCertifikatJmenoPrijmeni {
+    border-right: 1px solid #FFFFFF;
+    float: left;
+    width: 298px;	
+}
+
+#wrapperPrihlasky #tableHeaderCertifikaty #headerCertifikatJmenoPrijmeni a p {
+    color: #FFFFFF;
+    padding: 7px 3px 6px 0;
+    text-align: center;	
+}
+
+#wrapperPrihlasky #tableHeaderCertifikaty #headerCertifikatJmenoPrijmeni a img {
+    float: right;
+    padding: 12px 9px 10px 10px;	
+}
+
+#wrapperPrihlasky #tableHeaderCertifikaty #headerCertifikatDatumVystaveni {
+    border-right: 1px solid #FFFFFF;
+    float: left;
+    width: 203px;	
+}
+
+#wrapperPrihlasky #tableHeaderCertifikaty #headerCertifikatDatumVystaveni a p {
+    color: #FFFFFF;
+    padding: 7px 3px 6px 0;
+    text-align: center;
+}
+
+#wrapperPrihlasky #tableHeaderCertifikaty #headerCertifikatDatumVystaveni a img {
+    float: right;
+    padding: 12px 9px 10px 10px;	
+}
+/**/
+/**/
+#wrapperPrihlasky #tableHeaderCertifikaty #headerCertifikatDokument {
+    float: left;
+    width: 330px;	
+}
+
+#wrapperPrihlasky #tableHeaderCertifikaty #headerCertifikatDokument a p {
+    color: #FFFFFF;
+    padding: 7px 3px 6px 0;
+    text-align: center;	
+}
+
+#wrapperPrihlasky #tableHeaderCertifikaty #headerCertifikatDokument a img {
+    float: right;
+    padding: 12px 9px 10px 10px;	
+}
+
+/* ------------------------------------------------------------------------- */
+/* NAVIGACE STRIP v Dokumenty certifikaty s UP/DOWN ARROWS */
+/* ------------------------------------------------------------------------- */
+
+#wrapperPrihlasky #tableHeaderPridruzeneOsobu {
+    clear: both;
+    color: #000000;
+    height: 29px;
+    width: 1024px;
+}
+
+#wrapperPrihlasky #tableHeaderNavrhovaneOsoby {
+    clear: both;
+    width: 1024px;
+    height: 29px;
+    
+}
+
+/**/
+#headerJmeno, #headerPrijmeni, #headerDatumNarozeni, #headerRodneCislo, #headeruDetailyOsoby, #headeruGDPR, #headerTlacitkoOsoby {
+    background: #2A9789 none repeat scroll 0 0;
+    height: 34px;
+}
+
+#wrapperPrihlasky #tableHeaderPridruzeneOsobu #headerJmeno {
+    
+    border-right: 1px solid #FFFFFF;
+    float: left;
+    width: 134px;
+}
+
+#wrapperPrihlasky #tableHeaderNavrhovaneOsoby #headerJmeno {
+    
+    border-right: 1px solid #FFFFFF;
+    float: left;
+    width: 134px;
+}
+
+#wrapperPrihlasky #tableHeaderPridruzeneOsobu #headerJmeno a p {
+    color: #FFFFFF;
+    padding: 7px 2px 0 0;
+    text-align: center;	
+}
+
+#wrapperPrihlasky #tableHeaderNavrhovaneOsoby #headerJmeno a p {
+    color: #FFFFFF;
+    padding: 7px 2px 0 11px;
+    text-align: center;	
+}
+
+#wrapperPrihlasky #tableHeaderPridruzeneOsobu #headerJmeno a img {
+    float: right;
+    padding: 12px 9px 10px 10px;	
+}
+/**/
+/**/
+#wrapperPrihlasky #tableHeaderPridruzeneOsobu #headerPrijmeni  {
+    border-right: 1px solid #FFFFFF;
+    float: left;
+    width: 178px;	
+}
+
+#wrapperPrihlasky #tableHeaderNavrhovaneOsoby #headerPrijmeni  {
+    border-right: 1px solid #FFFFFF;
+    float: left;
+    width: 174px;	
+}
+
+#wrapperPrihlasky #tableHeaderPridruzeneOsobu #headerPrijmeni a p, #wrapperPrihlasky #tableHeaderNavrhovaneOsoby #headerPrijmeni a p {
+    color: #FFFFFF;
+    padding: 7px 2px 0 0;
+    text-align: center;		
+}
+
+#wrapperPrihlasky #tableHeaderPridruzeneOsobu #headerJmeno a img, #wrapperPrihlasky #tableHeaderNavrhovaneOsoby #headerDatumNarozeni a img {
+    float: right;
+    padding: 12px 9px 10px 10px;	
+}
+
+#wrapperPrihlasky #tableHeaderPridruzeneOsobu #headerDatumNarozeni {
+    border-right: 1px solid #FFFFFF;
+    float: left;
+    width: 148px;
+}
+
+#wrapperPrihlasky #tableHeaderNavrhovaneOsoby #headerDatumNarozeni {
+    border-right: 1px solid #FFFFFF;
+    float: left;
+    width: 187px;
+}
+
+#wrapperPrihlasky #tableHeaderPridruzeneOsobu #headerDatumNarozeni a p, #wrapperPrihlasky #tableHeaderNavrhovaneOsoby #headerDatumNarozeni a p {
+    color: #FFFFFF;
+    padding: 7px 2px 0 0;
+    text-align: center;		
+}
+
+#wrapperPrihlasky #tableHeaderPridruzeneOsobu #headerDatumNarozeni a img {
+    float: right;
+    padding: 12px 9px 10px 10px;	
+}
+
+#wrapperPrihlasky #tableHeaderPridruzeneOsobu #headerRodneCislo {
+    border-right: 1px solid #FFFFFF;
+    float: left;
+    width: 149px;	
+}
+
+#wrapperPrihlasky #tableHeaderNavrhovaneOsoby #headerRodneCislo {
+    border-right: 1px solid #FFFFFF;
+    float: left;
+    width: 187px;	
+}
+
+#wrapperPrihlasky #tableHeaderPridruzeneOsobu #headerRodneCislo a p, #wrapperPrihlasky #tableHeaderNavrhovaneOsoby #headerRodneCislo a p {
+    color: #FFFFFF;
+    padding: 7px 2px 0 0;
+    text-align: center;	
+}
+
+
+#wrapperPrihlasky #tableHeaderPridruzeneOsobu #headeruDetailyOsoby {
+    border-right: 1px solid #FFFFFF;
+    float: left;
+    width: 136px;	
+}
+
+ #wrapperPrihlasky #tableHeaderNavrhovaneOsoby #headeruDetailyOsoby {
+    border-right: 1px solid #FFFFFF;
+    float: left;
+    width: 187px;	
+}
+
+#wrapperPrihlasky #tableHeaderPridruzeneOsobu #headeruDetailyOsoby a p, #wrapperPrihlasky #tableHeaderNavrhovaneOsoby #headeruDetailyOsoby a p {
+    color: #FFFFFF;
+    padding: 7px 2px 0 0;
+    text-align: center;		
+}
+
+#wrapperPrihlasky #tableHeaderPridruzeneOsobu #headeruDetailyOsoby a img {
+    float: right;
+    padding: 12px 9px 10px 10px;	
+}
+
+#wrapperPrihlasky #tableHeaderPridruzeneOsobu #headeruGDPR {
+    border-right: 1px solid #FFFFFF;
+    float: left;
+    width: 135px;	
+}
+
+#wrapperPrihlasky #tableHeaderNavrhovaneOsoby #headeruGDPR {
+    border-right: 1px solid #FFFFFF;
+    float: left;
+    width: 140px;	
+}
+
+#wrapperPrihlasky #tableHeaderPridruzeneOsobu #headeruGDPR a p, #wrapperPrihlasky #tableHeaderNavrhovaneOsoby #headeruGDPR a p {
+    color: #FFFFFF;
+    padding: 7px 2px 0 0;
+    text-align: center;		
+}
+
+#wrapperPrihlasky #tableHeaderPridruzeneOsobu #headeruGDPR a img {
+    float: right;
+    padding: 12px 9px 10px 10px;	
+}
+
+/**/
+/**/
+#wrapperPrihlasky #tableHeaderPridruzeneOsobu #headerTlacitkoOsoby {
+    
+    float: left;
+    width: 137px;	
+}
+
+#wrapperPrihlasky #tableHeaderNavrhovaneOsoby #headerTlacitkoOsoby {
+    
+    float: left;
+    width: 149px;
+}
+
+#wrapperPrihlasky #tableHeaderPridruzeneOsobu #headerTlacitkoOsoby a p, #wrapperPrihlasky #tableHeaderNavrhovaneOsoby #headerTlacitkoOsoby a p {
+    color: #FFFFFF;
+    padding: 7px 2px 0 0;
+    text-align: center;	
+}
+
+#wrapperPrihlasky #tableHeaderPridruzeneOsobu #headerTlacitkoOsoby a img {
+    float: right;
+    padding: 12px 9px 10px 10px;	
+}
+/**/
+/**/
+
+#wrapperPrihlasky #tableHeaderOstatni {
+    background: #2A9789 none repeat scroll 0 0;
+    
+    clear: both;
+    height: 33px;
+    margin: auto;
+}
+
+#wrapperPrihlasky #tableHeaderOstatni #headerOstatniDatumVystaveni {
+    border-right: 1px solid #FFFFFF;
+    float: left;
+    width: 200px;
+}
+
+#wrapperPrihlasky #tableHeaderOstatni #headerOstatniDatumVystaveni p {
+    color: #FFFFFF;
+    font-weight: bold;
+    padding: 7px 9px 6px 0;
+    text-align: center;
+}
+
+#wrapperPrihlasky #tableHeaderOstatni #headerOstatniDatumVystaveni a img {
+    float: right;
+    padding: 12px 9px 10px 10px;
+}
+
+
+#wrapperPrihlasky #tableHeaderOstatni #headerOstatniNazevDokumentu {
+    border-right: 1px solid #FFFFFF;
+    float: left;
+    width: 532px;
+}
+
+#wrapperPrihlasky #tableHeaderOstatni #headerOstatniNazevDokumentu p {
+    color: #FFFFFF;
+    font-weight: bold;
+    padding: 7px 9px 6px 0;
+    text-align: center;
+}
+
+#wrapperPrihlasky #tableHeaderOstatni #headerOstatniNazevDokumentu a img {
+    float: right;
+    padding: 12px 9px 10px 10px;
+}
+
+#wrapperPrihlasky #tableHeaderOstatni #headerOstatniDokument {
+    float: left;
+    width: 290px;
+}
+
+#wrapperPrihlasky #tableHeaderOstatni #headerOstatniDokument p {
+    color: #FFFFFF;
+    font-weight: bold;
+    padding: 7px 9px 6px 0;
+    text-align: center;
+}
+
+#wrapperPrihlasky #tableHeaderOstatni #headerOstatniDokument a img {
+    float: right;
+    padding: 12px 9px 10px 10px;
+}
+
+/*---------------------------------------------------------------------------*/
+
+
+/* ------------------------------------------------------------------------- */
+/* ROZBALOVACI CAST TABULKY AKCE - PRIHLASKY (bez REGISTRACE buttonu) */
+/* ------------------------------------------------------------------------- */
+
+
+
+#divChar {
+    width: auto;
+    padding: 5px;
+}
+
+.levaCara {
+    float: left;
+    width: 42%;
+    background: none repeat scroll 0 0 black;
+    height: 1px;
+    margin: 19px 0px 5px 0px;
+}
+
+/* CHARAKTERISTIKA */
+
+#divChar p.tabDetail {
+    float: left;
+    width: 16%;
+    height: 10px;
+    background: none repeat scroll 0 0 transparent;
+    margin-top: 6px;
+    font-size: 1.0em;
+    color: #1b2954;
+    text-align: center;
+}
+
+#divChar p.tabCharakteristika {
+    clear: both;
+    background: none repeat scroll 0 0 transparent;
+    width: auto;
+    font-size: 1.0em;
+    text-align: left;
+}
+
+/* GARANT */
+
+#divGarant {
+    width: auto;
+    padding: 5px;
+}
+
+#divGarant p.tabDetail {
+    float: left;
+    width: 16%;
+    height: 10px;
+    background: none repeat scroll 0 0 transparent;
+    margin-top: 6px;
+    font-size: 1.0em;
+    color: #1b2954;
+    text-align: center;
+}
+
+#divGarant p.tabGarant {
+    clear: both;
+    background: none repeat scroll 0 0 transparent;
+    width: auto;
+    font-size: 1.0em;
+    text-align: center;
+}
+
+/* DOPORUCENO */
+
+#divDoporuceno {
+    width: auto;
+    padding: 5px;
+}
+
+#divDoporuceno p.tabDetail {
+    float: left;
+    width: 16%;
+    height: 10px;
+    background: none repeat scroll 0 0 transparent;
+    margin-top: 6px;
+    font-size: 1.0em;
+    color: #1b2954;
+    text-align: center;
+}
+
+#divDoporuceno p.tabDoporuceno {
+    clear: both;
+    background: none repeat scroll 0 0 transparent;
+    width: auto;
+    font-size: 1.0em;
+    text-align: center;
+}
+
+/* MISTO */
+#divMisto p.tabDetail {
+    float: left;
+    width: 16%;
+    height: 10px;
+    background: none repeat scroll 0 0 transparent;
+    margin-top: 6px;
+    font-size: 1.0em;
+    color: #1b2954;
+    text-align: center;
+}
+
+#divMisto p.tabMisto {
+    clear: both;
+    background: none repeat scroll 0 0 transparent;
+    width: auto;
+    font-size: 1.0em;
+    text-align: center;
+}
+
+#divDokumenty p.tabDetail {
+    float: left;
+    width: 16%;
+    height: 10px;
+    background: none repeat scroll 0 0 transparent;
+    margin-top: 6px;
+    font-size: 1.0em;
+    color: #1b2954;
+    text-align: center;
+}
+
+#tabDokumenty {
+    clear: both;
+    width: auto;
+    margin: auto;
+    text-align: center;
+}
+
+#tabDokumenty a {
+    /*clear: both;*/
+    background: grey;
+}
+
+/* ------------------------------------------------------------------- */
+/* ROZBALOVACI CAST TABULKY AKCE - SHOP = REGISTRACE button) */
+/* ------------------------------------------------------------------- */
+
+/*.levaCaraShop {
+        float: left;
+        width: 42%;
+        background: none repeat scroll 0 0 black;
+        height: 1px;
+        margin: 19px 0px 5px 0px;
+}*/
+
+/* PRIHLASENE OSOBY */
+#divPrihlaseniShop {
+    width: auto;
+    padding: 0px /**5px**/;
+}
+
+#divPrihlaseniShop p.tabDetailShop {
+    background-color: #2A9789;
+    border: 1px solid #D3D3D3;
+    
+    color: #FFFFFF;
+    float: left;
+    font-weight: bold;
+    height: 21px;
+    padding-left: 10px;
+    padding-top: 4px;
+    text-align: left;
+    width: 800px;
+}
+
+#divPrihlaseniShop .tabPrihlaseniShop {
+    clear: both;
+    float: left;
+}
+
+#divPrihlaseniShop .tabPrihlaseniShop li {
+    float: left;
+    
+    padding: 4px 0px 4px 8px;
+    text-align: justify;
+    width: auto;
+}
+
+/* CHARAKTERISTIKA */
+#divCharShop {
+    width: auto;
+    padding: 0px /**5px**/;
+}	
+
+#divCharShop p.tabDetailShop {
+    background-color: #2A9789;
+    border: 1px solid #D3D3D3;
+    
+    clear: both;
+    color: #FFFFFF;
+    float: left;
+    font-weight: bold;
+    height: 21px;
+    padding-left: 10px;
+    padding-top: 4px;
+    text-align: left;
+    width: 800px;
+}
+
+#divCharShop p.tabCharakteristikaShop {
+    background: rgba(0, 0, 0, 0) none repeat scroll 0 0;
+    clear: both;
+    padding: 4px 4px 4px 8px;
+    text-align: justify;
+    width: 800px;
+}
+
+/* OBJEDNAT */
+#divObjednatShop {
+    float: right;    
+}
+
+.tlacitkoRezervace {
+    background: #FFA500 none repeat scroll 0 0;
+    border: medium none;
+    
+    color: #FFFFFF;
+    cursor: pointer;
+    font-size: 1.1em;
+    left: 1126px;
+    padding: 12px 18px;
+    position: absolute;
+    width: 107px;
+}
+
+.tlacitkoRezervace:hover {
+    background: #FF4500 none repeat scroll 0 0;
+}
+
+/* GARANT */
+#divGarantShop {
+    clear: both;
+    width: auto;
+    padding: 0px;
+}
+
+#divGarantShop p.tabDetailShop {
+    background-color: #2a9789;
+    border: 1px solid #D3D3D3;
+    
+    color: #FFFFFF;
+    float: left;
+    /*font-size: 0.85em;*/
+    font-weight: bold;
+    height: 21px;
+    padding-left: 10px;
+    padding-top: 4px;
+    text-align: left;
+    width: 800px;
+}
+
+#divGarantShop p.tabGarantShop {
+    clear: both;
+    background: none repeat scroll 0 0 transparent;
+    width: auto;
+    
+    text-align: justify;
+    padding: 4px;
+    padding-left: 8px;
+}
+
+/* DOPORUCENO */
+#divDoporucenoShop {
+    width: auto;
+    padding: 0px;
+}	
+
+#divDoporucenoShop p.tabDetailShop {
+    background-color: #2a9789;
+    border: 1px solid #D3D3D3;
+    
+    color: #FFFFFF;
+    float: left;
+    /*font-size: 0.85em;*/
+    font-weight: bold;
+    height: 21px;
+    padding-left: 10px;
+    padding-top: 4px;
+    text-align: left;
+    width: 800px;
+}
+
+#divDoporucenoShop p.tabDoporucenoShop {
+    clear: both;
+    background: none repeat scroll 0 0 transparent;
+    width: auto;
+    
+    text-align: justify;
+    padding: 4px;
+    padding-left: 8px;
+}
+
+/* LEKTOR */
+#divLektorShop {
+    width: auto;
+    padding: 0px;
+}	
+
+#divLektorShop p.tabDetailShop {
+    background-color: #2a9789;
+    border: 1px solid #D3D3D3;
+    
+    color: #FFFFFF;
+    float: left;
+    /*font-size: 0.85em;*/
+    font-weight: bold;
+    height: 21px;
+    padding-left: 10px;
+    padding-top: 4px;
+    text-align: left;
+    width: 800px;
+}
+
+#divLektorShop ul li {
+    clear: both;
+    background: none repeat scroll 0 0 transparent;
+    width: auto;
+    
+    text-align: justify;
+    padding: 4px;
+    padding-left: 8px;
+}
+
+/* ROZSAH */
+#divPocetHodinShop {
+    width: auto;
+    padding: 0px;
+}	
+
+#divPocetHodinShop p.tabDetailShop {
+    background-color: #2a9789;
+    border: 1px solid #D3D3D3;
+    
+    color: #FFFFFF;
+    float: left;
+    /*font-size: 0.85em;*/
+    font-weight: bold;
+    height: 21px;
+    padding-left: 10px;
+    padding-top: 4px;
+    text-align: left;
+    width: 800px;
+}
+
+#divPocetHodinShop p.tabPocetHodinShop {
+    clear: both;
+    background: none repeat scroll 0 0 transparent;
+    width: auto;
+    
+    text-align: justify;
+    padding: 4px;
+    padding-left: 8px;
+}
+
+/* MISTO */
+#divMistoShop {
+    width: auto;
+    padding: 0px;
+}	
+
+#divMistoShop p.tabDetailShop {
+    background-color: #2a9789;
+    border: 1px solid #D3D3D3;
+    
+    color: #FFFFFF;
+    float: left;
+    /*font-size: 0.85em;*/
+    font-weight: bold;
+    height: 21px;
+    padding-left: 10px;
+    padding-top: 4px;
+    text-align: left;
+    width: 800px;
+}
+
+#divMistoShop p.tabMistoShop {
+    clear: both;
+    background: none repeat scroll 0 0 transparent;
+    width: auto;
+    
+    text-align: justify;
+    padding: 4px;
+    padding-left: 8px;
+}
+
+/* DOKUMENTY */
+#divDokumentyShop {
+    width: auto;
+    padding: 0px;
+}		
+
+#divDokumentyShop p.tabDetailShop {
+    background-color: #2a9789;
+    border: 1px solid #D3D3D3;
+    
+    color: #FFFFFF;
+    /*font-size: 0.85em;*/
+    font-weight: bold;
+    height: 21px;
+    padding-left: 10px;
+    padding-top: 4px;
+    text-align: left;
+    width: 800px;
+}
+
+#divDokumentyShop p.tabMistoShop {
+    clear: both;
+    background: none repeat scroll 0 0 transparent;
+    width: auto;
+    
+    text-align: justify;
+    padding: 4px;
+    padding-left: 8px;
+}
+
+#divDokumentyShop a {
+    color: black;
+    display: block;
+    margin: auto;
+    text-align: center;
+    
+}
+
+#divDokumentyShop ul {
+    float: left;
+    margin: 5px;
+}
+
+#divDokumentyShop ul li {
+    margin-right: 20px;
+    padding: 3px 0;
+}
+
+/**	
+#divDokumentyShop p.tabDetailShop {
+        float: left;
+        width: 16%;
+        height: 10px;
+        background: none repeat scroll 0 0 transparent;
+        margin-top: 6px;
+        font-size: 1.0em;
+        color: #1b2954;
+        text-align: center;
+}
+
+#tabDokumentyShop {
+        clear: both;
+        width: auto;
+        margin: auto;
+        text-align: center;
+}
+
+#tabDokumentyShop a {
+        clear: both;
+        background: grey;
+}**/
+
+#wrapperPrihlasky #NazevAkce #hledatFormAkce input {
+    /*clear: both;*/
+    /*float: left;*/
+    /**/
+    margin: 5px 0px 5px 5px;
+    width: 248px;
+    /*background-image: -moz-linear-gradient(right center , #F0E68C 0%, #FFA600 100%);*/
+}
+
+/*#wrapperPrihlasky p.wrapperP, #wrapperPrihlasky select {
+    /*clear: both;*/
+    /*float: left;*/
+    /**/
+    /*margin: 5px 0px 5px 5px;
+    width: 260px;
+    /*background-image: -moz-linear-gradient(right center , #F0E68C 0%, #FFA600 100%);*/
+/*}*/
+
+#wrapperPrihlasky p.wrapperP {
+    clear: both;
+    color: #2F4F4F;
+    float: left;
+    font-family: "Roboto";
+    padding: 10px 5px;
+    width: 160px;
+}
+
+/* --------------------------------------------------------------------------------------------------- */
+/* NAVIGACE v AKCE SHOPU, 1 2 3 Predchozi, Dalsi, 10 20 50
+/* --------------------------------------------------------------------------------------------------- */
+
+/* nefunguje, zjistit cileni classy a A: */
+a.navClass:link, a.navClass:visited/*, a.navClass:hover/*, a.navClass:active*/ {
+    color: #4C4C4C;
+    /**color: white;**/
+}
+
+a.navClass:hover {
+    background: #2A9789 none repeat scroll 0 0;
+    color: #FFFFFF;
+}
+
+a.navClass:active {
+    color: white;
+    background: black;
+}
+
+.volno {
+    background: green;
+    padding: 2px;
+    margin-top: 2px;
+    
+    font-weight: bold;
+    padding: 2px;
+    color: white;
+    border: 2px solid #419f1a;
+    cursor: default;
+}
+
+.obsazeno {
+    background: none repeat scroll 0 0 #FF7410;
+    padding: 2px;
+    margin-top: 2px;
+    
+    font-weight: bold;
+    padding: 2px;
+    color: white;
+    border: 2px solid orange;
+}
+
+/* --------------------------------------------------------------------------------------------------- */
+/* SEZNAM PRIHLASENYCH LIDI NA AKCI v SHOPU,
+/* --------------------------------------------------------------------------------------------------- */
+
+#panelRegistrace h2.registraceNadpis {
+    
+    color: #000000;
+    font-weight: bold;
+    height: 19px;
+    margin: 0 1px;
+    padding: 5px 28px;
+}
+
+#singleColumn h2 {
+    background: #D3D3D3 none repeat scroll 0 0;
+    
+    color: #000000;
+    font-weight: bold;
+    height: 19px;
+    margin: 0;
+    padding: 5px 27px;
+}
+
+#wrapperPrihlasky #inputPrihlaseniOsoba {
+    background: #FFA500 none repeat scroll 0 0;
+    border: medium none;
+    
+    color: #FFFFFF;
+    cursor: pointer;
+    float: right;
+    font-size: 1.1em;
+    margin-top: 7px;
+    padding: 10px 30px;
+}
+
+#wrapperPrihlasky #inputPrihlaseniOsoba:hover {
+    background: #FF4500 none repeat scroll 0 0;
+    border: medium none;
+    
+    color: #FFFFFF;
+    cursor: pointer;
+    font-size: 1.1em;
+    margin-top: 7px;
+    padding: 10px 30px;
+}
+
+#osobyOrgTable {
+    width: 100%;
+}
+
+#osobyOrgTable .header {
+    background: #2A9789 none repeat scroll 0 0;
+}
+
+#osobyOrgTable .header > th {
+    color: #FFFFFF;
+    padding: 6px;
+    text-align: center;
+}
+
+#osobyOrgTable .hlavniHeader {
+    /*text-align: center;
+    background: none repeat scroll 0 0 #FAC600;*/
+    width: 100%;
+    /**/
+}
+
+#osobyOrgTable .hlavniHeader > th {
+    background: #2A9789 none repeat scroll 0 0;
+    
+    color: #FFFFFF;
+    padding: 5px;
+    text-align: center;
+}
+
+#wrapperPrihlasky .kosikCisloAkce {
+    background: #2A9789 none repeat scroll 0 0;
+    
+    color: #FFFFFF;
+    float: left;
+    font-weight: bold;
+    margin-bottom: 1px;
+    margin-left: 2px;
+    padding: 6px 20px;
+}
+
+#wrapperPrihlasky .kosikNazevAkce {
+    
+    box-shadow: 0 -8px 7px -7px #D3D3D3 inset;
+    clear: both;
+    font-weight: bold;
+    margin-bottom: 5px;
+    margin-left: 2px;
+    padding: 6px 11px;
+}
+
+#wrapperPrihlasky #kosikCenaAkce {
+    background: #828282 none repeat scroll 0 0;
+    
+    color: #FFFFFF;
+    font-weight: bold;
+    height: 30px;
+    margin-bottom: 0;
+    margin-left: 2px;
+    padding: 9px 9px 0;
+}
+
+#wrapperPrihlasky #kosikCenaAkce > span:first-child {
+    float: left;
+}
+
+#wrapperPrihlasky #kosikCenaAkce > span:last-child {
+    float: right;
+    margin-right: 10px;
+}
+
+/* -------------------------------------------------------------------------------------- */
+/* NAKUPNI KOSIK - NAKOUPENE ITEMY */
+/* -------------------------------------------------------------------------------------- */
+
+#singleColumn {
+    background: #2A9789 none repeat scroll 0 0;
+    
+    clear: both;
+    margin: auto;
+    width: 624px;
+}
+
+#singleColumn > p {
+    color: #FFFFFF;
+    font-weight: bold;
+    margin-left: 14px;
+    margin-top: 10px;
+}
+
+#singleColumn .warningFaktura {
+    margin-left: 14px;
+    margin-top: 10px;
+    width: 624px;
+    
+    font-weight: bold;
+    color: #ff0000;
+}
+
+#singleColumn form {
+    width: 624px;
+    margin: 6px auto auto 13px;
+}
+
+#singleColumn form > p {
+    color: #FFFFFF;
+    font-weight: bold;
+    margin-left: 3px;
+    margin-top: 10px;
+}
+
+#singleColumn #checkoutTable {
+    background: #D3D3D3 none repeat scroll 0 0;
+    
+    padding: 10px;
+    width: 497px;
+}
+
+#singleColumn #checkoutTable td {
+    padding: 2px;
+}
+
+#singleColumn #checkoutTable tr {
+    padding: 2px;
+}
+
+#actionBar {
+    /**margin: 2px 0px 0px 83px;**/
+    height: 38px;
+}
+
+#actionBar a:link, #actionBar a:visited, #actionBar a:hover, #actionBar a:active {
+    
+    box-shadow: 0 0 2px 1px #D3D3D3;
+    color: #FF4500;
+    float: right;
+    margin: 7px 5px;
+    padding: 2px 8px;
+    text-decoration: none;
+}
+
+#actionBar a:first-child {
+    
+    box-shadow: 0 0 2px 2px #D3D3D3;
+    color: #2A9789;
+}
+
+#cartLeft #subtotal, #singleColumn #subtotal {
+    background: #2F4F4F none repeat scroll 0 0;
+    box-shadow: 0 0 4px 2px #2A9789 inset;
+    clear: both;
+    color: #FFFFFF;
+    height: 38px;
+    padding-top: 0;
+}
+
+#subtotal p.cenaObjs {
+    float: left;
+    font-weight: bold;
+    margin-left: 32px;
+    margin-top: 8px;
+}
+
+#subtotal p.cenaSum {
+    float: right;
+    font-weight: bold;
+    margin-right: 20px;
+    margin-top: 8px;
+}
+
+#subtotal2 p.cenaObjs2 {
+    color: #FFFFFF;
+    font-weight: bold;
+    padding: 4px;
+}
+
+#subtotal2 p.cenaSum2 {
+    color: #FFFFFF;
+    font-weight: bold;
+    padding: 12px 0;
+}
+
+#singleColumn #subtotal p.cenaObjs {
+    border-bottom: 1px solid #D3D3D3;
+    float: left;
+    margin: 0 0 0 10px;
+    padding-top: 18px;
+    width: 497px;
+}
+
+#singleColumn #subtotal p.cenaSum {
+    background: #2F4F4F none repeat scroll 0 0;
+    
+    margin: 0 36px 0 0;
+    padding: 10px;
+}
+
+#singleColumn input {
+    background: #FF4500 none repeat scroll 0 0;
+    border: medium none;
+    
+    clear: both;
+    color: #FFFFFF;
+    cursor: pointer;
+    height: 33px;
+    margin-bottom: 16px;
+    margin-left: 466px;
+    margin-top: 31px;
+}
+
+#singleColumn h4 {
+    background: none repeat scroll 0 0 rgba(35, 25, 100, 0.6);
+    color: white;
+    clear: both;
+    float: right;
+    margin-right: 88px;
+    padding: 4px;
+}
+
+#singleColumn form > ul {
+    background: #FFFFFF none repeat scroll 0 0;
+    padding: 0;
+    width: 500px;
+}
+
+#singleColumn form > ul > li {
+    background: #FFFFFF none repeat scroll 0 0;
+    
+    margin: 0 auto;
+    padding: 2px;
+}
+
+#singleColumn form > ul > li > p {
+    background: #FAC600 none repeat scroll 0 0;
+    
+    margin: 0 auto;
+    padding: 12px;
+}
+
+#singleColumn form > ul > li > p:last-child {
+    background: none repeat scroll 0 0 grey;
+    margin: 1px 0;
+    margin: 1px 0;
+    padding: 2px 10px;
+    color: white;
+}
+
+#checkoutTable2 {
+    background: #D3D3D3 none repeat scroll 0 0;
+    padding: 10px;
+    width: 596px;
+}
+
+#checkoutTable2 > ul {
+    background: red none repeat scroll 0 0;
+    padding: 0;
+    width: 500px;
+}
+
+/*----------------------------------------------------------------------------------------*/
+/* ORGANIZACE / OSOBA --------------------------------------------------------------------*/
+/*----------------------------------------------------------------------------------------*/
+
+#panelOrganizaceOsoba { 
+    background: #D3D3D3 none repeat scroll 0 0;
+    height: auto; /*794px*/
+    margin: auto;
+    width: 624px;
+}
+
+#panelOrganizaceOsoba h2 {
+    height: 23px;
+    padding-left: 28px;
+    padding-top: 4px;
+}
+
+#avizoPozvankyEmail {
+    margin-bottom: 10px;
+}
+/*----------------------------------------------------------------------------------------*/
+
+#cartTable {
+    clear: both;
+    color: black;
+    background: none repeat scroll 0 0 #FEECBF;
+    /*background-color: rgba(55, 45, 105, 0.7);*/
+    font-size: 1em;
+    margin: 8px auto;
+}
+
+#cartTable th {
+    clear: both;
+    background-color: rgba(255, 132, 0, 0.5);
+}
+
+#cartTable td {
+    color: black;
+    background-color: #E2D7B6;
+    font-size: 1em;
+    padding: 2px 6px;
+    font-weight: bold;
+}
+
+.cartTlacitkoOdebrat {
+    background: #FFA500 none repeat scroll 0 0;
+    
+    border-style: none;
+    cursor: pointer;
+    display: block;
+    height: 26px;
+    margin: auto;
+    vertical-align: middle;
+    width: 100px;
+}
+
+.cartTlacitkoOdebrat:hover {
+    background: #FF4500 none repeat scroll 0 0;
+    color: #FFFFFF;
+}
+
+/* ---------------------------------------------------------------------------- */
+/* HOME - 5 TABY s bodovym popisem VZEDL. UCITELU, JAZYK.SKOLA, DALS.VZ, EKCVJS, Kariera */
+/* -----------------------------------------------------------------------------*/
+
+#uciteleHome {
+    width: auto;
+    /* margin: auto 12px;*/
+    margin: 10px 10px 0 10px;
+    padding: 6px;
+    /*clear: both;*/
+    float: left;
+    display: block;
+    width: 584px;
+    /**background: none repeat scroll 0 0 #FCEC9D;**/
+    /**border: 3px solid #F1E296;**/
+    /*box-shadow: 1px 1px 11px 1px grey;*/
+    /*filter: progid:DXImageTransform.Microsoft.Glow(Color=#383838, Strength=3, Enabled);*/
+}
+
+#uciteleHome a:link, #uciteleHome a:visited, #uciteleHome a:hover, #uciteleHome a:link  {
+    color: #5B5B5B;
+}
+
+#uciteleHome ul {
+    margin: auto 12px;
+}
+
+
+#uciteleHome ul li {
+    list-style: disc;
+    background: none; /* !!!! - workaround pro likwidace stylu z #wrapper ul li - !!!! */
+    margin-bottom: 5px;
+}
+
+#jsHome {
+    width: auto;
+    /* margin: auto 12px;*/
+    margin: 10px 10px 0 10px;
+    padding: 6px;
+    clear: both;
+    float: left;
+    display: block;
+    width: 584px;
+    background: white /*#FEECBF*/;
+    /**border: 3px solid #F1E296;**/
+    /*box-shadow: 1px 1px 11px 1px grey;*/
+    /*filter: progid:DXImageTransform.Microsoft.Glow(Color=#383838, Strength=3, Enabled);*/
+}
+
+#jsHome a:link, #jsHome a:visited, #jsHome a:hover, #jsHome a:link  {
+    color: #5B5B5B;
+}
+
+#jsHome ul {
+    margin: auto 12px;
+}
+
+
+#jsHome ul li {
+    list-style: disc;
+    background: none; /* !!!! - workaround pro likwidace stylu z #wrapper ul li - !!!! */
+}
+
+#dvppHome {
+    width: auto;
+    /*margin: auto 12px;*/
+    margin: 10px 10px 0 10px;
+    padding: 6px;
+    clear: both;
+    float: left;
+    display: block;
+    width: 584px;
+    background: white /*#FEECBF*/;
+    /**border: 2px dashed #FEECBF;**/
+    /*box-shadow: 1px 1px 11px 1px grey;*/
+    /*filter: progid:DXImageTransform.Microsoft.Glow(Color=#383838, Strength=3, Enabled);*/
+}
+
+#dvppHome a:link, #dvppHome a:visited, #dvppHome a:hover, #dvppHome a:link  {
+    color: #5B5B5B;
+}
+
+#dvppHome ul {
+    margin: auto 12px;
+}
+
+
+#dvppHome ul li {
+    list-style: disc;
+    background: none; /* !!!! - workaround pro likwidace stylu z #wrapper ul li - !!!! */
+}
+
+#ekcvjsHome {
+    width: auto;
+    margin: 20px 10px 0 10px;
+    padding: 6px;
+    clear: both;
+    float: left;
+    display: block;
+    width: 584px;
+    background: white; 
+}
+
+#ekcvjsHome a:link, #ekcvjsHome a:visited, #ekcvjsHome a:hover, #ekcvjsHome a:link  {
+    color: #5B5B5B;
+}
+
+#ekcvjsHome ul {
+    margin: auto 12px;
+}
+
+#ekcvjsHome ul li {
+    list-style: disc;
+    background: none; /* !!!! - workaround pro likwidace stylu z #wrapper ul li - !!!! */
+}
+
+#karieraHome {
+    width: auto;
+    margin: 20px 10px 0 10px;
+    padding: 6px;
+    clear: both;
+    float: left;
+    display: block;
+    width: 584px;
+    background: white; 
+}
+
+#karieraHome a:link, #karieraHome a:visited, #karieraHome a:hover, #karieraHome a:link  {
+    color: #5B5B5B;
+}
+
+#karieraHome ul {
+    margin: auto 12px;
+}
+
+#karieraHome ul li {
+    list-style: disc;
+    background: none; /* !!!! - workaround pro likwidace stylu z #wrapper ul li - !!!! */
+}
+
+#spolupraceHome {
+    width: auto;
+    margin: 20px 10px 0 10px;
+    padding: 6px;
+    clear: both;
+    float: left;
+    display: block;
+    width: 584px;
+    background: white;
+}
+
+#spolupraceHome ul li {
+    float: left;
+}
+
+#spolupraceHome p.spolupraceNadpis {
+    
+}
+
+/*----------------------------------------------------------------------------------------------------------------------*/
+
+#uciteleHome .homePanelNazev1 {
+    float: left;
+    background: url("../img/tEdu.png") no-repeat scroll 0 0 transparent;
+    /**background: none repeat scroll 0 0 #FCF49D;**/
+    width: 172px;
+    height: 101px; /* background style box */
+    margin-top: 6px;
+    padding-left: 4px;
+    margin-top: 6px;
+}
+
+#jsHome .homePanelNazev2 {
+    float: left;
+    background: url("../img/nEdu.png") no-repeat scroll 0 0 transparent;
+    /**background: none repeat scroll 0 0 #FCF49D;**/
+    width: 172px;
+    height: 101px; /* background style box */
+    margin-top: 6px;
+    padding-left: 4px;
+    margin-top: 6px;
+}
+
+#dvppHome .homePanelNazev3 {
+    float: left;
+    background: url("../img/forLang.png") no-repeat scroll 0 0 transparent;
+    /**background: none repeat scroll 0 0 #FCF49D;**/
+    width: 172px;
+    height: 101px; /* background style box */
+    margin-top: 6px;
+    padding-left: 4px;
+    margin-top: 6px;
+}
+
+#ekcvjsHome .homePanelNazev4 {
+    float: left;
+    background: url("../img/emKcvjs.png") no-repeat scroll 0 0 transparent;
+    /**background: none repeat scroll 0 0 #FCF49D;**/
+    width: 172px;
+    height: 101px; /* background style box */
+    margin-top: 6px;
+    padding-left: 4px;
+    margin-top: 6px;
+}
+
+#karieraHome .homePanelNazev5 {
+    float: left;
+    background: url("../img/emKcvjs.png") no-repeat scroll 0 0 transparent;
+    /**background: none repeat scroll 0 0 #FCF49D;**/
+    width: 172px;
+    height: 101px; /* background style box */
+    margin-top: 6px;
+    padding-left: 4px;
+    margin-top: 6px;
+}
+
+
+/* -------------------------------------------------------------------------- */
+/* DOKUMENTY TABULKA
+/* -------------------------------------------------------------------------- */
+
+#dokumentyTable tbody tr td p {
+    background: lightgrey;
+    
+    padding: 2px;
+}
+
+#dokumentyTable tbody tr td img {
+    vertical-align: text-top;
+}
+
+/* -------------------------------------------------------------------------- */
+
+
+
+/* -------------------------------------------------------------------------- */
+
+#wrapperContainer ul > li > p {
+    clear: both;
+}
+
+
+.homePanelDetail {
+    float: left;
+    margin: 8px 20px;
+    width: 59%;
+    
+}
+
+.homePanelDetail > h2 {
+    font-family: verdana;
+    font-size: 1.2em;
+}
+
+.homePanelDetail > p {
+    font-family: verdana;
+    margin-top: 5px;
+    line-height: 1.5em;
+}
+
+.homePanelDetail > a {
+    float: right;
+    font-family: verdana;
+    margin-top: 12px;
+    font-size: 0.85em;
+    text-decoration: underline;
+    color: black;
+}
+
+.ekcvjsPanelNazev {
+    float: left;
+    width: 30%;
+    margin-top: 6px;
+}
+
+.ekcvjsPanelDetail {
+    float: left;
+    margin: auto 20px;
+    width: 63%;
+}
+
+.detailAkceShop {
+    background-color: #E6E6E6;
+}
+
+a.categoryLabelText:link, a.categoryLabelText:visited, a.categoryLabelText:hover, a.categoryLabelText:link {
+    color: grey;
+}
+
+.panelText {
+    color: #000000;
+    float: left;
+    font-family: "Roboto";
+    font-weight: normal;
+    margin: 4px 0 0 8px;
+}
+
+/*.panelText:hover {
+    color: #FFF
+}*/
+
+.cenaTabulka {
+    /*padding: 2px;
+    margin: 2px;*/
+}
+
+/*-----------------------------------------------------------------------------*/
+/* FOOTER */
+/*-----------------------------------------------------------------------------*/
+
+#footer {
+    clear: both;
+    height: 91px;
+    padding: 14px 12px 12px 12px;
+    /***border: 1px dotted black;***/
+    position: relative;
+    z-index: 100;
+    /*background: url("../img/footerImg.png") no-repeat scroll 0 0 transparent;*/
+    margin-bottom: 14px;
+}
+
+#footer #footerLeft {
+    float: left;
+    height: 83px;
+    width: 100px;			
+}
+
+#footer #footerCenter {
+    float: left;
+    height: 83px;
+    width: 100px;
+}
+
+#footer #footerRight {
+    float: right;
+    /***background: url("../img/footerLogo.png") no-repeat scroll 0 0 transparent;***/
+    width: 325px;
+    height: 83px;
+}
+
+/** NEW MAVERICK **/
+
+#panelLeftColumn input.inp_text {
+    border: medium none;
+    width: 124px;
+    margin: 20px 12px 0 18px;
+}
+
+.panelButton img {
+    float: left;
+    /**margin: 3px 5px 2px 10px;**/
+    margin: 3px 1px 2px 8px;
+    width: 21px;
+}
+
+/*-----------------------------------------------------------------------------*/
+/* MAIN PAGE TILES, HOVER STATE, LINE HEIGHT... */
+/*-----------------------------------------------------------------------------*/
+
+.homePanelNazev1, .homePanelNazev2, .homePanelNazev3, .homePanelNazev4, .homePanelNazev5 {
+    float: left;
+    margin-left: 26px;
+    margin-top: 8px;
+    width: 188px;
+    height: 127px;
+    cursor: pointer;
+}
+
+.homePanelNazev1 {
+    background: url("../img/tile01.png") no-repeat scroll 0 0 transparent;
+    margin-bottom: 45px;
+}
+
+.homePanelNazev2 {
+    background: url("../img/tile02.png") no-repeat scroll 0 0 transparent;
+    margin-bottom: 45px;
+}
+
+.homePanelNazev3 {
+    background: url("../img/tile04.png") no-repeat scroll 0 0 transparent;
+    margin-bottom: 45px;
+}
+
+.homePanelNazev4 {
+    background: url("../img/tile03.png") no-repeat scroll 0 0 transparent;
+    margin-bottom: 63px;
+} 
+
+.homePanelNazev5 {
+    background: url("../img/tile05.png") no-repeat scroll 0 0 transparent;
+
+} 
+
+/*.homePanelNazev1 > a, .homePanelNazev2 > a, .homePanelNazev3 > a, .homePanelNazev4 > a {
+    width: 188px;
+    height: 128px;
+    cursor: pointer;
+    display: block;
+}*/
+
+#wrapperCenter ul li.homePanelLi2 {
+    clear: both;
+}
+
+#wrapperCenter ul li.homePanelLi3 {
+    clear: both;
+}
+
+#wrapperCenter ul li.homePanelLi4 {
+    clear: both;
+}
+
+#wrapperCenter ul li.homePanelLi5 {
+    clear: both;
+}
+
+.homePanelNazev1:hover {
+    background: url("../img/tile01.png") no-repeat scroll -187px 0 transparent;
+}
+
+.homePanelNazev2:hover {
+    background: url("../img/tile02.png") no-repeat scroll -188px 0 transparent;
+}
+
+.homePanelNazev3:hover {
+    background: url("../img/tile04.png") no-repeat scroll -188px 0 transparent;
+}
+
+.homePanelNazev4:hover {
+    background: url("../img/tile03.png") no-repeat scroll -188px 0 transparent;
+}
+
+.homePanelNazev5:hover {
+    background: url("../img/tile05.png") no-repeat scroll -188px 0 transparent;
+}
+
+.homePanelDetail span {
+    float: right;
+    margin-top: 10px;
+}
+
+#stripMainPage {
+    float: left;
+    margin-left: 8px;
+    margin-top: 18px;
+}
+
+/*-----------------------------------------------------------------------------*/
+
+/*-----------------------------------------------------------------------------*/
+/* GALLERY, GALERIE - MAIN PAGE */
+/*-----------------------------------------------------------------------------*/
+
+.galerieSeznamList {
+    clear: both;
+    height: 144px;
+}
+
+.galerieSeznamList:last-child {
+    margin-bottom: 10px;
+}
+
+.galerieLogo {
+    width: 164px;
+    height: 134px;
+    /*margin-left: 10px;*/
+    cursor: pointer;
+    float: left;
+}
+
+.galerieLogo .galerieSub {
+    background: url("../img/bgcut.png") repeat scroll 0 0 transparent;
+    width: 164px;
+    height: 134px;
+    position: relative;
+    z-index: 100;
+    top: 10px;
+    left: 10px;
+}
+
+.galerieLogo > img {
+    position: absolute;
+    z-index: 5;
+    margin: 10px;
+    float: left;
+    width: 164px;
+    height: 134px;
+}
+
+.galerieSub img {
+    /*background: url(images/bgcut.png) no-repeat;*/
+    width: 164px;
+    height: 134px;
+    position: relative;
+    z-index: 100;
+    top: 10px;
+    left: 10px;
+}
+
+.galerieInfo {
+    float: right;
+    width: 446px;
+    margin-top: 24px;
+    height: 94px;
+}
+
+.galerieInfo a {
+    float: left;
+    color: black;
+}
+
+.galerieInfo > span {
+    float: right;
+    
+    margin-right: 20px;
+    margin-top: 2px;
+    font-weight: bold;
+}
+
+.galerieInfo img {
+    clear: both;
+    width: 430px;
+}
+
+.galeriePopis {
+    margin-top: 3px;
+    height: 70px;
+    
+    width: 433px;
+}
+
+#galerieVlozil {
+    float: right;
+    margin-right: 10px;
+}
+
+.galerieAutor {
+    font-size: 0.64em;
+    font-weight: bold;
+}
+
+.galerieAutorJmeno {
+    font-size: 0.64em;
+}
+
+/*-----------------------------------------------------------------------------*/
+
+/*-----------------------------------------------------------------------------*/
+/* GALLERY, GALERIE - PREVIEW STRIP, FULL IMAGE */
+/*-----------------------------------------------------------------------------*/
+
+#fotoSeznamTop {
+    margin: auto;
+    width: 800px;
+}
+
+#fotoSeznamTop ul {
+    margin: auto;
+    height: 100px;
+    background: url("../img/gallPrevBg.png") no-repeat scroll 0 0 transparent;
+    margin-top: 10px;
+}
+
+#fotoSeznamTop li {
+    float: left;
+    margin: 6px 5px;
+    /*width: 120px;
+    height: 85px;*/
+}
+
+#fotoSeznamTop li:first-child, #fotoSeznamTop li:last-child {
+    margin: 2px 0 0 0;
+}
+
+#fotoSeznamTop li img:first-child, #fotoSeznamTop li img:last-child {
+    /*float: left;*/
+    width: 55px;
+    height: 98px;
+}
+
+#fotoSeznamTop li.fotoSeznamList > a > img {
+    /*float: left;*/
+    width: 126px;
+    height: 88px;
+}
+
+#fotoSeznamTop li.fotoSeznamList > a > img.aktImage {
+    /*float: left;*/
+    border: 2px solid white;
+    width: 124px;
+    height: 84px;
+}
+
+#fotoSeznamBottom {
+    margin: auto;
+    text-align: center;
+}
+
+
+/*-----------------------------------------------------------------------------*/
+/*-----------------------------------------------------------------------------*/
+/* Registrace made by Favak  */
+/*-----------------------------------------------------------------------------*/
+
+#panelRegistrace {
+    background: #D3D3D3 none repeat scroll 0 0;
+    
+    margin: auto;
+    width: 624px;
+}
+
+#panelRegistrace h2 {
+    display: block;
+    height: 20px;
+    margin: auto;
+    padding: 4px 8px;
+    width: 604px;
+}
+
+.tabDokumentyShop span {
+    bottom: 9px;
+    margin-left: 5px;
+    margin-top: 0;
+    position: relative;
+}
+
+/*-----------------------------------------------------------------------------*/
+/* KOSIK - ODEBRAT AKCE, OBJEDNAT, NAPOVEDA  */
+/*-----------------------------------------------------------------------------*/
+
+#wrapperPrihlasky .kosikOdebratAkce {
+    border: medium none;
+    float: right;
+    margin-right: 2px;
+    width: 32px;
+}
+
+#wrapperPrihlasky .formPridatOsobu {
+    float: left;
+}
+
+#wrapperPrihlasky .tlacitkoPridatOsobu {
+    background: #FFA500 none repeat scroll 0 0;
+    border: medium none;
+    
+    clear: both;
+    color: #000000;
+    cursor: pointer;
+    display: block;
+    font-size: 14px;
+    font-weight: bold;
+    height: 31px;
+    margin-bottom: 1px;
+    margin-left: 2px;
+    padding: 6px 20px;
+}
+
+#wrapperPrihlasky .cartTlacitkoOdebratAkce {
+    background: #FF4500 none repeat scroll 0 0;
+    border: medium none;
+    
+    color: #FFFFFF;
+    cursor: pointer;
+    font-size: 14px;
+    font-weight: bold;
+    padding: 5px 0;
+    width: 30px;
+}
+
+#wrapperPrihlasky .objednatOdkaz {
+    background: #FFA500 none repeat scroll 0 0;
+    
+    display: block;
+    float: right;
+    height: 20px;
+    margin-top: 3px;
+    padding: 6px 15px;
+    text-align: center;
+    width: 82px;
+}
+
+#wrapperPrihlasky .objednatOdkaz:link {
+    color: #FFFFFF;
+}
+
+/*#wrapperPrihlasky .objednatOdkaz:visited {
+    color: #810000;
+}*/
+
+#wrapperPrihlasky .objednatOdkaz:hover {
+    background: #FF4500 none repeat scroll 0 0;
+}
+
+#wrapperPrihlasky .objednatOdkaz:active {
+    color: white;
+}
+
+#wrapperPrihlasky .statickeInfoNazev {
+    font-weight: bold;
+    
+}
+#wrapperPrihlasky .statickeInfoDiv {
+    font-style: italic;
+    
+}
+
+/*-----------------------------------------------------------------------------*/
+/* PRIHLASENI - info po prihlaseni  */
+/*-----------------------------------------------------------------------------*/
+
+#wrapperContainer h2.prihlaseniWarningHeader {
+    background: linear-gradient(red,orangered);
+    height: 22px;
+    margin-bottom: 1px;
+    padding: 9px 10px 3px 28px;
+    font-size: .95em;
+    
+    box-shadow: 0 2px 1px 0px lightgrey;
+    color: white;
+    text-align: center;
+}
+
+.prihlaseniWarningP {
+    margin: 14px auto;
+    text-align: center;
+}
+
+.prihlaseniWarningP > a {
+    color: orangered;
+}
+
+#wrapperContainer p.prihlaseniUzivatel {
+    background: #2A9789 none repeat scroll 0 0;
+    
+    color: #FFFFFF;
+    font-weight: bold;
+    margin-top: 10px;
+    padding: 4px 9px;
+}
+
+#wrapperContainer h2.prihlaseniHeader {
+    background: #2A9789 none repeat scroll 0 0;
+    
+    color: #FFFFFF;
+    margin-bottom: 1px;
+    padding: 2px 10px;
+    
+}	
+
+#wrapperContainer #prihlaseniInfo {
+    margin-top: 15px;
+    
+    padding: 0 2px;
+}
+
+#wrapperContainer #prihlaseniNavrat {
+    clear: both;
+    
+    height: 24px;
+    position: relative;
+    top: 6px;
+    padding: 0 2px;
+}
+
+#prihlaseniInfo .prihlaseniPrihlasky1 p:first-child {
+    float: left;
+}
+
+#prihlaseniInfo .prihlaseniPrihlasky1 p:last-child {
+    float: right;
+}
+
+#prihlaseniInfo .prihlaseniPrihlasky2 {
+    clear: both;
+}
+
+#prihlaseniInfo .prihlaseniPrihlasky2 p:first-child {
+    float: left;
+}
+
+#prihlaseniInfo .prihlaseniPrihlasky2 p:last-child {
+    float: right;
+}
+
+#prihlaseniInfo .prihlaseniPrihlasky1 a, #prihlaseniInfo .prihlaseniPrihlasky2 a {
+    color: #810000;
+}
+
+#prihlaseniNavrat p {
+    display: block;
+    margin: 5px 0;
+}
+
+#prihlaseniNavrat p a {
+    color: #810000;
+}
+/*-----------------------------------------------------------------------------*/
+/*-----------------------------------------------------------------------------*/
+/* OBEJDNAVKA - SUMMMARY													   */
+/*-----------------------------------------------------------------------------*/
+
+#singleColumn #confirmationText {
+    background: url("../img/shopSumOrngStrip.png") no-repeat scroll 0 0 transparent;
+    font-size: 1.1em;
+    height: 23px;
+    margin: auto;
+    padding-top: 3px;
+    text-align: center;
+    width: 809px;
+}
+
+#kcvjsInfo {
+    width: 806px;
+    margin: auto;
+    margin-top: 15px;
+}
+
+#kcvjsInfo .kcvjsInfoBold {
+    font-weight: bold;
+}
+
+#kcvjsInfo .kcvjsInfo {
+    font-weight: normal;
+    margin-bottom: 15px;
+    margin-top: 1px;
+}
+
+#horizontRuler hr {
+    width: 507px;
+    margin: 10px 0 0 0;
+    text-align: left;
+    height: 2px;
+    background: none repeat scroll 0 0 black;
+}
+
+.summaryObjednavatel {
+    margin: 0 3px;
+}
+
+#singleColumn .summaryColumn {
+    margin: auto 3px;
+}
+
+#orderSummaryTable th {
+    background: none repeat scroll 0 0 lightgrey;
+    height: 20px;
+    padding-left: 6px;
+    padding-top: 1px;
+    text-align: left;
+    width: 800px;
+}
+
+#orderSummaryTable td {
+    width: auto;
+    
+}
+
+#orderSummaryTable td:first-child {
+    text-align: left;
+}
+
+#orderSummaryTable td:last-child {
+    text-align: right;
+}
+
+#orderSummaryTable #totalCellRight {
+    text-align: right;
+}
+
+#potvrzeniObjTable th, #potvrzeniPlatceTable th {
+    background: none repeat scroll 0 0 lightgrey;
+    height: 20px;
+    padding-left: 6px;
+    padding-top: 1px;
+    text-align: left;
+    width: 800px;
+}
+
+#potvrzeniObjTable td, #potvrzeniPlatceTable td {
+    width: auto;
+    
+}
+
+#shrnutiObjednavky {
+    margin: 0 5px;
+}
+
+#shrnutiObjednavky {
+    margin-top: 15px;
+}
+
+#shrnutiObjednavky .shrnutiObjednavkyText {
+    font-weight: bold;
+    font-size: 0.95em;
+}
+
+#odkazMain {
+    margin: 15px 5px 0;
+}
+
+#odkazMain a {
+    border: 1px solid black;
+    padding: 5px;
+    background: none repeat scroll 0 0 lightgray;
+    color: black;
+}
+
+
+/*-----------------------------------------------------------------------------*/
+/* EKCVJS - UZIVATELSKE UDAJE												   */
+/*-----------------------------------------------------------------------------*/
+
+#panelUdajeLogin h2 {
+    padding: 4px 0 4px 28px;
+}
+/*-----------------------------------------------------------------------------*/
+
+#registraceRCCheck {
+    float: left;
+    height: 10px;  
+    margin-top: 5px;
+    margin-bottom: 0px;
+}
+
+#registraceRCCheck input{
+    margin-left: 0;
+    margin-right: 6px;
+    margin-top: 1px;
+    width: auto;
+}
+
+#registraceRCCheck span{
+    color: #FFFFFF;
+    font-style: italic;
+    height: 25px;
+    margin-top: 7px;
+}
+
+#registraceNezletilostCheck {
+    float: left;
+    height: 6px;
+    margin-bottom: 26px;
+    margin-top: 20px;
+    width: 280px;
+}
+
+#registraceNezletilostCheck input{
+    margin-left: 0;
+    margin-right: 6px;
+    margin-top: 1px;
+    width: auto;
+}
+
+#registraceNezletilostCheck span{
+    clear: both;
+    color: #FFFFFF;
+    font-style: italic;
+    height: 27px;
+    margin-bottom: 10px;
+    margin-top: 7px;
+}
+
+#nepovinneUdaje {
+    clear: both;
+    color: #FFFFFF;
+    font-style: italic;
+    margin-top: 35px;
+} 
+
+/*.rcInfoRegistrace {
+    clear: both;
+    left: 628px;
+    position: absolute;
+    top: 361px;
+}*/
+
+.loginError {
+    color: red;
+    font-size: 1em;
+    font-weight: bold;
+    margin-bottom: 5px;
+    margin-top: 25px;
+}
+
+#narodnostRegDiv {
+    clear: both;
+    width: 400px;
+}
+
+#prislusnostRegDiv {
+    clear: both;
+    width: 400px;
+}
+
+#narodnostRegDiv p {
+    float: left;
+    margin-top: 3px;
+    width: 138px;
+}
+
+#narodnostRegDiv select {
+    border: medium none;
+    float: left;
+    margin-top: 3px;
+    width: 260px;
+}
+
+#prislusnostRegDiv p {
+    float: left;
+    margin-top: 3px;
+    width: 138px;
+}
+
+#prislusnostRegDiv select {
+    border: medium none;
+    float: left;
+    margin-top: 3px;
+    width: 260px;
+}
+
+#narodnostInfoDiv {
+    clear: both;
+    
+}
+
+#prislusnostInfoDiv {
+    clear: both;
+}
+
+#narodnostInfoDiv p {
+    color: #FFFFFF;
+    float: left;
+    margin-left: 5px;
+    margin-top: 3px;
+    padding-top: 10px;
+    text-align: left;
+    width: 170px;
+}
+
+#narodnostInfoDiv select {
+    border: medium none;
+    
+    float: left;
+    /*font-size: 1em;*/
+    margin-bottom: 7px;
+    margin-left: 14px;
+    margin-top: 3px;
+    padding: 7px 11px;
+    width: 410px;
+}
+
+#prislusnostInfoDiv p {
+    color: #FFFFFF;
+    float: left;
+    margin-left: 5px;
+    margin-top: 3px;
+    padding-top: 10px;
+    text-align: left;
+    width: 170px;
+}
+
+#prislusnostInfoDiv select {
+    border: medium none;
+    
+    float: left;
+    /*font-size: 1em;*/
+    margin-bottom: 7px;
+    margin-left: 14px;
+    margin-top: 3px;
+    padding: 7px 11px;
+    width: 410px;
+}
+
+#wrapperPrihlasky #placeniSelect {
+    /*font-size: 1.2em;*/
+    margin: 5px 0 5px 5px;
+    width: 160px;
+}
+
+.detailyPrislusnostP {
+    float: left;
+    margin-top: 3px;
+    margin-left: 5px;
+    text-align: left;
+    width: 170px;
+}
+
+.detailyPrislusnostSelect {
+    /*font-size: 1.2em;*/
+    margin: 5px 0 5px 5px;
+    width: 160px;
+}
+
+.detailyNarodnostP {
+    float: left;
+    margin-top: 3px;
+    margin-left: 5px;
+    text-align: left;
+    width: 170px;
+}
+
+.detailyNarodnostSelect {
+    /*font-size: 1.2em;*/
+    margin: 5px 0 5px 5px;
+    width: 160px;
+}
+
+.hlavniHeaderChyba {
+    text-align: center;
+    background: none repeat scroll 0 0 #FAC600;  
+    width: 100%;
+    font-size: 1.2em;
+    height: 25px;
+}
+
+.hlavniHeaderChyba th {
+    background: url("../img/chybaStrip1.png") repeat scroll 0 0 transparent;
+}
+
+#osobyOrgTableChyba {
+    margin-top: 10px;
+    padding-bottom: 15px;
+}
+
+#vyberFakturace {
+    height: 27px;
+    margin-bottom: 10px;
+    margin-left: 14px;
+    margin-top: 10px;
+    padding-left: 6px;
+}
+

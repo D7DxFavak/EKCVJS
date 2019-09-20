@@ -1,0 +1,128 @@
+<%-- 
+    Document   : klientskeUdaje
+    Created on : 26.10.2011, 13:28:58
+    Author     : 7Data Gotzy
+--%>
+
+<%@taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core"%>
+<%@taglib prefix="sql" uri="http://java.sun.com/jsp/jstl/sql"%>
+
+<c:set var='view' value='/klientskeUdaje' scope='session' />
+<%@page contentType="text/html" pageEncoding="UTF-8"%>
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">      
+    </head>
+    <body>
+        <div id="panelUdajeOsoba">
+
+            <h2>ORGANIZACE</h2>
+
+            <p>Vase uzivatelské údaje :</p>
+
+            <form action="organizaceUdaje" method="post" id="organizaceInfoForm">                   
+                <label for="nazev">${webProp.nazev("organizace_nazev")}:</label>
+                <input type="text"
+                       size="31"
+                       maxlength="45"
+                       id="nazev"
+                       name="nazev"
+                       value="${klientPrihlaseni.nazev}">
+                <br>
+                <label for="nazevPlny1">${webProp.nazev("organizace_nazevPlny1")}:</label>
+                <input type="text"
+                       size="31"
+                       maxlength="45"
+                       id="nazevPlny1"
+                       name="nazevPlny1"
+                       value="${klientPrihlaseni.nazevPlny1}">
+                <br>                    
+                <div id="katOrgTypy">
+                    <p class="wrapperP">${webProp.nazev("filtr_typ_org")}</p>
+                    <select name="vyberTypOrg" size="1" onchange="document.location.href='ekcvjs?organizaceUdaje.jsp&idTypOrg='+this.value">
+                        <c:forEach var="orgTyp" items="${katOrgTypy}">
+                            <c:choose>
+                                <c:when test="${orgTyp.katorgtypId == vyberKatOrgTyp}">
+                                    <option selected value="${orgTyp.katorgtypId}" >${orgTyp.nazev}</option>
+                                </c:when>
+                                <c:otherwise>
+                                    <option value="${orgTyp.katorgtypId}">${orgTyp.nazev}</option>
+                                </c:otherwise>
+                            </c:choose>                 
+                        </c:forEach>
+                    </select>
+                </div>
+                <div id="katOrgDruhy">
+                    <p class="wrapperP">${webProp.nazev("filtr_druh_org")}</p>
+                    <select name="vyberTypOrgPol" size="1" onchange="document.location.href='ekcvjs?organizaceUdaje.jsp&idDruhOrg='+this.value">
+                        <c:forEach var="orgTypPol" items="${katOrgPolozky}">       
+                            <c:choose>
+                                <c:when test="${orgTypPol.katOrgPolozkyPK.katorgtypId == vyberKatOrgTyp &&
+                                                orgTypPol.katOrgPolozkyPK.katorgpolId == vyberKatOrgDruh}">
+                                        <option selected value="${orgTypPol.katOrgPolozkyPK.katorgpolId}">${orgTypPol.nazev}</option>
+                                </c:when>
+                                <c:otherwise>
+                                    <option value="${orgTypPol.katOrgPolozkyPK.katorgpolId}">${orgTypPol.nazev}</option>
+                                </c:otherwise>
+                            </c:choose> 
+
+                        </c:forEach>
+                    </select>
+                </div>
+                <label for="adresa">${webProp.nazev("uzivatel_adresa")}:</label>
+                <input type="text"
+                       size="31"
+                       maxlength="45"
+                       id="adresa"
+                       name="adresa"
+                       value="${klientPrihlaseni.adresa}">           
+                <br>
+                <label for="mesto">${webProp.nazev("uzivatel_mesto")}:</label>
+                <input type="text"
+                       size="31"
+                       maxlength="45"
+                       id="mesto"
+                       name="mesto"
+                       value="${klientPrihlaseni.mesto}">    
+                <br>
+                <label for="psc">${webProp.nazev("uzivatel_psc")}:</label>
+                <input type="text"
+                       size="31"
+                       maxlength="45"
+                       id="psc"
+                       name="psc"
+                       value="${klientPrihlaseni.psc}"> 
+                <br>
+                <br>
+                <label for="telefon">${webProp.nazev("uzivatel_telefon")}:</label>
+                <input type="text"
+                       size="31"
+                       maxlength="16"
+                       id="telefon"
+                       name="telefon"
+                       value="${klientPrihlaseni.telefon}">
+                <br>
+                <label for="email">${webProp.nazev("uzivatel_email")}:</label>
+                <input type="text"
+                       size="31"
+                       maxlength="45"
+                       id="email"
+                       name="email"
+                       value="${klientPrihlaseni.EMail}">
+                <br>
+                <label for="fax">${webProp.nazev("uzivatel_fax")}:</label>
+                <input type="text"
+                       size="31"
+                       maxlength="16"
+                       id="fax"
+                       name="fax"
+                       value="${klientPrihlaseni.fax}">
+                <br>
+
+                <input type="submit" value="Potvrdit" id="submitOrganizaceUdaje"/>                 
+            </form>
+
+        </div>
+    </body>
+</html>

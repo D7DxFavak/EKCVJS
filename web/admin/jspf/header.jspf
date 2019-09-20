@@ -1,0 +1,43 @@
+<%--
+ * Copyright (c) 2010, Oracle and/or its affiliates. All rights reserved.
+ *
+ * You may not modify, use, reproduce, or distribute this software
+ * except in compliance with the terms of the license at:
+ * http://developer.sun.com/berkeley_license.html
+
+ * author: tgiunipero
+--%>
+
+<%@taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core" %>
+<%@taglib prefix="fmt" uri="http://java.sun.com/jsp/jstl/fmt" %>
+
+<%@page pageEncoding="UTF-8" contentType="text/html; charset=UTF-8"%>
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+
+<html>
+    <head>
+        <link rel="stylesheet" type="text/css" href="${pageContext.request.contextPath}/css/affablebean2.css">
+        <link rel="shortcut icon" href="../img/favicon.ico">
+
+        <title>KCVJŠ : Přihlášení uživatele</title>
+    </head>
+
+    <body>
+        <div id="btop">
+            <span></span>
+        </div>
+        <div id="bbottom">
+            <span></span>
+        </div>
+        <div id="main">
+            <div id="header">
+                <div id="widgetBar"></div>
+
+                <a href="<c:url value='../index.jsp'/>">
+                    <img src="../img/logo.jpg" alt="Affable Bean logo" id="adminLogo">
+                </a>
+
+
+            </div>
+
+            <h2>Přihlášení uživatele</h2>

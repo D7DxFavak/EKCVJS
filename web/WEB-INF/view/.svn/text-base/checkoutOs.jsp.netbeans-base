@@ -1,0 +1,104 @@
+<%--
+    Document   : checkout
+    Created on : Jun 9, 2010, 3:59:32 PM
+    Author     : tgiunipero
+--%>
+<c:set var='view' value='/checkout' scope='session' />
+
+
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">       
+</head>
+<body>
+
+    <div id="singleColumn">
+
+        <h2>Shrnuti</h2>
+
+        <p>Pred potvrzenim rezervace zkontrolujte Vase udaje :</p>
+
+        <form action="potvrzeni" method="post">
+            <table id="checkoutTable">
+                <tr>
+                    <td><label for="jmeno">Jmeno:</label></td>
+                    <td class="inputField">
+                        <input type="text"
+                               size="31"
+                               maxlength="45"
+                               id="jmeno"
+                               name="jmeno"
+                               value="${klientPrihlaseni.jmeno}">
+                    </td>
+                </tr>
+                <tr>
+                    <td><label for="prijmeni">Prijmeni:</label></td>
+                    <td class="inputField">
+                        <input type="text"
+                               size="31"
+                               maxlength="45"
+                               id="prijmeni"
+                               name="prijmeni"
+                               value="${klientPrihlaseni.prijmeni}">
+                    </td>
+                </tr>
+                <tr>
+                    <td><label for="email">E-mail:</label></td>
+                    <td class="inputField">
+                        <input type="text"
+                               size="31"
+                               maxlength="45"
+                               id="email"
+                               name="email"
+                               value="${param.eMail}">
+                    </td>
+                </tr>
+                <tr>
+                    <td><label for="telefon">telefon:</label></td>
+                    <td class="inputField">
+                        <input type="text"
+                               size="31"
+                               maxlength="16"
+                               id="telefon"
+                               name="telefon"
+                               value="${klientPrihlaseni.telefon}">
+                    </td>
+                </tr>
+                <tr>
+                    <td><label for="addresa">adresa:</label></td>
+                    <td class="inputField">
+                        <input type="text"
+                               size="31"
+                               maxlength="45"
+                               id="addresa"
+                               name="addresa"
+                               value="${klientPrihlaseni.adresa}, ${klientPrihlaseni.psc} ${klientPrihlaseni.mesto}">                    
+                    </td>
+                </tr>            
+                <tr>
+                    <td colspan="2">
+                        <input type="submit" value="Potvrdit rezervaci">
+                    </td>
+                </tr>
+            </table>
+        </form>
+
+        <div id="infoBox">
+
+
+            <table id="priceBox">
+                <tr>
+                    <td>subtotal:</td>
+                    <td class="checkoutPriceColumn">
+                        &euro; ${cart.subtotal}</td>
+                </tr>            
+                <tr>
+                    <td class="total">total:</td>
+                    <td class="total checkoutPriceColumn">
+                        &euro; ${cart.total}</td>
+                </tr>
+            </table>
+        </div>
+    </div>
+
+</body>
+</html>

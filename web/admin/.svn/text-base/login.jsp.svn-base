@@ -1,0 +1,49 @@
+<%--
+ * Copyright (c) 2010, Oracle and/or its affiliates. All rights reserved.
+ *
+ * You may not modify, use, reproduce, or distribute this software
+ * except in compliance with the terms of the license at:
+ * http://developer.sun.com/berkeley_license.html
+
+ * author: tgiunipero
+--%>
+
+<%@taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core" %>
+<%@taglib prefix="fmt" uri="http://java.sun.com/jsp/jstl/fmt" %>
+
+<%@page pageEncoding="UTF-8" contentType="text/html; charset=UTF-8"%>
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+
+<html>
+    <head>
+        <link rel="stylesheet" type="text/css" href="${pageContext.request.contextPath }/css/affablebean2.css">
+        <link rel="shortcut icon" href="${pageContext.request.contextPath }/img/favicon.ico">
+
+        <title>KCVJŠ : Přihlášení uživatele</title>
+    </head>
+
+    <body>
+        <div id="mainLogin">        
+            <form action="<c:url value='j_security_check'/>" method=post id ="loginForm">
+                <div id="loginBox">
+                    <label for="loginLabel">Uživatelské jméno:</label>
+
+                    <input type="text" size="20" name="j_username" id="loginInput">
+                    <label for="passLabel">heslo:</label>
+
+                    <input type="password" size="20" name="j_password" id="passInput">
+
+                    <input type="submit" value="Potvrdit" id="submitLogin">
+                </div>
+            </form>
+         <%--   <div id ="registraceOdkaz">
+                Pokud ještě nejste zaregistrovaní, proveďte registraci zde : 
+                <a href="${pageContext.request.contextPath}/registrace.jsp"> 
+                    Registrovat
+                </a>
+
+            </div>--%>
+            
+        </div>
+    </body>
+</html>

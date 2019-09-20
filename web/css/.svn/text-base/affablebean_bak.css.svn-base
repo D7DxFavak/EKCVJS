@@ -1,0 +1,291 @@
+/* START RESET */
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre, a,
+abbr, acronym, address, big, cite, code, del, dfn,
+em, font, img, ins, kbd, q, s, samp, small, strike,
+strong, sub, sup, tt, var, b, u, i, center, dl, dt,
+dd, ol, ul, li, fieldset, form, label, legend, table,
+caption, tbody, tfoot, thead, tr, th, td {
+
+    background: none repeat scroll 0 0 transparent;
+    border: 0 none;
+    font-size: 100%;
+    margin: 0;
+    outline: 0 none;
+    padding: 0;
+    vertical-align: baseline;
+}
+
+body {
+    background: none repeat scroll 0 0 lightgrey;
+    font-family: Arial,Helvetica,sans-serif;
+    margin: auto;
+    width: 1024px;
+
+}
+ol, ul {
+    list-style: none outside none;
+}
+/* END RESET */
+
+#header {
+     width: auto;
+     height: 220px;
+     border: 2px solid black;
+}
+
+#logo {
+    height: 100px;
+    margin: auto;
+    width: 100%;
+     border: 2px solid black;
+}
+
+#widgetBar {
+    width: auto;
+     height: 40px;
+     margin: 5px 0;
+     border: 2px solid black;
+}
+
+#login.headerWidget {
+    display: inline;
+    float: right;
+    /*margin: 5px 50px 15px 837px;*/
+     border: 2px solid black;
+}
+
+.headerWidget {
+     /*clear:both;*/
+    display: inline;
+    float: right;
+    /*margin: 5px 50px 15px 837px;*/
+     border: 2px solid black;
+     margin-right: 20px;
+}
+
+#viewCart {
+    position: relative;
+     clear: both;
+    float: left;
+     margin: 15px 20px;
+     border: 2px solid black;
+     
+}
+
+#indexTopColumn {
+     clear: both;
+    height: 44px;
+     width: 100%;
+     background: orange/*#fff*/;
+     /*padding-left: 264px;*/
+     margin: 20px auto;
+     border: 2px solid black;
+     text-align: center;
+     display: block;
+}
+
+#indexTopColumn ul {
+     /*float: left;*/
+     width: 100%;
+     /*margin: 10px 0px;
+     position: relative;
+     /*display: inline;*/
+     list-style: circle;
+     cursor: pointer;
+     text-align: center; /* !!!! musi byt proto aby displa: inline-block v UL LI fungoval, viz nize !!!! */
+}
+
+#indexTopColumn ul li {
+     /*clear: both;
+     float: left;*/
+     /*width: 60px;*/
+     /*height: 30px;*/
+     margin: 8px 20px;
+     padding: 10px 10px;
+     display: inline-block; /* !!!! bude fungovat s text-align: center viz vyse !!!! */
+     /*float: left;*/
+     background: #f44;
+     position: relative; /* !!!! nejdulezitejsi pro spravny alignment drop-down menu k jednotlive polozce !!!! */
+     border: 2px dashed #fff;
+}
+
+#indexTopColumn ul li ul li {
+     display: none;
+}
+
+#indexTopColumn li:hover {
+     cursor: pointer;
+     z-index: 100;
+}
+
+#indexTopColumn ul li:hover ul {
+     top: 30px;
+     left: 0px;
+     width:240px;
+     background-color:#F66; /* orange */
+    position:absolute;
+     /*height:65px;*/
+     display:block;
+}
+#indexTopColumn ul li:hover ul li {
+     width:200px;
+     margin: 4px 2px;
+     background-color:#F90; /* orange */
+    /*position: absolute;*/
+     /*height:65px;*/
+     display:block;
+     font-size: 0.6em;
+     text-align: left;
+}
+
+.categoryBox {
+    margin: auto;
+     display: inline;
+    float: left;
+    margin: 5px 10px 0 0;
+     padding: 10px;
+     background: magenta;
+     border: 2px solid black;
+     position: absolute;
+}
+
+#panelLeftColumn {
+     margin-top: 10px;
+     padding-top: 10px;
+     clear: both;
+     float: left;
+     display: block;
+     width: 200px;
+     border: 2px solid black;
+}
+
+#wrapper {
+     margin: 10px 10px;
+     padding: 6px;
+     /*clear: both;*/
+     float: left;
+     display: block;
+     width: 580px;
+     border: 2px solid black;
+}
+
+#leftColumnUl1, #leftColumnUl2 {
+     margin: 20px 0;
+     width: 160px;
+     background: #fff;
+     padding: 20px;
+     
+}
+
+#leftColumnUl1 ul, #leftColumnUl2 ul {
+     /*margin: 20px 0;
+     width: 160px;*/
+     background: magenta;
+     padding: 2px;
+     
+}
+ 
+#leftColumnUl1 ul li, #leftColumnUl2 ul li {
+     /*margin: 20px 0;
+     width: 160px;*/
+     background: orange;
+     border: 2px dotted black;
+     margin: 2px;
+}
+
+#panelRightColumn {
+     margin: 10px 0px;
+     padding-top: 10px;
+     /*clear: both;*/
+     float: right;
+     display: block;
+     width: 200px;
+     border: 2px solid black;
+}
+
+#rightColumnUl1 {
+     clear: both;
+     margin: 10px 8px;
+     padding-top: 10px;
+     /*clear: both;*/
+     float: right;
+     display: block;
+     width: 180px;
+     border: 2px solid black;
+}
+
+#rightColumnUl2  {
+     clear: both;
+     margin: 10px 8px;
+     padding-top: 10px;
+     /*clear: both;*/
+     float: right;
+     display: block;
+     width: 180px;
+     border: 2px solid black;
+}
+
+#rightColumnUl3  {
+     clear: both;
+     margin: 10px 8px;
+     padding-top: 10px;
+     /*clear: both;*/
+     float: right;
+     display: block;
+     width: 180px;
+     border: 2px solid black;
+}
+
+#footer {
+    clear: both;
+     /*display: inline;
+    float: left;
+    margin-right: 288px;*/
+}
+
+#footerEsf {
+     /*width: 33%;
+     /*float: left;*/
+     /*background: url(img/logoesf.jpg) no-repeat;*/
+}
+
+#footerEsf #logo {
+     width: auto;
+     height: auto;
+     background: url(img/logoesf.jpg) no-repeat;
+}
+
+#footer #footerKontakt {
+     width: 50%;
+     float: left;
+     /*text-align: center;*/
+}
+
+
+#footer #footerTM {
+     width: 50%;
+     float: left;
+     text-align: right;
+}
+
+.datumAktuality {
+     font-size: 0.8em;
+     font-weight: bold;
+}
+
+.aktualityLabelText {
+     font-family: Arial, Helvetica, sans-serif;
+     font-size: 0.8em;
+     font-style: italic;
+}
+
+.categoryLabelText {
+     font-family: Arial, Helvetica, sans-serif;
+     /*font-size: 0.9em;*/
+     font-size: 16px;
+}
+
+/*#footer #footerTM a {
+     float: right;
+}*/

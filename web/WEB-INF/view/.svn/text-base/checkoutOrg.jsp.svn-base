@@ -1,0 +1,102 @@
+<%--
+    Document   : checkout
+    Created on : Jun 9, 2010, 3:59:32 PM
+    Author     : tgiunipero
+--%>
+
+<%@taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core"%>
+
+<c:set var='view' value='/checkoutOrg' scope='session' />
+
+<html>
+    <head>
+        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">       
+    </head>
+    <body>
+
+        <div id="singleColumn">
+
+            <h2>${webProp.nazev("shrnuti_objednavka")}</h2>
+
+            <p>${webProp.nazev("kontrola_udaju")}</p>
+
+            <form action="potvrzeniOrg" method="post">
+                <table id="checkoutTable">
+                    <tr>
+                        <td><label for="nazev">${webProp.nazev("organizace_nazev")} : </label></td>
+                        <td class="inputField">
+                            <input type="text"
+                                   size="31"
+                                   maxlength="45"
+                                   id="nazev"
+                                   name="nazev"
+                                   value="${klientPrihlaseni.nazev}">
+                        </td>
+                    </tr>
+                    <tr>
+                        <td><label for="adresa">${webProp.nazev("uzivatel_adresa")}:</label></td>
+                        <td class="inputField">
+                            <input type="text"
+                                   size="31"
+                                   maxlength="45"
+                                   id="adresa"
+                                   name="adresa"
+                                   value="${klientPrihlaseni.adresa}">
+                        </td>
+                    </tr>
+                    <tr>
+                        <td><label for="mesto">${webProp.nazev("uzivatel_mesto")}:</label></td>
+                        <td class="inputField">
+                            <input type="text"
+                                   size="31"
+                                   maxlength="45"
+                                   id="mesto"
+                                   name="mesto"
+                                   value="${klientPrihlaseni.mesto}">
+                        </td>
+                    </tr>
+                    <tr>
+                        <td><label for="psc">${webProp.nazev("uzivatel_psc")}:</label></td>
+                        <td class="inputField">
+                            <input type="text"
+                                   size="31"
+                                   maxlength="16"
+                                   id="psc"
+                                   name="psc"
+                                   value="${klientPrihlaseni.psc}">
+                        </td>
+                    </tr>                                            
+                </table>
+
+                <c:if test="${!empty cart && cart.numberOfProducts != 0}">
+                    <ul>
+                        <c:forEach var="cartItem" items="${cart.items}">         
+
+                            <c:set var="product" value="${cartItem.product}"/>
+                            <li>          
+                                <p>${product.akceCislo} - ${product.nazev}</p>                                                            
+                                <p>${webProp.nazev("cena_akce")} : ${cartItem.total}</p>
+                            </li>                        
+                        </c:forEach>
+                    </ul>
+                </c:if>            
+
+                <div id="infoBox">
+                    <table id="priceBox">
+                        <tr>
+                            <td class="total">${webProp.nazev("cena_celkem")}:</td>
+                            <td class="total checkoutPriceColumn">
+                                ${cart.total} ${webProp.nazev("CZK")}</td>
+                        </tr>
+                    </table>
+                </div>
+
+                <input type="submit" value="Potvrdit rezervaci">
+
+            </form>
+
+
+        </div>
+
+    </body>
+</html>
